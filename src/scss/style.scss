@@ -221,19 +221,29 @@ padding: 24px ;
   gap: 24px;
   padding: 16px 16px 0 0;
 }
+.mainmenu__navouter {
+  padding-bottom: 88px;
+  position: relative;
+}
+.mainmenu__navbar {
+max-width: 317px;
+width: 100%;
+min-width: 317px;
+border-right: 1px solid rgba(68, 83, 113, 0.15);
+}
 .mainmenu__nav {
+  margin-bottom: 14px;
   cursor: pointer;
   font-weight: 500;
 font-size: 14px;
 line-height: 143%;
 letter-spacing: -0.03em;
 color: #0e1117;
-margin-bottom: 14px;
-max-width: 317px;
-width: 100%;
-min-width: 317px;
-border-right: 1px solid rgba(68, 83, 113, 0.15);
-padding: 0;
+
+&:last-child {
+  margin-bottom: 0;
+}
+
 &.active {
   color: #37f;
 }
@@ -242,4 +252,70 @@ padding: 0;
 .mainmenu__content {
 }
 .mainmenu__footer {
+}
+
+.mainmenu__submenu {
+  display: flex;
+  gap: 24px;
+}
+.mainmenu__subcol {
+  max-width: 258px;
+
+  min-width: 258px;
+}
+.mainmenu__subitem {
+  padding: 16px 16px 8px;
+
+}
+.mainmenu__subtitle {
+  font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: -0.03em;
+color: #0e1117;
+margin-bottom: 8px;
+}
+.mainmenu__sublinks {
+  ul {
+    @include clear;
+  }
+  li {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      font-weight: 400;
+font-size: 14px;
+line-height: 114%;
+letter-spacing: -0.03em;
+color: #445371;
+    }
+  }
+}
+ 
+.btn_arrow {
+  font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: -0.03em;
+color: #445371;
+  padding: 8px 35px 8px 15px;
+  background-image: url(../img/arrow_outward.svg);
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
+background-color: #f6f6f8;
+border-radius: 9999px;
+}
+
+.mainmenu__subcontent {
+  position: relative;
+  height: 100%;
+  
+}
+.mainmenu__subfooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
