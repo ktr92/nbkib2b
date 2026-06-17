@@ -31,19 +31,19 @@
 }
 
 @mixin medium-screen() {
-  @media only screen and (max-width: 855px) {
+  @media only screen and (max-width: 1180px) {
     @content;
   }
 }
 
 @mixin small-screen() {
-  @media only screen and (max-width: 855px) {
+  @media only screen and (max-width: 1180px) {
     @content;
   }
 }
 
 @mixin extrasmall-screen() {
-  @media only screen and (max-width: 402px) {
+  @media only screen and (max-width: 767px) {
     @content;
   }
 }

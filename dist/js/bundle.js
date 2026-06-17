@@ -30,28 +30,42 @@ window.addEventListener("load", () => {
     //hideAnotherModal();
     //statsAnimate(".stats", ".stats__title span");
     initToggleClick();
-
+    tabsInit();
+    absoluteTarget('.mainmenu__union', '#mainmenu_btn')
     //initLightbox();
-   // fixElement(0, 0, "header", "fixed");
+    // fixElement(0, 0, "header", "fixed");
     //wowInit();
     scrollTo();
   }
 
+  function absoluteTarget(element, target) {
+    const targetEl = document.querySelector(target);
+    const absoluteEl = document.querySelector(element);
+
+    function positionAbsoluteBelowTarget() {
+      const rect = targetEl.getBoundingClientRect();
+      absoluteEl.style.left = rect.left + "px";
+    }
+
+    window.addEventListener("resize", positionAbsoluteBelowTarget);
+    positionAbsoluteBelowTarget(); // вызов при загрузке
+  }
+
   function scrollTo() {
     $("a.scrollTo").click(function () {
-    $(this).addClass("active");
-    var destination = $($(this).attr("href")).offset().top - 100;
-    $("html:not(:animated),body:not(:animated)").animate(
-      {
-        scrollTop: destination,
-      },
-      400,
-    );
-    if ($(this).closest('[data-toggle]').length) {
-      $(this).closest('[data-toggle]').removeClass('active')
-    }
-    return false;
-  });
+      $(this).addClass("active");
+      var destination = $($(this).attr("href")).offset().top - 100;
+      $("html:not(:animated),body:not(:animated)").animate(
+        {
+          scrollTop: destination,
+        },
+        400,
+      );
+      if ($(this).closest("[data-toggle]").length) {
+        $(this).closest("[data-toggle]").removeClass("active");
+      }
+      return false;
+    });
   }
 
   function wowInit() {
@@ -147,10 +161,32 @@ window.addEventListener("load", () => {
     });
   }
 
+  function tabsInit() {
+    $(function () {
+      $("[data-tabsheader]").on(
+        "click",
+        "[data-tabsbutton]:not(.active)",
+        function () {
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active")
+            .closest("[data-tabs]")
+            .find("[data-tabscontent]")
+            .removeClass("active")
+            .eq($(this).index())
+            .addClass("active");
+        },
+      );
+    });
+  }
+
   function initToggleClick() {
     $("[data-toggleclick]").on("click", function (e) {
       $(this).toggleClass("active");
       $(this).closest("[data-toggleitem]").addClass("active");
+
+      
       e.preventDefault();
       let dropdown = $(this).data("toggleclick");
       $("[data-toggle].active")
@@ -164,7 +200,16 @@ window.addEventListener("load", () => {
         .removeClass("active");
       $(`[data-toggle=${dropdown}]`).toggleClass("active");
       $(`[data-toggleactive=${dropdown}]`).toggleClass("active");
+
+      if ($(`[data-toggle=${dropdown}]`).attr('data-backdrop') === 'true') {
+        $('.jsbackdrop').toggleClass('active')
+      }
     });
+
+    $('.jsbackdrop').on("click", function (e) {
+      $(this).removeClass('active');
+      $('[data-backdrop="true"]').removeClass('active')
+    })
   }
 
   function initTelMask() {

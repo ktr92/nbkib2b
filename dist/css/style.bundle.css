@@ -125,12 +125,28 @@ img {
   height: initial;
 }
 
+[data-toggle] {
+  display: none;
+}
+
+[data-toggle].active {
+  display: block;
+}
+
+[data-tabscontent] {
+  display: none;
+}
+
+[data-tabscontent].active {
+  display: block;
+}
+
 @media (min-width: 855px) {
   .onlyMobile {
     display: none !important;
   }
 }
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 1180px) {
   .onlyMobile {
     display: initial;
   }
@@ -140,9 +156,179 @@ img {
 }
 .container {
   width: 100%;
-  max-width: 895px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header#header {
+  position: relative;
+  z-index: 90;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  background: #f6f6f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+main {
+  padding-top: 84px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__logo a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__logotext {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  padding-left: 16px;
+  border-left: 2px solid #000;
+  height: 31px;
+  white-space: nowrap;
+}
+
+.menuline__items {
+  display: flex;
+  gap: 2px;
+}
+
+.menuline__item {
+  padding: 4px 16px;
+}
+.menuline__item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.03em;
+  color: #0e1117;
+  display: block;
+}
+.menuline__item a:hover {
+  color: #0055FF;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.headerlogin {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 36px;
+}
+
+.headerlogin__button {
+  border-radius: 9999px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.03em;
+  color: #445371;
+  height: 36px;
+  background: #fff;
+  padding: 0 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
+}
+
+.headerlogin__icon {
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  margin-left: -3px;
+  box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
+}
+
+.mainmenu {
+  position: absolute;
+  width: 100%;
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.jsbackdrop {
+  background: rgba(10, 19, 61, 0.2);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: none;
+}
+
+.jsbackdrop.active {
+  display: block;
+}
+
+.mainmenu__wrapper {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  /* .container {
+    position: relative;
+
+    &:before {
+      content: url(../img/Union.svg);
+      position: absolute;
+      top: -37px;
+      left: 351px;
+    }
+  } */
+}
+
+.mainmenu__union {
+  position: absolute;
+  top: -13px;
+  transform: translateX(-15px);
+}
+
+.mainmenu__main {
+  display: flex;
+  gap: 24px;
+  padding: 16px 16px 0 0;
+}
+
+.mainmenu__nav {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.03em;
+  color: #0e1117;
+  margin-bottom: 14px;
+  max-width: 317px;
+  width: 100%;
+  min-width: 317px;
+  border-right: 1px solid rgba(68, 83, 113, 0.15);
+  padding: 0;
+}
+.mainmenu__nav.active {
+  color: #37f;
 }
 
 /* desktop small */
