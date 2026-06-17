@@ -1,0 +1,56 @@
+@import './params.scss';
+
+button {
+	cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.content-center{
+  justify-content: center;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-white, .text-white {
+  color: #fff;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.w-half {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+@media (max-width: 1023px) {
+  .mobile-full {
+    width: 100% !important;
+  }
+}

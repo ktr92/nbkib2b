@@ -1,0 +1,15 @@
+/* desktop small */
+@include xlarge-screen {
+}
+/* laptop */
+@include large-screen {
+ 
+}
+
+/* tablet */
+@include medium-screen {
+}
+/* mobile */
+@include small-screen {
+  
+}

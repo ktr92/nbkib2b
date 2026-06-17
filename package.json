@@ -1,0 +1,34 @@
+{
+  "name": "static-site-webpack",
+  "version": "2.0.0",
+  "description": "HTML template",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider  webpack --mode development",
+    "watch": "cross-env NODE_OPTIONS=--openssl-legacy-provider  webpack --mode development --watch",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider  webpack serve",
+    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "latest",
+    "copy-webpack-plugin": "latest",
+    "cross-env": "latest",
+    "css-loader": "latest",
+    "css-minimizer-webpack-plugin": "latest",
+    "eslint-plugin-html": "latest",
+    "html-webpack-plugin": "latest",
+    "mini-css-extract-plugin": "latest",
+    "prettier": "latest",
+    "raw-loader": "latest",
+    "sass": "latest",
+    "sass-loader": "latest",
+    "svg-inline-loader": "latest",
+    "terser-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "dependencies": {
+    "html-webpack-inline-svg-plugin": "latest"
+  }
+}

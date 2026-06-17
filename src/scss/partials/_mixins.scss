@@ -1,0 +1,49 @@
+@import "params.scss";
+
+@mixin container {
+  width: 100%;
+  max-width: 1134px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin clear {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
+
+@mixin xlarge-screen() {
+  @media only screen and (max-width: 1536px) {
+    @content;
+  }
+}
+@mixin large-screen() {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media only screen and (max-width: 855px) {
+    @content;
+  }
+}
+
+@mixin small-screen() {
+  @media only screen and (max-width: 855px) {
+    @content;
+  }
+}
+
+@mixin extrasmall-screen() {
+  @media only screen and (max-width: 402px) {
+    @content;
+  }
+}
