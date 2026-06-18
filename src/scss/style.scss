@@ -52,10 +52,20 @@ img {
 [data-toggle].active {
   display: block;
 }
-[data-tabscontent] {
+/* [data-tabscontent] {
   display: none;
 }
 [data-tabscontent].active {
+  display: block;
+} */
+/* [data-accordioncontent] {
+  display: none;
+}
+[data-accordioncontent].expanded {
+  display: block;
+} */
+
+.mainmenu__subcontent.active[hidden] {
   display: block;
 }
 @media (min-width: 855px) {

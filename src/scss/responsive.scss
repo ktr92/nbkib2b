@@ -138,7 +138,7 @@
     &.active {
       color: #0e1117;
     }
-    &.active:after {
+    &.expanded:after {
       transform: rotate(0);
     }
   }
@@ -166,6 +166,16 @@
   .mainmenu__subcol {
    max-width: 100%;
    min-width: 100%;
+  }
+  .mainmenu__subcontent.active {
+   display: none !important;
+  }
+  .mainmenu__subcontent.expanded {
+   display: block !important;
+  }
+  .mainmenu__staticarea  {
+   margin: 23px 0;
+   display: block;
   }
 }
 /* mobile */

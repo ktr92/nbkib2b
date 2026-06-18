@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
     initToggleClick();
     tabsInit();
     accordionInit();
-    absoluteTarget('.mainmenu__union', '#mainmenu_btn')
+    absoluteTarget(".mainmenu__union", "#mainmenu_btn");
     //initLightbox();
     // fixElement(0, 0, "header", "fixed");
     //wowInit();
@@ -183,15 +183,19 @@ window.addEventListener("load", () => {
   }
   function accordionInit() {
     $(function () {
-      $("[data-accordion]").on(
-        "click",        
-        function () {
-          $(this)
-            .toggleClass("active")
-            .next('[data-accordioncontent]')
-            .toggleClass("active")
-        },
-      );
+      $("[data-accordion]").on("click", function () {
+        const $panel = $(this).next("[data-accordioncontent]");
+        $(this)
+          .toggleClass("expanded")
+          .next("[data-accordioncontent]")
+          .toggleClass("expanded")
+          .attr("hidden", function (index, attr) {
+            console.log(attr);
+            return attr ? null : "hidden";
+          });
+        const isExpanded = $(this).attr("aria-expanded") === "true";
+        $(this).attr('aria-expanded', !isExpanded);
+      });
     });
   }
 
@@ -200,7 +204,6 @@ window.addEventListener("load", () => {
       $(this).toggleClass("active");
       $(this).closest("[data-toggleitem]").addClass("active");
 
-      
       e.preventDefault();
       let dropdown = $(this).data("toggleclick");
       $("[data-toggle].active")
@@ -215,18 +218,18 @@ window.addEventListener("load", () => {
       $(`[data-toggle=${dropdown}]`).toggleClass("active");
       $(`[data-toggleactive=${dropdown}]`).toggleClass("active");
 
-      if ($(`[data-toggle=${dropdown}]`).attr('data-backdrop') === 'true') {
-        $('.jsbackdrop').toggleClass('active')
+      if ($(`[data-toggle=${dropdown}]`).attr("data-backdrop") === "true") {
+        $(".jsbackdrop").toggleClass("active");
       }
-      if ($(this).attr('data-overflow') === 'body') {
-        $('body').toggleClass('overflow')
+      if ($(this).attr("data-overflow") === "body") {
+        $("body").toggleClass("overflow");
       }
     });
 
-    $('.jsbackdrop').on("click", function (e) {
-      $(this).removeClass('active');
-      $('[data-backdrop="true"]').removeClass('active')
-    })
+    $(".jsbackdrop").on("click", function (e) {
+      $(this).removeClass("active");
+      $('[data-backdrop="true"]').removeClass("active");
+    });
   }
 
   function initTelMask() {
