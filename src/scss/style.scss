@@ -539,7 +539,7 @@ sup {
   line-height: 150%;
   letter-spacing: -0.03em;
   color: #445371;
-
+  margin-top: 0;
   &:last-child {
     margin-bottom: 0;
   }
@@ -588,7 +588,7 @@ sup {
   border-radius: 24px;
   padding: 24px 32px;
 }
-h1 {
+.aboutblock__title h1 {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
@@ -601,6 +601,7 @@ h1 {
 }
 
 .frameblock {
+  overflow: hidden;
   height: 307px;
   border: 1px solid rgba(68, 83, 113, 0.05);
   border-radius: 24px;
@@ -609,7 +610,7 @@ h1 {
   background-position: right 72px bottom;
   background-repeat: no-repeat;
 }
-.frameblock__wrapper {
+.frameblock__wrapper {  overflow: hidden;
   min-height: 100%;
   position: relative;
   display: flex;

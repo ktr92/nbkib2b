@@ -115,6 +115,9 @@ a {
   .mob-pb-20 {
     padding-bottom: 20px;
   }
+  .mob-mb-20 {
+    margin-bottom: 20px;
+  }
 }
 :root {
   --font-family: "Formular";
@@ -664,6 +667,7 @@ sup {
   line-height: 150%;
   letter-spacing: -0.03em;
   color: #445371;
+  margin-top: 0;
 }
 .aboutblock__cols .aboutblock__text p:last-child {
   margin-bottom: 0;
@@ -713,7 +717,7 @@ sup {
   padding: 24px 32px;
 }
 
-h1 {
+.aboutblock__title h1 {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
@@ -723,6 +727,7 @@ h1 {
 }
 
 .frameblock {
+  overflow: hidden;
   height: 307px;
   border: 1px solid rgba(68, 83, 113, 0.05);
   border-radius: 24px;
@@ -733,6 +738,7 @@ h1 {
 }
 
 .frameblock__wrapper {
+  overflow: hidden;
   min-height: 100%;
   position: relative;
   display: flex;
@@ -959,7 +965,7 @@ h2 {
     min-width: unset;
   }
   .aboutblock__stats {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
   }
   .aboutblock__content {
     display: block;
@@ -995,7 +1001,8 @@ h2 {
   .maincard__wrapper {
     padding: 30px 16px 16px 16px;
     border-radius: 0;
-    background-position: bottom center;
+    background-position: bottom -30px center;
+    background-size: 561px;
   }
   .maincard__text {
     font-size: 15px;
@@ -1045,6 +1052,74 @@ h2 {
   }
   .slider-controls .slick-dots li.slick-active button {
     background: #80aaff;
+  }
+  .aboutblock__title h1 {
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #0e1117;
+    margin-bottom: 24px;
+  }
+  .aboutblock__cols .aboutblock__text p {
+    font-size: 15px;
+    line-height: 160%;
+  }
+  .aboutblock__cols .aboutblock__text p:last-child {
+    margin-bottom: 0;
+  }
+  .aboutblock__cols {
+    gap: 0;
+  }
+  .aboutblock__item {
+    backdrop-filter: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  .stats__text {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .aboutblock__stats {
+    gap: 16px 21px;
+  }
+  .stats__top {
+    white-space: nowrap;
+  }
+  .stats__text br {
+    display: none;
+  }
+  .frameblock {
+    height: unset;
+  }
+  .frameblock__main {
+    width: 100%;
+    padding: 30px 16px;
+  }
+  .frameblock__wrapper {
+    display: block;
+  }
+  .frameblock__image {
+    transform: none;
+    text-align: center;
+  }
+  .frameblock__image img {
+    display: block;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .frameblock__footer {
+    position: static;
+    margin-top: 40px;
+  }
+  .frameblock__footer .btn_main {
+    display: block;
+    width: 100%;
   }
 }
 /* mobile */
