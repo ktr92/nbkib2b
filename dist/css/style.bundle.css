@@ -521,6 +521,7 @@ main {
 }
 
 .maincard__wrapper {
+  display: block;
   height: 100%;
   border-radius: 24px;
   padding: 54px 32px;
@@ -560,6 +561,7 @@ main {
 
 .btn_main {
   border-radius: 9999px;
+  text-align: center;
   height: 48px;
   min-width: 48px;
   line-height: 48px;
@@ -948,6 +950,101 @@ h2 {
   .mainmenu__staticarea {
     margin: 23px 0;
     display: block;
+  }
+  .maincard {
+    height: unset;
+  }
+  .aboutblock_type2 .aboutblock__title {
+    width: 100%;
+    min-width: unset;
+  }
+  .aboutblock__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutblock__content {
+    display: block;
+  }
+  .aboutblock__cols {
+    flex-wrap: wrap;
+  }
+  .aboutblock_type2 .aboutblock__text {
+    max-width: 100%;
+  }
+  .mobileslider__container {
+    height: 541px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
+    background: #eceef6;
+  }
+  .mobileslider__slider .slick-list,
+  .mobileslider__slider .slick-track,
+  .mobileslider__slider .slick-slide > div,
+  .mobileslider__slider,
+  .mobileslider__slide,
+  .mobileslidercard,
+  .maincard__wrapper {
+    height: 100%;
+  }
+  .stats__numb {
+    font-size: 54px;
+  }
+  .aboutblock__item {
+    padding: 0;
+  }
+  .maincard__wrapper {
+    padding: 30px 16px 16px 16px;
+    border-radius: 0;
+    background-position: bottom center;
+  }
+  .maincard__text {
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+  }
+  .maincard__text br {
+    display: none;
+  }
+  .maincard__container .maincard__footer {
+    width: 100%;
+  }
+  .maincard__container .maincard__footer .btn_main {
+    width: 100%;
+  }
+  .maincard__title {
+    margin-bottom: 20px;
+  }
+  .slider-controls .slick-dots {
+    position: static;
+    background: none;
+    padding: 0;
+    margin: 0;
+    line-height: unset;
+    display: flex;
+  }
+  .slider-controls .slick-dots li button:before {
+    height: 4px;
+    line-height: 4px;
+    width: 100%;
+    display: none;
+  }
+  .slick-dots li {
+    width: 20%;
+    height: 4px;
+    line-height: 4px;
+    padding: 0;
+    margin: 0;
+  }
+  .slider-controls .slick-dots li button {
+    padding: 0;
+    height: 4px;
+    line-height: 4px;
+    width: 100%;
+    border-radius: 999px;
+    background: rgba(0, 85, 255, 0.05);
+  }
+  .slider-controls .slick-dots li.slick-active button {
+    background: #80aaff;
   }
 }
 /* mobile */

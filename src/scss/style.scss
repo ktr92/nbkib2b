@@ -394,6 +394,7 @@ main {
 }
 
 .maincard__wrapper {
+  display: block;
   height: 100%;
   border-radius: 24px;
   padding: 54px 32px;
@@ -435,7 +436,7 @@ main {
 }
 .btn_main {
   border-radius: 9999px;
-
+text-align: center;
   height: 48px;
   min-width: 48px;
   line-height: 48px;

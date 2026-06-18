@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
   function initFE() {
+    mainSlider();
     initTelMask();
     //checkCookies();
     //lazyLoadSrc("iframe");
@@ -14,6 +15,17 @@ window.addEventListener("load", () => {
     // fixElement(0, 0, "header", "fixed");
     //wowInit();
     scrollTo();
+  }
+
+  function mainSlider() {
+    $('.mainblock__mobile [data-slider="mainslider"]').slick({
+      dots: true,
+      appendDots: $('.mainblock__mobile .slider-controls'), 
+      arrows: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
   }
 
   function absoluteTarget(element, target) {
