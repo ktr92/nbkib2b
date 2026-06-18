@@ -50,196 +50,234 @@
 <body>
   <div class="jsbackdrop "></div>
 <header id="header" class="header ">
- <div class="container">
-  <div class="header__wrapper">
-   <div class="header__logo">
-    <a href="/">
-     <div class="header__logoimg"><img src="img/nbki-logo.svg" alt="логотип нбки"></div>
-     <div class="header__logotext">для бизнеса</div>
-    </a>
-   </div><!-- /.header__logo -->
-   <div class="header__menu">
-    <div class="menuline">
-     <div class="menuline__items">
-      <div class="menuline__item">
-       <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn">Услуги</a>
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a href="/">
+          <div class="header__logoimg"><img src="img/nbki-logo.svg" alt="логотип нбки"></div>
+          <div class="header__logotext onlyDesktop">для бизнеса</div>
+        </a>
+      </div><!-- /.header__logo -->
+      <div class="header__menu onlyDesktop">
+        <div class="menuline">
+          <div class="menuline__items">
+            <div class="menuline__item">
+              <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn">Услуги</a>
+            </div>
+            <div class="menuline__item">
+              <a href="#">Аналитика</a>
+            </div>
+            <div class="menuline__item">
+              <a href="#">Способы подключения</a>
+            </div>
+            <div class="menuline__item">
+              <a href="#">Стать клиентом</a>
+            </div>
+            <div class="menuline__item">
+              <a href="#">Контакты</a>
+            </div>
+          </div><!-- /.menuline__items -->
+        </div><!-- /.menuline -->
+      </div><!-- /.header__menu -->
+      <div class="header__nav onlyDesktop">
+        <div class="headerlogin">
+          <a href="#" class="headerlogin__button">Войти</a>
+          <a href="#" class="headerlogin__icon">
+            <img src="img/User.svg" alt="">
+          </a>
+        </div><!-- /.headerlogin -->
+      </div><!-- /.header__nav -->
+      <div class="header__burger onlyMobile" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
       </div>
-      <div class="menuline__item">
-       <a href="#">Аналитика</a>
-      </div>
-      <div class="menuline__item">
-       <a href="#">Способы подключения</a>
-      </div>
-      <div class="menuline__item">
-       <a href="#">Стать клиентом</a>
-      </div>
-      <div class="menuline__item">
-       <a href="#">Контакты</a>
-      </div>
-     </div><!-- /.menuline__items -->
-    </div><!-- /.menuline -->
-   </div><!-- /.header__menu -->
-   <div class="header__nav">
-    <div class="headerlogin">
-     <a href="#" class="headerlogin__button">Войти</a>
-     <a href="#" class="headerlogin__icon">
-      <img src="img/User.svg" alt="">
-     </a>
-    </div><!-- /.headerlogin -->
-   </div><!-- /.header__nav -->
-  </div><!-- /.header__wrapper -->
- </div><!-- /.container -->
- <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true">
-  <div class="mainmenu__wrapper">
-   <div class="container">
-    <div class="mainmenu__union">
-     <img src="img/Union.svg" alt="">
-    </div><!-- /.mainmenu__union -->
-    <div class="mainmenu__main" data-tabs="mainmenu">
-     <div class="mainmenu__navouter">
+    </div><!-- /.header__wrapper -->
+  </div><!-- /.container -->
+  <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true">
+    <div class="mainmenu__wrapper">
+      <div class="container">
+        <div class="mainmenu__header onlyMobile">
+          <a href="#" class="btn_border btn_lk">
+            <span>Войти в ЛКП</span>
+          </a><!-- /.btn_border btn_lk -->
+          <div class="header__closeburger active" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
+          </div>
+        </div><!-- /.mainmenu__header -->
+        <div class="mainmenu__union onlyDesktop">
+          <img src="img/Union.svg" alt="">
+        </div><!-- /.mainmenu__union -->
+        <div class="mainmenu__main" data-tabs="mainmenu">
+          <div class="mainmenu__navouter onlyDesktop">
 
-      <div class="mainmenu__navbar" data-tabsheader="mainmenu">
-       <div class="mainmenu__nav active" data-tabsbutton="mainmenu">Банкам и МФИ</div>
-       <div class="mainmenu__nav" data-tabsbutton="mainmenu">Страховым компаниям</div>
-       <div class="mainmenu__nav" data-tabsbutton="mainmenu">Поставщикам ЖКУ и услуг связи</div>
-       <div class="mainmenu__nav" data-tabsbutton="mainmenu">Лизингу и операторам инвестиционных платформ</div>
-       <div class="mainmenu__nav" data-tabsbutton="mainmenu">Аналитика НБКИ</div>
-      </div><!-- /.mainmenu__nav -->
-       <div class="mainmenu__subfooter">
-        <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-       </div><!-- /.mainmenu__subfooter -->
-     </div><!-- /.mainmenu__navouter -->
+            <div class="mainmenu__navbar" data-tabsheader="mainmenu">
+              <div class="mainmenu__nav active" data-tabsbutton="mainmenu">Банкам и МФИ</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Страховым компаниям</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Поставщикам ЖКУ и услуг связи</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Лизингу и операторам инвестиционных платформ</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Аналитика НБКИ</div>
+            </div><!-- /.mainmenu__nav -->
+            <div class="mainmenu__subfooter">
+              <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
+            </div><!-- /.mainmenu__subfooter -->
+          </div><!-- /.mainmenu__navouter -->
 
-     <div class="mainmenu__content">
-      <div class="active" class="mainmenu__subcontent" data-tabscontent="mainmenu">
-       <div class="mainmenu__submenu">
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Управление рисками</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Прескоринг кредитных заявок</a></li>
-            <li><a href="">Кредитные отчеты</a></li>
-            <li><a href="">ССП и самозапрет на кредиты</a></li>
-            <li><a href="">Мониторинг финансового поведения заемщика</a></li>
-            <li><a href="">Верификация данных заявителей</a></li>
-            <li><a href="">Противодействие мошенничеству</a></li>
-            <li><a href="">Скоринги и рейтинги</a></li>
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Кредитный портфель</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Скоринг действующих кредитов</a></li>
-            <li><a href="">Мониторинг должников</a></li>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Службы взыскания</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Взыскание на ранних этапах</a></li>
-            <li><a href="">Скоринг банкротства</a></li>
-            <li><a href="">Мониторинг должников</a></li>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-        <div class="mainmenu__subcol">
+          <div class="mainmenu__content">
+            <div class="mainmenu__tabsarea">
+              
+           
+            <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu">Банкам и МФИ</div>
 
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Маркетинг</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Сегментация клиентской базы</a></li>
-            <li><a href="">Диверсификация кредитных предложений</a></li>
-            <li><a href="">Мониторинг клиентов (CRM)</a></li>
+            <div class="" class="mainmenu__subcontent" data-tabscontent="mainmenu"  data-accordioncontent="mainmenu">
+              <div class="mainmenu__submenu">
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Управление рисками</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Прескоринг кредитных заявок</a></li>
+                        <li><a href="#">Кредитные отчеты</a></li>
+                        <li><a href="#">ССП и самозапрет на кредиты</a></li>
+                        <li><a href="#">Мониторинг финансового поведения заемщика</a></li>
+                        <li><a href="#">Верификация данных заявителей</a></li>
+                        <li><a href="#">Противодействие мошенничеству</a></li>
+                        <li><a href="#">Скоринги и рейтинги</a></li>
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Кредитный портфель</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Скоринг действующих кредитов</a></li>
+                        <li><a href="#">Мониторинг должников</a></li>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-       </div><!-- /.mainmenu__submenu -->
-      </div>
-      <div class="mainmenu__subcontent" data-tabscontent="mainmenu">
-       <div class="mainmenu__submenu">
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Страховым компаниям</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Кредитные отчеты и ССП</a></li>
-            <li><a href="">Мониторинг клиентской базы</a></li>
-            <li><a href="">Скоринги и рейтинги</a></li>
-            <li><a href="">Верификация данных/a></li>
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Службы взыскания</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Взыскание на ранних этапах</a></li>
+                        <li><a href="#">Скоринг банкротства</a></li>
+                        <li><a href="#">Мониторинг должников</a></li>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-       </div>
-      </div>
-      <div class="mainmenu__subcontent" data-tabscontent="mainmenu">
-       <div class="mainmenu__submenu">
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Поставщикам ЖКУ и услуг связи</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Информация</a></li>
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+                <div class="mainmenu__subcol">
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-       </div>
-      </div>
-      <div class="mainmenu__subcontent" data-tabscontent="mainmenu">
-       <div class="mainmenu__submenu">
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Лизингу и операторам инвестиционных платформ</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Передача данных по 218-ФЗ</a></li>
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Маркетинг</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Сегментация клиентской базы</a></li>
+                        <li><a href="#">Диверсификация кредитных предложений</a></li>
+                        <li><a href="#">Мониторинг клиентов (CRM)</a></li>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-       </div>
-      </div>
-      <div class="mainmenu__subcontent" data-tabscontent="mainmenu">
-       <div class="mainmenu__submenu">
-        <div class="mainmenu__subcol">
-         <div class="mainmenu__subitem">
-          <div class="mainmenu__subtitle">Аналитика НБКИ</div>
-          <div class="mainmenu__sublinks">
-           <ul>
-            <li><a href="">Аналитические отчеты НБКИ</a></li>
-            <li><a href="">BI аналитика НБКИ</a></li>
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+              </div><!-- /.mainmenu__submenu -->
+            </div>
 
-           </ul>
-          </div><!-- /.mainmenu__sublinks -->
-         </div><!-- /.mainmenu__subitem -->
-        </div><!-- /.mainmenu__subcol -->
-       </div>
-       <div class="mainmenu__subfooter">
-        <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-       </div><!-- /.mainmenu__subfooter -->
-      </div>
-     </div><!-- /.mainmenu__content -->
-    </div>
-   </div><!-- /.container -->
-  </div><!-- /.mainmenu__main -->
- </div><!-- /.mainmenu -->
+            <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu">Страховым компаниям</div>
+            <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu">
+              <div class="mainmenu__submenu">
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Страховым компаниям</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Кредитные отчеты и ССП</a></li>
+                        <li><a href="#">Мониторинг клиентской базы</a></li>
+                        <li><a href="#">Скоринги и рейтинги</a></li>
+                        <li><a href="#">Верификация данных</a></li>
+
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+              </div>
+            </div>
+
+            <div class="mainmenu__nav onlyMobile"  data-accordion="mainmenu">Поставщикам ЖКУ и услуг связи</div>
+            <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu">
+              <div class="mainmenu__submenu">
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Поставщикам ЖКУ и услуг связи</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Информация</a></li>
+
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+              </div>
+            </div>
+
+            <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu">Лизингу и операторам инвестиционных платформ</div>
+            <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu">
+              <div class="mainmenu__submenu">
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Лизингу и операторам инвестиционных платформ</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Передача данных по 218-ФЗ</a></li>
+
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+              </div>
+            </div>
+
+            <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu">Аналитика НБКИ</div>
+            <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu">
+              <div class="mainmenu__submenu">
+                <div class="mainmenu__subcol">
+                  <div class="mainmenu__subitem">
+                    <div class="mainmenu__subtitle">Аналитика НБКИ</div>
+                    <div class="mainmenu__sublinks">
+                      <ul>
+                        <li><a href="#">Аналитические отчеты НБКИ</a></li>
+                        <li><a href="#">BI аналитика НБКИ</a></li>
+
+                      </ul>
+                    </div><!-- /.mainmenu__sublinks -->
+                  </div><!-- /.mainmenu__subitem -->
+                </div><!-- /.mainmenu__subcol -->
+              </div>
+              <div class="mainmenu__subfooter">
+                <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
+              </div><!-- /.mainmenu__subfooter -->
+            </div>
+             </div><!-- /.mainmenu__tabsarea -->
+             <div class="mainmenu__staticarea onlyMobile">
+              <div class="mainmenu__staticmenu">
+                <ul>
+                  <li><a href="">Способы подключения</a></li>
+                  <li><a href="">Стать клиентом</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </div><!-- /.mainmenu__staticmenu -->
+              <div class="mainmenu__staticbuttons">
+                <a href="https://nbki.ru" class="btn_arrow btn_icon btn_arrow_white btn_full" target="_blank">
+                  <span>Сайт для физических лиц</span></a>
+              </div><!-- /.mainmenu__staticbuttons -->
+             </div><!-- /.mainmenu -->
+          </div><!-- /.mainmenu__content -->
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.mainmenu__main -->
+  </div><!-- /.mainmenu -->
 </header>
 <!-- /#header.header -->
    <main id="top">

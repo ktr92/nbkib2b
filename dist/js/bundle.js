@@ -31,6 +31,7 @@ window.addEventListener("load", () => {
     //statsAnimate(".stats", ".stats__title span");
     initToggleClick();
     tabsInit();
+    accordionInit();
     absoluteTarget('.mainmenu__union', '#mainmenu_btn')
     //initLightbox();
     // fixElement(0, 0, "header", "fixed");
@@ -180,6 +181,19 @@ window.addEventListener("load", () => {
       );
     });
   }
+  function accordionInit() {
+    $(function () {
+      $("[data-accordion]").on(
+        "click",        
+        function () {
+          $(this)
+            .toggleClass("active")
+            .next('[data-accordioncontent]')
+            .toggleClass("active")
+        },
+      );
+    });
+  }
 
   function initToggleClick() {
     $("[data-toggleclick]").on("click", function (e) {
@@ -203,6 +217,9 @@ window.addEventListener("load", () => {
 
       if ($(`[data-toggle=${dropdown}]`).attr('data-backdrop') === 'true') {
         $('.jsbackdrop').toggleClass('active')
+      }
+      if ($(this).attr('data-overflow') === 'body') {
+        $('body').toggleClass('overflow')
       }
     });
 
