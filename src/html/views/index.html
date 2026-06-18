@@ -1,0 +1,87 @@
+<% var data={ title: "Cookie Policy" , author: "" }; %>
+ <%= _.template(require('../includes/head.html').default)(data) %>
+  <%= _.template(require('../includes/header.html').default)(data) %>
+
+   <main>
+    <div class="mainblock">
+     <div class="container">
+      <div class="mainblock__cols">
+       <div class="mainblock__col mainblock__col_bigger">
+        <div class="mainblock__rows">
+         <div class="mainblock__item">
+          <div class="maincard maincard_xl">
+           <div class="maincard__wrapper" style="background-image: url(img/Banks3.png);">
+            <div class="maincard__container">
+             <div class="maincard__content">
+              <div class="maincard__title">Банкам и МФИ</div>
+              <div class="maincard__text">Решения для маркетинга и служб взыскания, <br>для управления рисками и
+               кредитным<br>
+               портфелем</div>
+             </div>
+             <div class="maincard__footer">
+              <div class="maincard__button">
+               <a href="" class="btn_main">Подробнее</a>
+              </div>
+             </div><!-- /.maincard__footer -->
+            </div><!-- /.maincard__container -->
+           </div><!-- /.maincard__wrapper -->
+          </div>
+         </div><!-- /.mainblock__item -->
+         <div class="mainblock__row">
+          <div class="mainblock__item">
+           <div class="maincard maincard_sm">
+            <div class="maincard__wrapper" style="background-image: url(img/Insurance3.png);">
+             <div class="maincard__container">
+              <div class="maincard__content">
+               <div class="maincard__title">Страховым<br> компаниям</div>
+              </div>
+             </div><!-- /.maincard__container -->
+            </div><!-- /.maincard__wrapper -->
+           </div>
+          </div><!-- /.mainblock__item -->
+          <div class="mainblock__item">
+           <div class="maincard maincard_sm">
+            <div class="maincard__wrapper" style="background-image: url(img/PD2.png);">
+             <div class="maincard__container">
+              <div class="maincard__content">
+               <div class="maincard__title">Поставщикам ЖКУ<br> и услуг связи</div>
+              </div>
+             </div><!-- /.maincard__container -->
+            </div><!-- /.maincard__wrapper -->
+           </div>
+          </div><!-- /.mainblock__item -->
+         </div><!-- /.mainblock__row -->
+        </div><!-- /.mainblock__rows -->
+       </div><!-- /.mainblock__col mainblock__bigger -->
+       <div class="mainblock__col mainblock__col_smaller">
+        <div class="mainblock__rows">
+         <div class="mainblock__item">
+          <div class="maincard maincard_lg">
+           <div class="maincard__wrapper" style="background-image: url(img/BI2.png);">
+            <div class="maincard__container">
+             <div class="maincard__content">
+              <div class="maincard__title">BI аналитика <br>НБКИ</div>
+             </div>
+            </div><!-- /.maincard__container -->
+           </div><!-- /.maincard__wrapper -->
+          </div>
+         </div><!-- /.mainblock__item -->
+         <div class="mainblock__item">
+          <div class="maincard maincard_lg">
+           <div class="maincard__wrapper" style="background-image: url(img/Bankrupt1.png);">
+            <div class="maincard__container">
+             <div class="maincard__content">
+              <div class="maincard__title">Лизинговым компаниями <br>операторам инвест <br>платформ</div>
+             </div>
+            </div><!-- /.maincard__container -->
+           </div><!-- /.maincard__wrapper -->
+          </div>
+         </div><!-- /.mainblock__item -->
+        </div><!-- /.mainblock__rows -->
+       </div><!-- /.mainblock__col mainblock__smaller -->
+      </div><!-- /.mainblock__cols -->
+     </div><!-- /.container -->
+    </div><!-- /.mainblock -->
+   </main>
+
+   <%= _.template(require('../includes/footer.html').default)(data) %>

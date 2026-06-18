@@ -91,6 +91,7 @@ body {
   color: #0e1117;
   overflow-x: hidden;
   width: 100%;
+  background: #f6f6f8;
 }
 
 body.overflow {
@@ -439,6 +440,109 @@ main {
   background-repeat: no-repeat;
   background-position: left center;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.3332 16.25H7.49984V17.5H13.3332C14.7139 17.5 15.8332 16.3807 15.8332 15L15.8332 5C15.8332 3.61929 14.7139 2.5 13.3332 2.5L7.49984 2.5V3.75L13.3332 3.75C14.0235 3.75 14.5832 4.30965 14.5832 5L14.5832 15C14.5832 15.6904 14.0235 16.25 13.3332 16.25ZM8.42694 12.653L9.30948 13.5356L10.1934 12.6517L12.2558 10.5893C12.5812 10.2639 12.5812 9.73623 12.2558 9.41079L10.1934 7.3484L9.30948 6.46452L8.42694 7.34706L10.4549 9.37505L4.1665 9.37505V10.6251L10.4549 10.6251L8.42694 12.653Z' fill='%230055FF'/%3e%3c/svg%3e ");
+}
+
+.mainblock__cols {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: 681px 1fr;
+}
+
+.mainblock__row {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainblock__item {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.maincard {
+  width: 100%;
+}
+
+.maincard_xl {
+  height: 427px;
+}
+
+.maincard_lg {
+  height: 281px;
+}
+
+.maincard_sm {
+  height: 135px;
+}
+
+.maincard__wrapper {
+  height: 100%;
+  border-radius: 24px;
+  padding: 54px 32px;
+  box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
+  background-color: #fff;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.maincard__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #0e1117;
+  margin-bottom: 10px;
+}
+
+.maincard__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #445371;
+}
+
+.maincard__container {
+  position: relative;
+  height: 100%;
+}
+.maincard__container .maincard__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.btn_main {
+  border-radius: 9999px;
+  height: 48px;
+  min-width: 48px;
+  line-height: 48px;
+  padding: 0 30px;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  background: #05f;
+  color: #fff;
+  display: inline-block;
+}
+.btn_main:hover {
+  background: #37f;
+}
+
+.maincard_sm .maincard__wrapper {
+  padding: 24px 32px;
+}
+.maincard_sm .maincard__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.maincard_sm .maincard__title {
+  font-size: 18px;
+}
+
+.maincard_lg .maincard__title {
+  font-size: 18px;
 }
 
 /* desktop small */
