@@ -400,12 +400,34 @@ window.addEventListener("load", () => {
             .find("[data-tabscontent]")
             .removeClass("active");
           $tab.addClass("active");
-
+          switchAttribute($(this), "aria-selected");
           switchArrows($tab);
         },
       );
     });
   }
+  function switchAttribute(element, attribute) {
+    element.siblings().attr(attribute, "false");
+    let elAttr = element.attr(attribute);
+    if (elAttr) {
+      const isExpanded = elAttr === "true";
+      element.attr(attribute, !isExpanded);
+    }
+  }
+  /* function switchExpanded(element) {
+    let elAttr = element.attr("aria-expanded");
+    if (elAttr) {
+      const isExpanded = elAttr === "true";
+      element.attr("aria-expanded", !isExpanded);
+    }
+  }
+  function switchSelected(element) {
+    let elAttr = element.attr("aria-selected");
+    if (elAttr) {
+      const isSelected = elAttr === "true";
+      element.attr("aria-selected", !isSelected);
+    }
+  } */
   function accordionInit() {
     $(function () {
       $("[data-accordion]").on("click", function () {
@@ -418,8 +440,7 @@ window.addEventListener("load", () => {
             console.log(attr);
             return attr ? null : "hidden";
           });
-        const isExpanded = $(this).attr("aria-expanded") === "true";
-        $(this).attr("aria-expanded", !isExpanded);
+        switchAttribute($(this), "aria-expanded");
       });
     });
   }
@@ -449,6 +470,8 @@ window.addEventListener("load", () => {
       if ($(this).attr("data-overflow") === "body") {
         $("body").toggleClass("overflow");
       }
+
+      switchAttribute($(this), "aria-expanded");
     });
 
     $(".jsbackdrop").on("click", function (e) {

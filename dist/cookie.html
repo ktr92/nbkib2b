@@ -73,7 +73,8 @@
         <div class="menuline">
           <div class="menuline__items">
             <div class="menuline__item">
-              <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn">Услуги</a>
+              <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn" aria-expanded="false"
+                aria-controls="menu-main">Услуги</a>
             </div>
             <div class="menuline__item">
               <a href="#">Аналитика</a>
@@ -102,7 +103,7 @@
       </div>
     </div><!-- /.header__wrapper -->
   </div><!-- /.container -->
-  <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true">
+  <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true" id="menu-main">
     <div class="mainmenu__wrapper">
       <div class="container">
         <div class="mainmenu__header onlyMobile">
@@ -118,12 +119,18 @@
         <div class="mainmenu__main" data-tabs="mainmenu">
           <div class="mainmenu__navouter onlyDesktop">
 
-            <div class="mainmenu__navbar" data-tabsheader="mainmenu">
-              <div class="mainmenu__nav active" data-tabsbutton="mainmenu">Банкам и МФИ</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Страховым компаниям</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Лизингу и операторам инвестиционных платформ</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu">Аналитика НБКИ</div>
+            <div class="mainmenu__navbar" data-tabsheader="mainmenu" role="tablist" aria-label="Menu desktop">
+              <div class="mainmenu__nav active" data-tabsbutton="mainmenu" role="tab" aria-selected="true"
+                aria-controls="menupanel-1" id="menutab-1" tabindex="0">Банкам и МФИ</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
+                aria-controls="menupanel-2" id="menutab-1" tabindex="1">Страховым компаниям</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
+                aria-controls="menupanel-3" id="menutab-3" tabindex="2">Поставщикам ЖКУ и услуг связи</div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
+                aria-controls="menupanel-4" id="menutab-4" tabindex="3">Лизингу и операторам инвестиционных платформ
+              </div>
+              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
+                aria-controls="menupanel-5" id="menutab-5" tabindex="4">Аналитика НБКИ</div>
             </div><!-- /.mainmenu__nav -->
             <div class="mainmenu__subfooter">
               <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
@@ -137,10 +144,11 @@
 
 
               <div class="mainmenu__nav active onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-1" id="mainmenu-1">Банкам и МФИ</div>
+                aria-controls="mainmenu-1" id="menuaccordion-1">Банкам и МФИ</div>
 
               <div class="mainmenu__subcontent active" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-1" role="region" aria-labelledby="mainmenu-1" hidden>
+                id="mainmenu-1" role="region tabpanel" aria-labelledby="menutab-1 menuaccordion-1"
+                tabindex="0" hidden>
                 <div class="mainmenu__submenu">
                   <div class="mainmenu__subcol">
                     <div class="mainmenu__subitem">
@@ -198,9 +206,11 @@
                 </div><!-- /.mainmenu__submenu -->
               </div>
 
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu"  aria-expanded="false"
-                aria-controls="mainmenu-2" id="mainmenu-2">Страховым компаниям</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"  id="mainmenu-2" role="region" aria-labelledby="mainmenu-2" hidden>
+              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
+                aria-controls="mainmenu-2" id="menuaccordion-2">Страховым компаниям</div>
+              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
+                id="mainmenu-2" role="region tabpanel" aria-labelledby="menutab-2 menuaccordion-2"
+                tabindex="1" hidden>
                 <div class="mainmenu__submenu">
                   <div class="mainmenu__subcol">
                     <div class="mainmenu__subitem">
@@ -220,8 +230,10 @@
               </div>
 
               <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-3" id="mainmenu-3">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu" id="mainmenu-3" role="region" aria-labelledby="mainmenu-3" hidden>
+                aria-controls="mainmenu-3" id="menuaccordion-3">Поставщикам ЖКУ и услуг связи</div>
+              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
+                id="mainmenu-3" role="region tabpanel" aria-labelledby="menutab-3 menuaccordion-3"
+                tabindex="2" hidden>
                 <div class="mainmenu__submenu">
                   <div class="mainmenu__subcol">
                     <div class="mainmenu__subitem">
@@ -238,9 +250,11 @@
               </div>
 
               <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-4" id="mainmenu-4">Лизингу и операторам инвестиционных
+                aria-controls="mainmenu-4" id="menuaccordion-4">Лизингу и операторам инвестиционных
                 платформ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"  id="mainmenu-4" role="region" aria-labelledby="mainmenu-4" hidden>
+              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
+                id="mainmenu-4" role="region tabpanel" aria-labelledby="menutab-4 menuaccordion-4"
+                tabindex="3"  hidden>
                 <div class="mainmenu__submenu">
                   <div class="mainmenu__subcol">
                     <div class="mainmenu__subitem">
@@ -257,8 +271,10 @@
               </div>
 
               <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-5" id="mainmenu-5">Аналитика НБКИ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"  id="mainmenu-5" role="region" aria-labelledby="mainmenu-5" hidden>
+                aria-controls="mainmenu-5" id="menuaccordion-5">Аналитика НБКИ</div>
+              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
+                id="mainmenu-5" role="region tabpanel" aria-labelledby="menutab-5 menuaccordion-5"
+                tabindex="3" hidden>
                 <div class="mainmenu__submenu">
                   <div class="mainmenu__subcol">
                     <div class="mainmenu__subitem">
@@ -494,7 +510,7 @@
         </div><!-- /.phone -->
        </div><!-- /.footercard__phone -->
        <div class="footercard__icons mob-m-32-0 mob-full">
-        <a href="https://t.me/bkinbki" target="_blank" class="flex content-center">
+        <a href="https://t.me/bkinbki" target="_blank" class="flex content-center" aria-label="telegram">
          <span class="onlyMobile">Telegram</span>
          <img src="img/TelegramFill.svg" alt="Telegram">
         </a>
