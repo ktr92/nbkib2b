@@ -17,6 +17,58 @@ window.addEventListener("load", () => {
     // fixElement(0, 0, "header", "fixed");
     //wowInit();
     scrollTo();
+    customSelect();
+    formsInit();
+  }
+
+  function formsInit() {
+    $('[data-entity="corp-page-form"]').on("submit", function (e) {
+      e.preventDefault();
+      const $form = $(this);
+
+      if (validatePageForm('[data-entity="corp-page-form"]')) {
+        /* $.post("/local/ajax/form.corp.php", $form.serialize(), function (result) {
+        $("#myModal_ty").modal("show");
+      }); */
+      }
+    });
+  }
+
+  function validatePageForm(x) {
+    //let x = document.querySelectorAll("[data-stepcontent]");
+    let y,
+      i,
+      valid = true;
+    y = $(x).find("[minlength]");
+    for (i = 0; i < y.length; i++) {
+      if (y[i].value < +$(y).attr("minlength")) {
+        y[i].className += " error_input";
+        valid = false;
+      } else {
+        y[i].classList.remove("error_input");
+      }
+    }
+
+    let sel = $(x).find("select.required");
+    for (i = 0; i < sel.length; i++) {
+      if (sel[i].value == "") {
+        sel[i].className += " error_input";
+        valid = false;
+      } else {
+        sel[i].classList.remove("error_input");
+      }
+    }
+
+    let check = $(x).find("#idCorpCheck");
+    for (i = 0; i < check.length; i++) {
+      if (!check[i].checked) {
+        check[i].className += " error_input";
+        valid = false;
+      } else {
+        check[i].classList.remove("error_input");
+      }
+    }
+    return valid; // return the valid status
   }
 
   function mainSlider() {
@@ -159,7 +211,7 @@ window.addEventListener("load", () => {
       $("[data-arrows]").hide();
       if ($slider) {
         const index = $slider.attr("data-sliderindex");
-        console.log(index)
+        console.log(index);
         $(`[data-arrows=${index}]`).show();
       }
     } else {
@@ -204,6 +256,108 @@ window.addEventListener("load", () => {
     switchArrows();
   }
 
+  function customSelect() {
+    var x, i, j, l, ll, selElmnt, a, b, c, bb;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /* For each element, create a new DIV that will act as the selected item: */
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /* For each element, create a new DIV that will contain the option list: */
+      b = document.createElement("DIV");
+      bb = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      bb.setAttribute("class", "select-wrapper");
+      b.appendChild(bb);
+      for (j = 0; j < ll; j++) {
+        /* For each option in the original select element,
+        create a new DIV that will act as an option item: */
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+
+        if (j === 0) {
+          c.classList.add("same-as-selected");
+        }
+        c.addEventListener("click", function (e) {
+          /* When an item is clicked, update the original select box,
+            and the selected item: */
+          var y, i, k, s, h, sl, yl;
+          s =
+            this.parentNode.parentNode.parentNode.getElementsByTagName(
+              "select",
+            )[0];
+          sl = s.length;
+          h = this.parentNode.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y =
+                this.parentNode.parentNode.getElementsByClassName(
+                  "same-as-selected",
+                );
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              h.classList.add("active");
+              break;
+            }
+          }
+          h.click();
+        });
+        bb.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /* When the select box is clicked, close any other select boxes,
+        and open/close the current select box: */
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+
+    function closeAllSelect(elmnt) {
+      /* A function that will close all select boxes in the document,
+    except the current select box: */
+      var x,
+        y,
+        i,
+        xl,
+        yl,
+        arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i);
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+  }
+
   function tabsInit() {
     $(function () {
       $("[data-tabsheader]").on(
@@ -221,7 +375,7 @@ window.addEventListener("load", () => {
             .removeClass("active")
             .closest("[data-tabs]")
             .find("[data-tabscontent]")
-             .removeClass("active");
+            .removeClass("active");
           $tab.addClass("active");
 
           switchArrows($tab);
