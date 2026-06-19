@@ -73,12 +73,18 @@ a {
 .pb-32 {
   padding-bottom: 32px;
 }
-@media (max-width: 1023px) {
+.mb-0 {
+  margin-bottom: 0;
+}
+@include medium-screen {
   .mobile-full {
     width: 100% !important;
   }
   .mob-m-20-0 {
     margin: 20px 0;
+  }
+  .mob-m-32-0 {
+    margin: 32px 0;
   }
   .mob-mb-32 {
     margin-bottom: 32px;
@@ -94,5 +100,22 @@ a {
   }
   .mob-mb-40 {
     margin-bottom: 40px;
+  }
+  .mob-flexwrap {
+    flex-wrap: wrap;
+  }
+  *.mob-full {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+  .mob-center{
+    text-align: center;
+     * {
+      text-align: center;
+     }
+  }
+  .mob-order-1 {
+    order: -1;
   }
 }
