@@ -329,11 +329,11 @@
   }
   .frameblock__image {
     transform: none;
-     text-align: center;
+    text-align: center;
 
     img {
-     display: block;
-     margin: auto;
+      display: block;
+      margin: auto;
       height: 100%;
       object-fit: cover;
       object-position: top;
@@ -342,10 +342,10 @@
 
   .frameblock__footer {
     position: static;
-   margin-top: 40px;
+    margin-top: 40px;
     .btn_main {
-     display: block;
-     width: 100%;
+      display: block;
+      width: 100%;
     }
   }
   .solutioncard__title br {
@@ -353,9 +353,44 @@
   }
   h2 {
     font-size: 25px;
-line-height: 120%;
-letter-spacing: -0.03em;
-margin-bottom: 40px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+  .subtitle,
+  .subtitle p {
+    font-size: 15px;
+    line-height: 160%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .categories__item a {
+    padding: 7px 16px;
+  }
+  .contactsform {
+    border-radius: 24px;
+    padding: 30px 16px 16px;
+  }
+  .formcols__items_two {
+    gap: 8px;
+  }
+  .buttoncaption {
+    flex-wrap: wrap;
+    padding: 6px;
+  }
+  .buttoncaption__button {
+    order: -1;
+    min-width: 100%;
+
+    .btn {
+      width: 100%;
+      margin-bottom: 6px;
+    }
+  }
+  .buttoncaption__info {
+    max-width: 253px;
+    margin: 0 auto 0 auto;
   }
 }
 /* mobile */
