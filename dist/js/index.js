@@ -8,6 +8,8 @@ window.addEventListener("load", () => {
     //hideAnotherModal();
     //statsAnimate(".stats", ".stats__title span");
     initToggleClick();
+    solutionsSlider();
+
     tabsInit();
     accordionInit();
     absoluteTarget(".mainmenu__union", "#mainmenu_btn");
@@ -20,7 +22,7 @@ window.addEventListener("load", () => {
   function mainSlider() {
     $('.mainblock__mobile [data-slider="mainslider"]').slick({
       dots: true,
-      appendDots: $('.mainblock__mobile .slider-controls'), 
+      appendDots: $(".mainblock__mobile .slider-controls"),
       arrows: false,
       infinite: true,
       slidesToShow: 1,
@@ -151,21 +153,78 @@ window.addEventListener("load", () => {
     });
   }
 
+  function switchArrows(tab) {
+    if (tab) {
+      const $slider = tab.find(".slick-initialized");
+      $("[data-arrows]").hide();
+      if ($slider) {
+        const index = $slider.attr("data-sliderindex");
+        console.log(index)
+        $(`[data-arrows=${index}]`).show();
+      }
+    } else {
+      const $slider = $('[data-slider="solutions"]').first();
+      if ($slider && $slider.length) {
+        $("[data-arrows]").hide();
+        const index = $("[data-sliderindex]").attr("data-sliderindex");
+        $(`[data-arrows=${index}]`).show();
+      }
+    }
+  }
+
+  function solutionsSlider() {
+    $('[data-slider="solutions"]').each(function (index) {
+      $(this).attr("data-sliderindex", index);
+      $(this).slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: false,
+        swipe: true,
+        arrows: true,
+        appendArrows: $('[data-sliderarrows="solutions"'),
+        prevArrow: `<button type="button" class="slick-arrow slick-prev" data-arrows="${index}"></button>`,
+        nextArrow: `<button type="button" class="slick-arrow slick-next" data-arrows="${index}"></button>`,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2.5,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1.5,
+            },
+          },
+        ],
+      });
+    });
+    switchArrows();
+  }
+
   function tabsInit() {
     $(function () {
       $("[data-tabsheader]").on(
         "click",
         "[data-tabsbutton]:not(.active)",
         function () {
+          const $tab = $(this)
+            .closest("[data-tabs]")
+            .find("[data-tabscontent]")
+            .eq($(this).index());
+
           $(this)
             .addClass("active")
             .siblings()
             .removeClass("active")
             .closest("[data-tabs]")
             .find("[data-tabscontent]")
-            .removeClass("active")
-            .eq($(this).index())
-            .addClass("active");
+             .removeClass("active");
+          $tab.addClass("active");
+
+          switchArrows($tab);
         },
       );
     });
@@ -183,7 +242,7 @@ window.addEventListener("load", () => {
             return attr ? null : "hidden";
           });
         const isExpanded = $(this).attr("aria-expanded") === "true";
-        $(this).attr('aria-expanded', !isExpanded);
+        $(this).attr("aria-expanded", !isExpanded);
       });
     });
   }

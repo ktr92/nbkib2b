@@ -348,6 +348,15 @@
      width: 100%;
     }
   }
+  .solutioncard__title br {
+    display: none;
+  }
+  h2 {
+    font-size: 25px;
+line-height: 120%;
+letter-spacing: -0.03em;
+margin-bottom: 40px;
+  }
 }
 /* mobile */
 @include small-screen {
