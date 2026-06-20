@@ -314,7 +314,7 @@
                 <div class="solutionsgrid__item">
                   <a href="#" class="solutionsgrid__card">
                     <div class="solutionsgrid__image">
-                      <img src="img/PD2_sm.png" alt="Кредитные отчеты">
+                      <img src="img/PD2_sm.png" alt="PD2_sm">
                     </div>
                     <div class="solutionsgrid__title">Кредитные отчеты</div>
                   </a>
@@ -322,7 +322,7 @@
                 <div class="solutionsgrid__item">
                   <a href="#" class="solutionsgrid__card">
                     <div class="solutionsgrid__image">
-                      <img src="img/Take2_sm.png" alt="Скоринги">
+                      <img src="img/Take2_sm.png" alt="Take2_sm">
                     </div>
                     <div class="solutionsgrid__title">Скоринги</div>
                   </a>
@@ -330,7 +330,7 @@
                 <div class="solutionsgrid__item">
                   <a href="#" class="solutionsgrid__card">
                     <div class="solutionsgrid__image">
-                      <img src="img/Reports2_sm.png" alt="Сигнальные отчеты">
+                      <img src="img/Reports2_sm.png" alt="Reports2_sm">
                     </div>
                     <div class="solutionsgrid__title">Сигнальные отчеты</div>
                   </a>
@@ -338,7 +338,7 @@
                 <div class="solutionsgrid__item">
                   <a href="#" class="solutionsgrid__card">
                     <div class="solutionsgrid__image">
-                      <img src="img/BI2_sm.png" alt="Аналитика">
+                      <img src="img/BI2_sm.png" alt="BI2_sm">
                     </div>
                     <div class="solutionsgrid__title">Аналитика</div>
                   </a>
@@ -809,23 +809,23 @@
                   </div>
                   <div class="formcols__item">
                     <div class="formcols__input">
-                      <div class="placeholder">Организация *</div>
-                      <input type="text" name="company" value="" minlength="2" class="forminput" placeholder="">
+                      <label for="input_company" class="placeholder">Организация *</label>
+                      <input type="text" id="input_company" name="company" value="" minlength="2" class="forminput" placeholder="">
                       <div class="error_text"></div>
                     </div>
                   </div>
                   <div class="formcols__items formcols__items_two">
                     <div class="formcols__item">
                       <div class="formcols__input">
-                        <div class="placeholder">ИНН</div>
-                        <input name="inn" type="text" value="" class="forminput" placeholder="">
+                        <label for="input_inn" class="placeholder">ИНН</label>
+                        <input id="input_inn" name="inn" type="text" value="" class="forminput" placeholder="">
                         <div class="error_text"></div>
                       </div>
                     </div>
                     <div class="formcols__item">
                       <div class="formcols__input">
-                        <div class="placeholder">Код участника</div>
-                        <input name="code" value="" type="text" class="forminput" placeholder="">
+                        <label for="input_code" class="placeholder">Код участника</label>
+                        <input id="input_code" name="code" value="" type="text" class="forminput" placeholder="">
                         <div class="error_text"></div>
                       </div>
                     </div>
@@ -834,8 +834,8 @@
 
                   <div class="formcols__item">
                     <div class="formcols__input">
-                      <div class="placeholder">Фамилия, имя и&nbsp;отчество *</div>
-                      <input name="fio" type="text" value="" minlength="2" class="forminput" placeholder="">
+                      <label for="input_fio" class="placeholder">Фамилия, имя и&nbsp;отчество *</label>
+                      <input id="input_fio" name="fio" type="text" value="" minlength="2" class="forminput" placeholder="">
                       <div class="error_text"></div>
                     </div>
                   </div>
@@ -843,15 +843,15 @@
                   <div class="formcols__items formcols__items_two">
                     <div class="formcols__item">
                       <div class="formcols__input">
-                        <div class="placeholder">Электронная почта *</div>
-                        <input name="email" type="email" value="" minlength="2" class="forminput" placeholder="">
+                        <label for="input_email" class="placeholder">Электронная почта *</label>
+                        <input id="input_email" name="email" type="email" value="" minlength="2" class="forminput" placeholder="">
                         <div class="error_text"></div>
                       </div>
                     </div>
                     <div class="formcols__item">
                       <div class="formcols__input">
-                        <div class="placeholder">Мобильный телефон *</div>
-                        <input name="phone" value="" type="tel" class="forminput" placeholder="" minlength="11">
+                        <label for="input_phone" class="placeholder">Мобильный телефон *</label>
+                        <input id="input_phone" name="phone" value="" type="tel" class="forminput" placeholder="" minlength="11">
                         <div class="error_text"></div>
                       </div>
                     </div>
@@ -860,8 +860,8 @@
 
                   <div class="formcols__item">
                     <div class="formcols__input">
-                      <div class="placeholder">Текст сообщения</div>
-                      <textarea name="comm" rows="5" class="forminput" placeholder=""></textarea>
+                      <label for="input_comment" class="placeholder">Текст сообщения</label>
+                      <textarea id="input_comment" name="comm" rows="5" class="forminput" placeholder=""></textarea>
                       <div class="error_text"></div>
                     </div>
                   </div>
@@ -876,7 +876,7 @@
                     </div>
                   </div>
                   <div class="formcheckinfo">
-                    Нажимая кнопку «Отправить», вы подтверждаете свое согласие <a href="">на обработку и использование
+                    Нажимая кнопку «Отправить», вы подтверждаете свое согласие <a href="#" aria-label="formcheckinfo">на обработку и использование
                       персональных данных</a>
                   </div><!-- /.formcheckinfo -->
                 </form>
