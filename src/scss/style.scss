@@ -769,7 +769,7 @@ h2 {
   margin: 0 -4px;
 
   overflow: visible !important;
-/*   padding-top: 50px !important; */
+  /*   padding-top: 50px !important; */
   padding-bottom: 50px !important;
 }
 
@@ -1281,11 +1281,9 @@ input.error_input,
   line-height: 1;
   padding: 4px 8px;
   border-radius: 24px;
- 
+
   display: inline-block;
 }
-
-
 
 .breadcrumbs ul li > span {
   font-weight: 400;
@@ -1295,7 +1293,7 @@ input.error_input,
 }
 
 .breadcrumbs ul li a:hover span {
-   background: #eceef1;
+  background: #eceef1;
 }
 
 .maincard_full {
@@ -1325,10 +1323,10 @@ h1 {
   margin-top: 0;
 }
 
-
 .offers {
 }
-.offers__items {display: grid;
+.offers__items {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin: 16px 0;
@@ -1338,8 +1336,7 @@ h1 {
   }
 }
 .offers__items_sm {
-    grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
 }
 .offers__item {
   height: 210px;
@@ -1357,29 +1354,37 @@ footer#footer {
 }
 
 .maincard__tag {
+  display: inline-block;
+  white-space: nowrap;
   font-weight: 400;
-font-size: 12px;
-color: #37f;
-border-radius: 24px;
-padding: 4px 8px;
-background: rgba(0, 85, 255, 0.05);
+  font-size: 12px;
+  color: #37f;
+  border-radius: 24px;
+  padding: 4px 8px;
+  background: rgba(0, 85, 255, 0.05);
 }
 
 .maincard_auto {
   height: unset;
   .maincard__wrapper {
-      padding: 32px 50px 50px 50px;
-
+    padding: 32px 50px 50px 50px;
   }
   .maincard__container .maincard__footer {
     position: static;
     margin-top: 24px;
   }
-
 }
 .cardsinfo > .card {
   flex: 1;
 }
 .frameblock__main {
   max-width: 715px;
+}
+
+#mainblock_digital_score {
+  .maincard__wrapper {
+    height: 370px;
+    padding: 32px 50px;
+   
+  }
 }

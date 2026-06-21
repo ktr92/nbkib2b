@@ -190,6 +190,13 @@ color: #445371;
   .mob-flexwrap {
     flex-wrap: wrap;
   }
+  .mob-flexwrap > div {
+    width: 100%;
+    flex: unset !important;
+  }
+  .mob-gap-8 {
+    gap: 8px;
+  }
   *.mob-full {
     width: 100% !important;
     max-width: 100% !important;
@@ -229,5 +236,11 @@ letter-spacing: -0.04em;
   }
   .mob-mb-8 {
     margin-bottom: 8px;
+  }
+  .mob-pb-0 {
+    padding-bottom: 0;
+  }
+  .mob-pb-32 {
+    padding-bottom: 32px;
   }
 }
