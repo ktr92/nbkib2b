@@ -96,7 +96,7 @@ margin-bottom: 12px;
   font-weight: 500;
 font-size: 18px;
 line-height: 120%;
-letter-spacing: -0.03em;
+letter-spacing: -0.04em;
 color: #0e1117;
 margin: 0;
 }
@@ -110,8 +110,10 @@ line-height: 150%;
 letter-spacing: -0.03em;
 color: #445371;
 }
+
 .text p {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .text p:last-child {
   margin-bottom: 0;
@@ -121,6 +123,31 @@ color: #445371;
   flex-direction: column;
   justify-content: space-between;
 /*   height: 100%; */
+}
+.m-0 {
+  margin: 0;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.card_24_22 {
+
+  padding:  24px 22px;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pt-0 {
+  padding-top: 0;
 }
 .carddiv {
   margin: 20px 0;
@@ -135,6 +162,9 @@ color: #445371;
 @include medium-screen {
   .mobile-full {
     width: 100% !important;
+  }
+  .mob-mb-10 {
+    margin-bottom: 0;
   }
   .mob-m-20-0 {
     margin: 20px 0;
@@ -189,12 +219,15 @@ line-height: 120%;
  .text, .text p {
   font-size: 15px;
 line-height: 160%;
-letter-spacing: -0.03em;
+letter-spacing: -0.04em;
  }
   .text {
     margin: 10px 0;
   }
   .mob_content_end {
     justify-content: flex-end;
+  }
+  .mob-mb-8 {
+    margin-bottom: 8px;
   }
 }

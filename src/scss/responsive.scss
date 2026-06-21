@@ -515,6 +515,9 @@ letter-spacing: -0.03em;
   .maincard_full .maincard__container {
     margin: auto;
   }
+  .frameblock {
+    height: unset !important;
+  }
 /*   .offercard__content  {
     max-width: 280px;
     min-width: 280px;

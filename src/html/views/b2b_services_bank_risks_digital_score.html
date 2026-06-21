@@ -1,0 +1,265 @@
+<% var data={ title: "Национальное бюро кредитных историй" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+
+      <main>
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                  href="/" title="НБКИ для бизнеса"><span itemprop="name">НБКИ для бизнеса</span>
+                  <meta itemprop="position" content="1">
+                </a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                  href="/" title="Банкам и МФИ"><span itemprop="name">Банкам и МФИ</span>
+                  <meta itemprop="position" content="1">
+                </a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                  href="/" title="Управление рисками"><span itemprop="name">Управление рисками</span>
+                  <meta itemprop="position" content="1">
+                </a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="item" content="b2b_services_bank.html"><span itemprop="name">НБКИ Digital Score</span>
+                <meta itemprop="position" content="2">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mainblock pb-32 mob-pb-20">
+          <div class="container">
+
+            <div class="maincard maincard_auto maincard_full">
+              <img src="img/Banks3_lg.webp" fetchpriority="high" alt="Услуги для банков и микрофинансовых институтов"
+                style="opacity: 0; visibility: hidden; height: 0;
+                        width: 0;">
+              <div class="maincard__wrapper" fetchpriority="high" style="background-image: url(img/PD1_lg.webp);">
+                <div class="maincard__container">
+                  <div class="maincard__tags">
+                    <div class="maincard__tag">Применяется без согласия субъекта</div>
+                    <div class="maincard__tag">«Короткая» анкета</div>
+                  </div><!-- /.maincard__tags -->
+                  <div class="maincard__content">
+                    <h1 class="maincard__title mob-center">НБКИ Digital Score</h1>
+                    <div class="maincard__text onlyDesktop">Определяет сегмент онлайн-заявок с высокой вероятностью
+                      отказа на получение кредита или займа. Модель обученана данных информационной части кредитной
+                      истории, поэтому ее можно применять без согласия субъекта на «короткой» анкете
+                    </div>
+                  </div>
+                  <div class="maincard__footer">
+                    <div class="maincard__button">
+                      <a href="" class="btn_main">Оставить заявку</a>
+                    </div>
+                    <div class="maincard__text onlyMobile">Определяет сегмент онлайн-заявок с высокой вероятностью
+                      отказа на получение кредита или займа. Модель обучена на данных информационной части кредитной
+                      истории, поэтому ее можно применять без согласия субъекта на «короткой» анкете
+                    </div>
+
+                  </div><!-- /.maincard__footer -->
+                </div><!-- /.maincard__container -->
+              </div><!-- /.maincard__wrapper -->
+            </div>
+
+          </div><!-- /.container -->
+        </div><!-- /.mainblock -->
+
+        <div class="pb-32 mob-pb-20">
+          <div class="container">
+            <div class="cardsinfo flex mob-flexwrap gap-24">
+              <div class="card">
+                <div class="text m-0">Модель разработана с использованием не интерпретируемого алгоритма ML</div>
+              </div><!-- /.card -->
+              <div class="card">
+                <div class="text m-0">Обеспечивает рост операционной эффективности кредитного процесса</div>
+              </div><!-- /.card -->
+              <div class="card">
+                <div class="text m-0">Сокращает время на обработку всего потока входящих заявок</div>
+              </div><!-- /.card -->
+            </div><!-- /.cardsinfo -->
+          </div><!-- /.container -->
+        </div>
+
+        <section class="offersection p-32-0 mob-p-20-0">
+          <div class="container">
+            <h2>Прескоринг кредитных онлайн-заявок</h2>
+            <div class="subtitle">
+              <p>Скоринг позволяет кредитору «отсекать» заявки без дорогостоящих<br> процедур верификации и оценки
+                кредитного риска</p>
+            </div>
+            <div class="cardsinfo flex mob-flexwrap gap-16">
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Высокие показатели</div>
+                <div class="text m-0">Hit Rate выше 90%, <br>Gini — 84%</div>
+              </div><!-- /.card -->
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Доказанная стабильность</div>
+                <div class="text m-0">Эффективность на всех типах кредитных продуктов</div>
+              </div><!-- /.card -->
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Целевой признак</div>
+                <div class="text m-0">Наличие текущей просрочки более 500 рублей</div>
+              </div><!-- /.card -->
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Удобно</div>
+                <div class="text m-0">Возможность массового (пакетного) запроса</div>
+              </div><!-- /.card -->
+
+            </div><!-- /.cardsinfo -->
+          </div><!-- /.container -->
+        </section><!-- /.offersection -->
+        <section class="offersection p-32-0 mob-p-20-0">
+          <div class="container">
+            <h2>Как применять скоринг</h2>
+
+            <div class="cardsinfo flex mob-flexwrap gap-24">
+              <div class="card ">
+                <div class="title mb-12 mob-mb-10">Pre-Scoring</div>
+                <div class="text m-0">
+                  <p>Запросить Pre-Scoring можно уже после короткой анкеты, когда получена информация для идентификации
+                    клиента в бюро.</p>
+                  <p>Клиентам с низким баллом и высокой вероятностью отказа по стоп-факторам можно отказать сразу без
+                    дополнительной валидации</p>
+                </div>
+              </div><!-- /.card -->
+              <div class="card ">
+                <div class="title mb-12 mob-mb-10">Cross-Sell</div>
+                <div class="text m-0">
+                  <p>Для использования скоринга не требуется согласие по 218-ФЗ, его можно использовать для подготовки
+                    кредитных предложений действующим клиентам банка.
+                  </p>
+                  <p>Для увеличения доли выдач через cross-sell кампании модель может быть обучена на кастомные флаги
+                  </p>
+                </div>
+              </div><!-- /.card -->
+
+            </div><!-- /.cardsinfo -->
+          </div><!-- /.container -->
+        </section><!-- /.offersection -->
+
+
+         <section class="sectiontabs p-32-0 pb-0 mob-p-20-0">
+          <div class="container">
+            <h2>Другие услуги НБКИ для банков и МФИ</h2>
+          </div><!-- /.container -->
+          <div class="solutionsgrid onlyMobile">
+            <div class="container">
+
+              <div class="solutionsgrid__items">
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/PD2_sm.webp" alt="PD2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Кредитные отчеты</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/Take2_sm.webp" alt="Take2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Скоринги</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/Reports2_sm.webp" alt="Reports2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Сигнальные отчеты</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/BI2_sm.webp" alt="BI2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Аналитика</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+              </div><!-- /.solutionsgrid__items -->
+            </div><!-- /.container -->
+
+          </div><!-- /.onlyMobile -->
+          <div class="tabsblock onlyDesktop" >
+           
+            <div class="tabsblock__content">
+              <div class="tabsblock__items">
+                <div class="tabsblock__item " >
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Кредитные отчеты для банков и МФИ</div>
+                            <div class="solutioncard__icon"></div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">ССП и сведения<br> о самозапрете</div>
+                            <div class="solutioncard__icon"></div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сигнальные кредитные отчеты</div>
+                            <div class="solutioncard__icon"></div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Аналитика <br>НБКИ</div>
+                            <div class="solutioncard__icon"></div>
+                          </a>
+                        </div>
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                
+              </div><!-- /.tabsblock__items -->
+            </div><!-- /.tabsblock__content -->
+          </div><!-- /.tabsblock -->
+        </section>
+
+
+      
+        <section class="sectionbanner p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="frameblock" style="height: 312px;">
+              <div class="frameblock__wrapper">
+                <div class="frameblock__main">
+                  <div class="frameblock__content">
+                    <div class="frameblock__top">
+                      <h2 class="frameblock__title">Запрос ССП и сведений о самозапрете в&nbsp;режиме одного окна</h2>
+                      <div class="frameblock__text">
+                        <p>НБКИ самостоятельно соберет сведения из всех КБКИ<br> и предоставит собранные данные пользователю по запросу</p>
+                      </div>
+                    </div>
+                    <div class="frameblock__footer">
+                      <div class="frameblock__buttons"><a href="#" class="btn_main mob-full">Подробнее</a></div>
+                    </div><!-- /.frameblock__footer -->
+                  </div><!-- /.frameblock__contents -->
+                </div><!-- /.frameblock__main -->
+                <div class="frameblock__image onlyDesktop" style="transform: none;">
+                  <img loading="lazy" src="img/Data1.webp" alt="Запрос ССП и сведений" width="435"
+                    height="326" style="transform: translateY(18px);">
+                </div><!-- /.frameblock__image -->
+                <div class="frameblock__image onlyMobile" style="height: 350px;margin-top: -60px;">
+                  <img loading="lazy" src="img/Data1.webp" alt="Запрос ССП и сведений" width="1108" height="831">
+                </div><!-- /.frameblock__image -->
+              </div><!-- /.frameblock__wrapper -->
+            </div><!-- /.frameblock -->
+          </div><!-- /.container -->
+        </section>
+
+
+    
+
+
+      </main>
+
+      <%= _.template(require('../includes/footer.html').default)(data) %>
