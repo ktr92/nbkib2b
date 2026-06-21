@@ -361,6 +361,9 @@
   .subtitle p {
     font-size: 15px;
     line-height: 160%;
+  }
+  .mob-center .subtitle,
+  .mob-center .subtitle p {
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -392,31 +395,92 @@
     max-width: 253px;
     margin: 0 auto 0 auto;
   }
-  .footer__card{
+  .footer__card {
     order: -1;
   }
   .footer__menuline {
     gap: 40px;
-
   }
-  .footer__menutitle, .footer__menulist {
-        max-width: 230px;
+  .footer__menutitle,
+  .footer__menulist {
+    max-width: 230px;
     margin-left: auto;
     margin-right: auto;
-  } 
+  }
   .footerbottom__links {
-    
   }
   .footerbottom__links ul {
     gap: 20px;
   }
   .footercard__icons span {
     font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #445371;
-padding-right: 8px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #445371;
+    padding-right: 8px;
+  }
+  .card br {
+    display: none;
+  }
+  .offers__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .maincard_full .maincard__wrapper {
+    padding: 30px 16px 16px 16px;
+    border-radius: 24px;
+    background-position: bottom 0 center;
+  }
+  .maincard_full .maincard__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+  }
+  .maincard__wrapper {
+    height: 541px;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+  }
+  .maincard__footer .maincard__text.onlyMobile {
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  main {
+    padding-top: 68px;
+  }
+  .header#header {
+    height: 68px;
+  }
+  .offers__item {
+    height: unset;
+  }
+  .offercard__top.mob-mb-40 {
+    .text {
+      margin-bottom: 0;
+    }
+  }
+  .offers__items_half {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .offers__items_half {
+    .grid__item:last-child {
+      width: 100%;
+    }
   }
 }
 /* mobile */

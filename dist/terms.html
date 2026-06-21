@@ -489,7 +489,130 @@ MHV Builders OÜ <br> Harju maakond, Tallinn, Kesklinna linnaosa, Narva mnt 7b, 
           </div>
         </div>
       </main>
-      <footer id="footer" class="footer">
+         <section class="formsection p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="formsection__content">
+              <h2>Оставить заявку</h2>
+              <div class="subtitle">
+                <p>Опишите ваш запрос и менеджер НБКИ свяжется с вами</p>
+              </div><!-- /.subtitle -->
+              <div class="contactsform">
+
+                <form action="#" class="stform" data-entity="corp-page-form">
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <div class="placeholder">Услуга *</div>
+                      <div class="custom-select">
+                        <select name="service" class="required">
+                          <option value="" selected>Выберите из списка</option>
+                          <option value="slmService$2302309">Digital скоринг</option>
+                          <option value="slmService$2302303">Fraud скоринг</option>
+                          <option value="slmService$2297520">Верификация данных заявителей</option>
+                          <option value="slmService$2297501">НБКИ-AFS</option>
+                          <option value="slmService$236518701">BI аналитика НБКИ</option>
+                          <option value="slmService$2297502">Отчет «Анализ долговой нагрузки частных заемщиков»</option>
+                          <option value="slmService$2297508">Отчеты «Бенчмаркинг»</option>
+                          <option value="slmService$2297505">Отчеты «Бенчмаркинг.Взыскание»</option>
+                          <option value="slmService$2297507">Отчеты «Винтажный анализ»</option>
+                          <option value="slmService$2297504">Отчеты «Поведенческий анализ заемщика после получения
+                            отказа»
+                          </option>
+                          <option value="slmService$2297515">Передача кредитных историй</option>
+                          <option value="slmService$2513606">Персональный кредитный рейтинг</option>
+                          <option value="slmService$2297529">Получение кредитных отчетов</option>
+                          <option value="slmService$2297538">Сигнальные кредитные отчеты</option>
+                          <option value="slmService$2302308">Скоринг бюро для выдачи кредита/займа</option>
+                          <option value="slmService$2302305">Скоринг бюро для управления портфелем</option>
+                          <!-- <option value="slmService$2302304">Скоринг МСБ</option> -->
+                          <option value="slmService$78324402">Прочее</option>
+                        </select>
+                      </div>
+                      <div class="error_text" style="display: none;"></div>
+                    </div>
+                  </div>
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_company" class="placeholder">Организация *</label>
+                      <input type="text" id="input_company" name="company" value="" minlength="2" class="forminput"
+                        placeholder="">
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                  <div class="formcols__items formcols__items_two">
+                    <div class="formcols__item">
+                      <div class="formcols__input">
+                        <label for="input_inn" class="placeholder">ИНН</label>
+                        <input id="input_inn" name="inn" type="text" value="" class="forminput" placeholder="">
+                        <div class="error_text"></div>
+                      </div>
+                    </div>
+                    <div class="formcols__item">
+                      <div class="formcols__input">
+                        <label for="input_code" class="placeholder">Код участника</label>
+                        <input id="input_code" name="code" value="" type="text" class="forminput" placeholder="">
+                        <div class="error_text"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.formcols__items -->
+
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_fio" class="placeholder">Фамилия, имя и&nbsp;отчество *</label>
+                      <input id="input_fio" name="fio" type="text" value="" minlength="2" class="forminput"
+                        placeholder="">
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+
+                  <div class="formcols__items formcols__items_two">
+                    <div class="formcols__item">
+                      <div class="formcols__input">
+                        <label for="input_email" class="placeholder">Электронная почта *</label>
+                        <input id="input_email" name="email" type="email" value="" minlength="2" class="forminput"
+                          placeholder="">
+                        <div class="error_text"></div>
+                      </div>
+                    </div>
+                    <div class="formcols__item">
+                      <div class="formcols__input">
+                        <label for="input_phone" class="placeholder">Мобильный телефон *</label>
+                        <input id="input_phone" name="phone" value="" type="tel" class="forminput" placeholder=""
+                          minlength="11">
+                        <div class="error_text"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.formcols__items -->
+
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_comment" class="placeholder">Текст сообщения</label>
+                      <textarea id="input_comment" name="comm" rows="5" class="forminput" placeholder=""></textarea>
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                  <div class="pagerow">
+                    <div class="buttoncaption">
+                      <div class="buttoncaption__info">
+                        АО «НБКИ» гарантирует безопасность ваших данных
+                      </div><!-- /.buttoncaption__info -->
+                      <div class="buttoncaption__button">
+                        <button type="submit" class="btn btn_main btn_submit">Отправить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="formcheckinfo">
+                    Нажимая кнопку «Отправить», вы подтверждаете свое согласие <a href="#" aria-label="formcheckinfo">на
+                      обработку и использование
+                      персональных данных</a>
+                  </div><!-- /.formcheckinfo -->
+                </form>
+              </div>
+            </div><!-- /.siteform -->
+          </div>
+        </section>
+<footer id="footer" class="footer">
  <div class="footer__main">
   <div class="container">
    <div class="footer__wrapper mob-flexwrap">
