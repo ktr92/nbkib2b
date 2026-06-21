@@ -423,9 +423,9 @@
   .card br {
     display: none;
   }
-  .offers__items {
+ /*  .offers__items {
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
   .maincard_full .maincard__wrapper {
     padding: 30px 16px 16px 16px;
     border-radius: 24px;
@@ -472,17 +472,62 @@
       margin-bottom: 0;
     }
   }
-  .offers__items_half {
+  .offers__items_half_mobile {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
-  .offers__items_half {
-    .grid__item:last-child {
+  .offers__items_half_mobile {
+    .offers__item {
+      width: calc(50% - 4px);
+    }
+    .offers__item:last-child:not(:nth-child(2n)) {
       width: 100%;
     }
   }
+  .offers__items_sm_mobile {
+    .offercard__image {
+      display: none;
+    }
+    .offercard__text {
+       display: none;
+    }
+    .offercard__footer {
+      display: none;
+    }
+    .offercard__title {
+      font-weight: 500;
+font-size: 15px;
+line-height: 120%;
+letter-spacing: -0.03em;
+    }
+  }
+  .offers__items_sm_mobile {
+    .offercard   {
+      padding: 40px 16px 16px 16px;
+    }
+    .offercard__content {
+      height: 100%;
+      justify-content: flex-end;margin-top: 0;
+    }
+  }
+  .maincard_full .maincard__container {
+    margin: auto;
+  }
+/*   .offercard__content  {
+    max-width: 280px;
+    min-width: 280px;
+  }
+  .offercard.content-between {
+    justify-content: center;
+    gap: 16px;
+  }
+      */
 }
 /* mobile */
-@include small-screen {
+@include extrasmall-screen {
+   .offers__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
