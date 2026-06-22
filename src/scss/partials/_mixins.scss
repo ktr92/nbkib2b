@@ -31,13 +31,13 @@
 }
 
 @mixin medium-screen() {
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 999px) {
     @content;
   }
 }
 
 @mixin small-screen() {
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 999px) {
     @content;
   }
 }

@@ -73,7 +73,7 @@ img {
   display: block;
 }
 
-@media (min-width: 1181px) {
+@media (min-width: 1000px) {
   .onlyMobile {
     display: none !important;
   }
@@ -408,11 +408,16 @@ main {
   height: 100%;
 
   border-radius: 24px;
-  padding: 54px 32px;
   box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
   background-color: #fff;
   background-position: right bottom;
   background-repeat: no-repeat;
+}
+.maincard__container {
+    padding: 54px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mainblock {
   min-height: 370px;
@@ -441,13 +446,17 @@ margin-bottom: 20px;
   letter-spacing: -0.03em;
   color: #445371;
 }
+.maincard__image.onlyDesktop {
+  display: flex;
+  align-items: flex-end;
+}
 .maincard__footer {
 }
 .maincard__container {
   position: relative;
   height: 100%;
   .maincard__footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     left: 0;
     z-index: 1;
@@ -1310,11 +1319,11 @@ input.error_input,
 }
 
 .maincard_full {
-  .maincard__wrapper {
+  .maincard__container {
     padding: 50px;
   }
   .maincard__container {
-    max-width: 502px;
+    max-width: calc(502px + 50px + 50px);
   }
   h1.maincard__title {
     font-weight: 500;
@@ -1330,6 +1339,17 @@ input.error_input,
     line-height: 150%;
     letter-spacing: -0.03em;
     color: #445371;
+  }
+}
+.maincard_wtags {
+  .maincard__container {
+    padding: 32px 41px 50px 50px;
+  }
+}
+.maincard_full {
+  .maincard__footer{
+    position: static;
+    margin-top: 24px;
   }
 }
 h1 {
@@ -1394,7 +1414,7 @@ footer#footer {
 
 .maincard_auto {
   height: unset;
-  .maincard__wrapper {
+  .maincard__container {
     padding: 32px 50px 50px 50px;
   }
   .maincard__container .maincard__footer {
@@ -1405,9 +1425,9 @@ footer#footer {
 .cardsinfo > .card {
   flex: 1;
 }
-.frameblock__main {
+/* .frameblock__main {
   max-width: 715px;
-}
+} */
 
 .solutions__slider:not(.slick-initialized) {
   display: flex;
@@ -1462,17 +1482,22 @@ footer#footer {
 .maincard_nogb {
   .maincard__wrapper {
     height: 370px;
-    padding: 50px 0 32px 0;
+    
     background-color: transparent;
     border-radius: 0;
     box-shadow: none;
     border:none;
   }
   .maincard__container {
+    padding: 50px 0 32px 0;
     max-width: 620px;
   }
 }
-
+.frameblock_imgleft {
+  .frameblock__main{
+    padding-left: 26px;
+  }
+}
 .frameblock__footer {
   position: static;
 }
@@ -1482,4 +1507,8 @@ footer#footer {
 .frameblock__image  {
   display: flex;
   align-items: flex-end;
+}
+.maincard__wrapper{
+  display: flex;
+  justify-content: space-between
 }

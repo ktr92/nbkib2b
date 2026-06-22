@@ -238,6 +238,9 @@ margin-bottom: 10px;
   font-size: 15px;
 line-height: 120%;
  }
+ .title br {
+  display: block;
+ }
  .text, .text p {
   font-size: 15px;
 line-height: 160%;
@@ -253,7 +256,7 @@ letter-spacing: -0.04em;
     margin-bottom: 8px;
   }
   .mob-pb-0 {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
   .mob-pb-32 {
     padding-bottom: 32px;

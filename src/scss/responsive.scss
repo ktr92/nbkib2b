@@ -220,10 +220,27 @@
     padding: 0;
   }
   .maincard__wrapper {
-    padding: 30px 16px 16px 16px;
+    /*   padding: 30px 16px 16px 16px; */
     border-radius: 0;
     background-position: bottom -30px center;
     background-size: 561px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  .maincard__image img {
+    max-width: unset;
+  }
+  .maincard__container {
+    /* max-width: 100% !important; */
+    padding: 30px 16px 16px 16px;
+    .maincard__footer {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      margin: auto;
+      width: calc(100% - 32px) !important;
+    }
   }
   .maincard__text {
     font-size: 15px;
@@ -341,10 +358,29 @@
   .frameblock__footer {
     position: static;
     margin-top: 40px;
+            
     .btn_main {
       display: block;
       width: 100%;
     }
+  }
+  .frameblock_imgleft {
+    .frameblock__content, .frameblock__main {
+      position: static;
+    }
+    .frameblock__wrapper{
+      position: relative;
+    }
+    .frameblock__footer {
+      z-index: 1;
+       bottom: 16px;
+        left: 16px;
+        margin: auto;
+        position: absolute;
+        right: 16px;
+        width: calc(100% - 32px) !important;
+    }
+      
   }
   .solutioncard__title br {
     display: none;
@@ -425,9 +461,11 @@
     grid-template-columns: repeat(1, 1fr);
   } */
   .maincard_full .maincard__wrapper {
-    padding: 30px 16px 16px 16px !important;
     border-radius: 24px;
     background-position: bottom 0 center;
+  }
+  .maincard_full .maincard__container {
+    padding: 30px 16px 16px 16px;
   }
   .maincard_full .maincard__title {
     font-weight: 500;
@@ -560,7 +598,11 @@
     line-height: 120%;
     letter-spacing: -0.03em;
   }
-
+  .maincard__image.onlyMobile {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
   .frameblock__image {
     position: absolute;
     bottom: 0;
@@ -568,6 +610,10 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    img {
+      display: block;
+      margin: auto;
+    }
   }
   .aboutblock__stats_type2 {
     flex-wrap: wrap;
@@ -577,30 +623,104 @@
       font-size: 54px;
       line-height: 120%;
     }
+  .stats__top {
+      sup {
+      font-size: 54px;
+    }
+  }
     .stats__text {
       line-height: 140%;
     }
 
     .aboutblock__item {
-      width: calc(50% - 16px);
+      width: calc(50% - 5px);
     }
     .aboutblock__item:last-child:not(:nth-child(2n)) {
       width: 100%;
     }
   }
-  .pageheader .mainblock  {
+  .pageheader .mainblock {
     order: -1;
   }
   .frameblock__text p {
     font-size: 15px;
-line-height: 140%;
-letter-spacing: -0.03em;
+    line-height: 140%;
+    letter-spacing: -0.03em;
   }
   .maincard_full h1.maincard__title {
     font-size: 24px;
-line-height: 120%;
-letter-spacing: -0.03em;
+    line-height: 120%;
+    letter-spacing: -0.03em;
   }
+  .maincard__wrapper {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .maincard_nogb {
+    .maincard__container {
+      padding: 30px 16px;
+    }
+    .maincard__wrapper {
+      background: #fff;
+      border-radius: 24px;
+      padding: 0;
+    }
+  }
+  .maincard__container {
+    height: unset;
+    position: static;
+  }
+  .cardsinfo {
+    .text {
+      p {
+        line-height: 140%;
+      }
+    }
+  }
+  .frameblock__main {
+    position: relative;
+    z-index: 1;
+  }
+  .frameblock__main{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .frameblock.frameblock_mobile_bg {
+    .frameblock__wrapper {
+      height: 100%;
+    }
+    .frameblock__main {
+      max-width: 100%;
+      padding: 30px 16px !important;
+      height: 100%;
+      min-height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .frameblock__footer {
+      position: absolute;
+      width: 100%;
+    }
+  }
+    .maincard_xl {
+    .maincard__wrapper {
+      height: 541px;
+    }
+    .maincard__footer {
+      position: absolute;
+      bottom: 16px;
+      max-width: 320px;
+    }
+  }
+/* .maincard__container {
+  max-width: 480px !important;
+  margin-left: auto;
+  margin-right: auto;
+  .maincard__footer {
+      max-width: 480px !important;
+  }
+} */
   /*   .offercard__content  {
     max-width: 280px;
     min-width: 280px;
