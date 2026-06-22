@@ -39,8 +39,14 @@
     .frameblock__image {
      display: block;
       height: 350px;
-      margin-top: -60px;
-   
+     bottom: -30px;
     }
   }
+  #frameblock_ssp {
+   .frameblock__image {
+    margin-top: -30px;
+    display: block;
+   }
+
+} 
 }
