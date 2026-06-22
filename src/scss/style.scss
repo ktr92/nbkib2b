@@ -427,6 +427,13 @@ main {
   color: #0e1117;
   margin-bottom: 10px;
 }
+h2.maincard__title {
+  font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: -0.03em;
+margin-bottom: 20px;
+}
 .maincard__text {
   font-weight: 400;
   font-size: 16px;
@@ -593,7 +600,9 @@ sup {
 .aboutblock_type2 .aboutblock__text {
   max-width: 335px;
 }
-
+.aboutblock_type2 .stats__text {
+line-height: 150%;
+}
 .aboutblock__item {
   backdrop-filter: blur(4px);
   box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
@@ -1307,7 +1316,7 @@ input.error_input,
   .maincard__container {
     max-width: 502px;
   }
-  .maincard__title {
+  h1.maincard__title {
     font-weight: 500;
     font-size: 44px;
     line-height: 120%;
@@ -1362,10 +1371,25 @@ footer#footer {
   white-space: nowrap;
   font-weight: 400;
   font-size: 12px;
-  color: #37f;
-  border-radius: 24px;
-  padding: 4px 8px;
-  background: rgba(0, 85, 255, 0.05);
+
+  a,
+  span {
+    border-radius: 24px;
+    padding: 4px 8px;
+    display: block;
+  }
+  span {
+       color: #37f;
+    background: rgba(0, 85, 255, 0.05);
+  }
+  a {
+     color: #858fa3;
+    background: #f9fafb;
+    &:hover {
+         color: #37f;
+    background: rgba(0, 85, 255, 0.05);
+    }
+  }
 }
 
 .maincard_auto {
@@ -1389,6 +1413,7 @@ footer#footer {
   display: flex;
   gap: 8px;
   padding-bottom: 52px;
+  padding-top: 0 !important;
 }
 
 .pageheader {
@@ -1416,18 +1441,21 @@ footer#footer {
     color: #37f;
     margin-bottom: 12px;
     display: inline-block;
-
-   
   }
-   .stats__top {
-      sup {
-        display: contents;
-        vertical-align: middle;
-        color: #37f;
-        font-size: 80px;
-      }
+  .stats__top {
+    sup {
+      display: contents;
+      vertical-align: middle;
+      color: #37f;
+      font-size: 80px;
     }
+  }
   .stats__caption {
     color: #37f;
+  }
+}
+.frameblock__top {
+  .maincard__tags {
+    margin-bottom: 32px;
   }
 }

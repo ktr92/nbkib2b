@@ -13,15 +13,24 @@
   height: 307px;
 }
 #mainblock_ko {
- .maincard__wrapper {
+  .maincard__wrapper {
     height: 370px;
     padding: 32px 50px;
   }
 }
+
+#frameblock_folders {
+  height: 367px;
+  .frameblock__main {
+    max-width: calc(495px + 61px + 23px);
+    padding: 32px 61px 32px 26px;
+  }
+}
+
 @include small-screen {
   .maincard__wrapper {
-      height: 541px !important;
-    }
+    height: 541px !important;
+  }
   .frameblock {
     height: 541px !important;
   }
@@ -45,16 +54,42 @@
     height: 307px;
 
     .frameblock__image {
-     display: block;
+      display: block;
       height: 350px;
-     bottom: -30px;
+      bottom: -30px;
     }
   }
   #frameblock_ssp {
-   .frameblock__image {
-    margin-top: -30px;
-    display: block;
-   }
+    .frameblock__image {
+      margin-top: -30px;
+      display: block;
+    }
+  }
 
-} 
+  #frameblock_folders {
+    height: 410px;
+
+    .frameblock__wrapper {
+      background-image: url(../img/nbki-folders-bg.webp);
+      background-position: bottom -175px center;
+      background-repeat: no-repeat;
+    }
+  }
+  .frameblock.frameblock_mobile_bg {
+    .frameblock__wrapper {
+      height: 100%;
+    }
+    .frameblock__main {
+      max-width: 100%;
+      padding: 30px 16px !important;
+      height: 100%;
+      min-height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .frameblock__footer {
+      position: absolute;
+      width: 100%;
+    }
+  }
 }
