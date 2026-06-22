@@ -116,6 +116,13 @@ color: #445371;
 .text p:last-child {
   margin-bottom: 0;
 }
+.title + .text {
+  margin-top: 12px;
+}
+.gap-32 {
+  gap: 32px;
+}
+
 .content_h {
   display: flex;
   flex-direction: column;

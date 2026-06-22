@@ -12,8 +12,16 @@
 #frameblock__bi {
   height: 307px;
 }
-
+#mainblock_ko {
+ .maincard__wrapper {
+    height: 370px;
+    padding: 32px 50px;
+  }
+}
 @include small-screen {
+  .maincard__wrapper {
+      height: 541px !important;
+    }
   .frameblock {
     height: 541px !important;
   }
@@ -25,7 +33,7 @@
   }
   #mainblock_digital_score {
     .maincard__wrapper {
-      height: 611px;
+      height: 611px !important;
       background-size: 498px;
       background-position: bottom -40px center;
     }
