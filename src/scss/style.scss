@@ -769,7 +769,7 @@ h2 {
   margin: 0 -4px;
 
   overflow: visible !important;
-  /*   padding-top: 50px !important; */
+    padding-top: 32px !important;
   padding-bottom: 50px !important;
 }
 
@@ -1381,10 +1381,15 @@ footer#footer {
   max-width: 715px;
 }
 
-#mainblock_digital_score {
-  .maincard__wrapper {
-    height: 370px;
-    padding: 32px 50px;
-   
-  }
+
+.solutions__slider:not(.slick-initialized) {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 52px;
+}
+
+.pageheader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

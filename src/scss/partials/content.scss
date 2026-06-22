@@ -1,0 +1,46 @@
+#mainblock_digital_score {
+  .maincard__wrapper {
+    height: 370px;
+    padding: 32px 50px;
+  }
+}
+
+#frameblock_ssp {
+  height: 312px;
+}
+
+#frameblock__bi {
+  height: 307px;
+}
+
+@include small-screen {
+  .frameblock {
+    height: 541px !important;
+  }
+
+  #mainblock_bank {
+    .maincard__wrapper {
+      height: 541px;
+    }
+  }
+  #mainblock_digital_score {
+    .maincard__wrapper {
+      height: 611px;
+      background-size: 498px;
+      background-position: bottom -40px center;
+    }
+  }
+  /* #frameblock_ssp {
+    height: 541px !important;
+  } */
+  #frameblock__bi {
+    height: 307px;
+
+    .frameblock__image {
+     display: block;
+      height: 350px;
+      margin-top: -60px;
+   
+    }
+  }
+}
