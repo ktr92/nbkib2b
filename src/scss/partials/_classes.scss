@@ -164,6 +164,16 @@ color: #445371;
     margin-bottom: 0;
   }
 }
+.title_lg {
+  font-size: 32px;
+  line-height: 120%;
+}
+.fw-bold {
+  font-weight: 500;
+}
+.p-32-40 {
+  padding: 32px 40px;
+}
 @include medium-screen {
   .mobile-full {
     width: 100% !important;
@@ -278,5 +288,11 @@ letter-spacing: -0.04em;
   }
 .mob-gap-40 {
   gap: 40px;
+}
+.mob-mt-30 {
+  margin-top: 30px;
+}
+.p-24-16 {
+  padding: 24px 16px;
 }
 }

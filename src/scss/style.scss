@@ -1459,3 +1459,27 @@ footer#footer {
     margin-bottom: 32px;
   }
 }
+.maincard_nogb {
+  .maincard__wrapper {
+    height: 370px;
+    padding: 50px 0 32px 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    border:none;
+  }
+  .maincard__container {
+    max-width: 620px;
+  }
+}
+
+.frameblock__footer {
+  position: static;
+}
+.frameblock {
+  height: unset !important
+}
+.frameblock__image  {
+  display: flex;
+  align-items: flex-end;
+}
