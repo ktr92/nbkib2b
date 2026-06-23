@@ -193,26 +193,37 @@ h2.maincard__title {
   justify-content: space-between;
 }
 
-.maincard__table {
+/* .maincard__table {
   display: flex;
   gap: 64px;
   margin: 20px 0;
-}
+} */
 .maincard__text {
   p {
     line-height: 150%;
   }
 }
-.maincard__tablecol {
+
+.maincard__table {
+  display: block;
 }
-.maincard__tablerow {
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.03em;
-  color: #445371;
+.maincard__list {
+  ul {
+    @include clear;
+    display: block;
+    column-count: 2;
+    li {
+      padding-right: 12px;
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+      color: #445371;
+    }
+  }
 }
+
 @include medium-screen {
   .maincard {
     height: unset;
@@ -345,42 +356,79 @@ h2.maincard__title {
     max-width: 100% !important;
     min-width: unset !important;
   }
-  .maincard__table {
+  /* .maincard__table {
     flex-wrap: wrap;
     gap: 0;
     margin-bottom: 0;
-  }.maincard__list ul {
+  } */
+
+  .maincard__list.onlyMobile {
+    br {
+      display: block;
+    }
+  }
+  
+   .maincard__list {
+    ul {
+      column-count: 1;
         margin-bottom: 0;
+      padding-left: 25px;
+      list-style: disc;
+      li {
+        margin-bottom: 0;
+        padding-right: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: -0.03em;
+        color: #445371;
+      }
+    }
   }
 }
 @include small-screen {
   .maincard__wrapper {
     height: 541px !important;
   }
-
 }
 
-
 @include min-medium-screen {
-  #mainblock_signals {
-  .maincard__content {
-    max-width: 532px; 
-    min-width: 532px;
+  .maincard_nobg {
+    .maincard__container {
+      padding: 50px 0 32px 0;
+    }
+    .maincard__wrapper {
+      background: none;
+      box-shadow: none;
+      border: none;
+    }
   }
-  .maincard__container {
-    padding-bottom: 32px;
-  } 
-  .maincard__image {
-    transform: translateX(-42px);
+  #mainblock_risks_fssp {
+    .maincard__wrapper {
+      align-items: center;
+    }
+    .maincard__content {
+      max-width: 746px;
+      min-width: 746px;
+    }
+  }
+  #mainblock_signals {
+    .maincard__content {
+      max-width: 532px;
+      min-width: 532px;
+    }
+    .maincard__container {
+      padding-bottom: 32px;
+    }
+    .maincard__image {
+      transform: translateX(-42px);
 
-    img {
-      max-width: unset;
+      img {
+        max-width: unset;
+      }
     }
   }
 }
-}
-
 
 @include medium-screen {
-  
 }

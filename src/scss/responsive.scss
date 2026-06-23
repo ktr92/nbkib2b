@@ -544,6 +544,51 @@
     gap: 8px;
   }
 
+  .card.offercard_lg {
+    padding: 24px 16px;
+    height: unset;
+    .content_h {
+      height: unset;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .maincard__tags {
+      margin-bottom: 20px;
+    }
+  }
+  .offercard__list {
+    margin-bottom: 32px;
+  }
+  .list_blueround {
+    @include clear;
+
+    li {
+      margin-bottom: 2px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+
+      gap: 8px;
+
+      &:before {
+        content: "";
+        margin-top: 6px;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #80aaff;
+      }
+    }
+  }
+
+ 
+
   /* .maincard__container {
   max-width: 480px !important;
   margin-left: auto;
