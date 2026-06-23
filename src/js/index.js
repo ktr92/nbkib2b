@@ -20,13 +20,13 @@ window.addEventListener("load", () => {
     customSelect();
     formsInit();
     initFlip();
+    modalInit();
   }
 
   function initFlip() {
-    $("[data-flipbutton]").on("click", function() {
+    $("[data-flipbutton]").on("click", function () {
       const $wrapper = $(this).closest("[data-flipwrapper]");
       $wrapper.toggleClass("active");
-      console.log($wrapper);
     });
   }
 
@@ -217,11 +217,12 @@ window.addEventListener("load", () => {
   function switchArrows(tab) {
     if (tab) {
       const $slider = tab.find(".slick-initialized");
-      $("[data-arrows]").hide();
       if ($slider) {
-        const index = $slider.attr("data-sliderindex");
-        console.log(index);
-        $(`[data-arrows=${index}]`).show();
+        $("[data-arrows]").hide();
+        if ($slider) {
+          const index = $slider.attr("data-sliderindex");
+          $(`[data-arrows=${index}]`).show();
+        }
       }
     } else {
       const $slider = $('[data-slider="solutions"]').first();
@@ -387,11 +388,32 @@ window.addEventListener("load", () => {
             .removeClass("active");
           $tab.addClass("active");
           switchAttribute($(this), "aria-selected");
-          switchArrows($tab);
+          if ($(this).closest("section").find("[data-arrows]")) {
+            switchArrows($tab);
+          }
         },
       );
     });
   }
+
+  function modalInit() {
+    $('[data-modalbutton]').on('click', function(e) {
+      e.preventDefault();
+      const $target = $(this).attr('data-modalbutton');
+      $(`[data-modal="${$target}"`).addClass('active')
+      $('.backdrop').addClass('active')
+    })
+    $('[data-modalclose]').on('click', function(e) {
+      e.preventDefault();
+      $(this).closest('[data-modal]').removeClass('active');
+      $('.backdrop').removeClass('active')
+    })
+    $('.backdrop').on('click', function(e) {
+      $('[data-modal]').removeClass('active')
+      $('.backdrop').removeClass('active')
+    })
+  }
+
   function switchAttribute(element, attribute) {
     element.siblings().attr(attribute, "false");
     let elAttr = element.attr(attribute);
@@ -423,7 +445,6 @@ window.addEventListener("load", () => {
           .next("[data-accordioncontent]")
           .toggleClass("expanded")
           .attr("hidden", function (index, attr) {
-            console.log(attr);
             return attr ? null : "hidden";
           });
         switchAttribute($(this), "aria-expanded");

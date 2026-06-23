@@ -19,7 +19,9 @@ a {
 .items-center{
   align-items: center;
 }
-
+.text-center {
+  text-align: center;
+}
 .content-center{
   justify-content: center;
 }
@@ -176,6 +178,9 @@ color: #445371;
 }
 b {
   font-weight: 500;
+}
+.mb-8 {
+  margin-bottom: 8px !important;
 }
 @include medium-screen {
   .mobile-full {
