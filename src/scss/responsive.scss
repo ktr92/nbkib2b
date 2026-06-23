@@ -177,9 +177,7 @@
     margin: 23px 0;
     display: block;
   }
-  .maincard {
-    height: unset;
-  }
+
   .aboutblock_type2 .aboutblock__title {
     width: 100%;
     min-width: unset;
@@ -218,47 +216,6 @@
   }
   .aboutblock__item {
     padding: 0;
-  }
-  .maincard__wrapper {
-    /*   padding: 30px 16px 16px 16px; */
-    border-radius: 0;
-    background-position: bottom -30px center;
-    background-size: 561px;
-    overflow: hidden;
-    justify-content: center;
-  }
-  .maincard__image img {
-    max-width: unset;
-  }
-  .maincard__container {
-    /* max-width: 100% !important; */
-    padding: 30px 16px 16px 16px;
-    .maincard__footer {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      right: 16px;
-      margin: auto;
-      width: calc(100% - 32px) !important;
-    }
-  }
-  .maincard__text {
-    font-size: 15px;
-    line-height: 160%;
-    letter-spacing: -0.03em;
-  }
-  .maincard__text br {
-    display: none;
-  }
-  .maincard__container .maincard__footer {
-    width: 100%;
-
-    .btn_main {
-      width: 100%;
-    }
-  }
-  .maincard__title {
-    margin-bottom: 20px;
   }
 
   .slider-controls .slick-dots {
@@ -335,53 +292,6 @@
     display: none;
   }
 
-  .frameblock__main {
-    width: 100%;
-    padding: 30px 16px;
-  }
-  .frameblock__wrapper {
-    display: block;
-  }
-  .frameblock__image {
-    transform: none;
-    text-align: center;
-
-    img {
-      display: block;
-      margin: auto;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
-  }
-
-  .frameblock__footer {
-    position: static;
-    margin-top: 40px;
-            
-    .btn_main {
-      display: block;
-      width: 100%;
-    }
-  }
-  .frameblock_imgleft {
-    .frameblock__content, .frameblock__main {
-      position: static;
-    }
-    .frameblock__wrapper{
-      position: relative;
-    }
-    .frameblock__footer {
-      z-index: 1;
-       bottom: 16px;
-        left: 16px;
-        margin: auto;
-        position: absolute;
-        right: 16px;
-        width: calc(100% - 32px) !important;
-    }
-      
-  }
   .solutioncard__title br {
     display: none;
   }
@@ -460,36 +370,12 @@
   /*  .offers__items {
     grid-template-columns: repeat(1, 1fr);
   } */
-  .maincard_full .maincard__wrapper {
-    border-radius: 24px;
-    background-position: bottom 0 center;
-  }
-  .maincard_full .maincard__container {
-    padding: 30px 16px 16px 16px;
-  }
-  .maincard_full .maincard__title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-  }
-  .maincard__wrapper {
-    /*  height: 541px; */
-  }
+
   h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: -0.03em;
-  }
-  .maincard__footer .maincard__text.onlyMobile {
-    font-size: 15px;
-    line-height: 160%;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: #fff;
-    margin-top: 10px;
-    display: block;
   }
 
   main {
@@ -547,30 +433,11 @@
       margin-top: 0;
     }
   }
-  .maincard_full .maincard__container {
-    margin: auto;
-  }
+
   .frameblock {
     /*  height: unset !important; */
   }
 
-  .maincard_full .maincard__text {
-    font-size: 15px;
-    line-height: 140%;
-    br {
-      display: none;
-    }
-  }
-  .maincard__tags {
-    flex-wrap: wrap;
-  }
-  .maincard__tag {
-    font-size: 12px;
-    span {
-      color: #858fa3;
-      background: #f9fafb;
-    }
-  }
   .breadcrumbs {
     overflow-x: auto;
     width: 100%;
@@ -593,28 +460,7 @@
   br {
     display: none;
   }
-  .frameblock__title {
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-  }
-  .maincard__image.onlyMobile {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .frameblock__image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    img {
-      display: block;
-      margin: auto;
-    }
-  }
+
   .aboutblock__stats_type2 {
     flex-wrap: wrap;
     gap: 10px !important;
@@ -623,11 +469,11 @@
       font-size: 54px;
       line-height: 120%;
     }
-  .stats__top {
+    .stats__top {
       sup {
-      font-size: 54px;
+        font-size: 54px;
+      }
     }
-  }
     .stats__text {
       line-height: 140%;
     }
@@ -642,34 +488,7 @@
   .pageheader .mainblock {
     order: -1;
   }
-  .frameblock__text p {
-    font-size: 15px;
-    line-height: 140%;
-    letter-spacing: -0.03em;
-  }
-  .maincard_full h1.maincard__title {
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-  }
-  .maincard__wrapper {
-    flex-wrap: wrap;
-    position: relative;
-  }
-  .maincard_nogb {
-    .maincard__container {
-      padding: 30px 16px;
-    }
-    .maincard__wrapper {
-      background: #fff;
-      border-radius: 24px;
-      padding: 0;
-    }
-  }
-  .maincard__container {
-    height: unset;
-    position: static;
-  }
+
   .cardsinfo {
     .text {
       p {
@@ -677,43 +496,55 @@
       }
     }
   }
-  .frameblock__main {
-    position: relative;
-    z-index: 1;
+
+  .offers_flip .offers__item {
+    height: unset;
   }
-  .frameblock__main{
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+  .offercard__image img {
+    display: block;
+    line-height: 1;
   }
- .frameblock.frameblock_mobile_bg {
-    .frameblock__wrapper {
+  [data-flipwrapper] {
+    display: flex;
+  }
+  .flipcard {
+    height: 100%;
+    .offercard__header {
+      margin-bottom: 20px;
+    }
+    .btn_img {
+      height: 28px;
+      max-width: 28px;
+      min-width: 28px;
+    }
+    .title {
+      br {
+        display: none;
+      }
+    }
+    .title + .text {
+      margin-bottom: 0;
+      line-height: 140%;
+
+      p {
+        line-height: 140%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .flipcard__back {
+    .offercard__content {
       height: 100%;
     }
-    .frameblock__main {
-      max-width: 100%;
-      padding: 30px 16px !important;
-      height: 100%;
-      min-height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .frameblock__footer {
-      position: absolute;
-      width: 100%;
-    }
   }
-    .maincard_xl {
-    .maincard__wrapper {
-      height: 541px;
-    }
-    .maincard__footer {
-      position: absolute;
-      bottom: 16px;
-      max-width: 320px;
-    }
+  .offers__items {
+    gap: 8px;
   }
-/* .maincard__container {
+
+  /* .maincard__container {
   max-width: 480px !important;
   margin-left: auto;
   margin-right: auto;

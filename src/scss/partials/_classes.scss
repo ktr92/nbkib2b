@@ -174,6 +174,9 @@ color: #445371;
 .p-32-40 {
   padding: 32px 40px;
 }
+b {
+  font-weight: 500;
+}
 @include medium-screen {
   .mobile-full {
     width: 100% !important;
@@ -260,6 +263,9 @@ letter-spacing: -0.04em;
   }
   .mob-pb-32 {
     padding-bottom: 32px;
+  }
+  .mob-mb-30 {
+    margin-bottom: 30px;
   }
   .mob-merge {
     gap: 0;

@@ -19,6 +19,15 @@ window.addEventListener("load", () => {
     scrollTo();
     customSelect();
     formsInit();
+    initFlip();
+  }
+
+  function initFlip() {
+    $("[data-flipbutton]").on("click", function() {
+      const $wrapper = $(this).closest("[data-flipwrapper]");
+      $wrapper.toggleClass("active");
+      console.log($wrapper);
+    });
   }
 
   function formsInit() {
