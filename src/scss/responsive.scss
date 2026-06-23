@@ -588,6 +588,50 @@
   }
 
  
+.maincard__image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tabscenter__nav  {
+  width: 100%;
+  overflow: auto;
+  justify-content: flex-start;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE and legacy Edge */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    li {
+      font-size: 14px;
+
+    }
+  }
+}
+.subtitle {
+  margin-bottom: 20px;
+}
+.card.offercard_md{
+  min-height: 214px;
+  .title {
+    font-size: 18px;
+line-height: 120%;
+    br {
+      display: none;
+    }
+  }
+  .text {
+    br {
+      display: block;
+    }
+  }
+}
 
   /* .maincard__container {
   max-width: 480px !important;

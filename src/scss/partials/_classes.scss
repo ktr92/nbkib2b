@@ -182,7 +182,16 @@ b {
 .mb-8 {
   margin-bottom: 8px !important;
 }
+.mb-40 {
+  margin-bottom: 40px !important
+}
+.mb-30 {
+  margin-bottom: 30px !important
+}
 @include medium-screen {
+  .mob-text-left {
+    text-align: left;
+  }
   .mobile-full {
     width: 100% !important;
   }
