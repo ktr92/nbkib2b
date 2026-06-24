@@ -434,6 +434,12 @@ h2.maincard__title {
       }
     }
   }
+  #mainblock_marketingsignals {
+     .maincard__content {
+      max-width: 600px;
+      min-width: 600px;
+    }
+  }
   #mainblock_signals {
     .maincard__content {
       max-width: 532px;

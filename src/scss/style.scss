@@ -1386,16 +1386,18 @@ footer#footer {
     color: #445371;
     position: relative;
     display: flex;
-
+    
     gap: 8px;
 
     &:before {
       content: "";
       display: block;
-      width: 16px;
+      min-width: 16px;
+      max-width: 16px;
       height: 16px;
       border-radius: 50%;
       background: #80aaff;
+      margin-top: 4px;
     }
   }
 }
@@ -1674,3 +1676,31 @@ footer#footer {
   border-bottom: none;
 }
  */
+
+ .asidelist__list {
+  ul {
+    @include clear;
+  }
+
+ }
+
+
+ .asidelist {
+  display: flex;
+  gap: 24px;
+
+  > div {
+    flex: 1;
+  }
+}
+.asidelist__left {
+}
+.asidelist__right {
+}
+.asidelist__list {
+  padding: 20px;
+  li {
+    margin-bottom: 8px;
+    min-height: 26px;
+  }
+}

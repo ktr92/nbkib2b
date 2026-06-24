@@ -579,7 +579,8 @@
         content: "";
         margin-top: 6px;
         display: block;
-        width: 8px;
+        min-width: 8px;
+        max-width: 8px;
         height: 8px;
         border-radius: 50%;
         background: #80aaff;
@@ -665,6 +666,17 @@ letter-spacing: -0.03em;
   span {
     font-size: 6px !important;
   }
+}
+.asidelist {
+  display: block;
+}
+.asidelist__left {
+}
+.asidelist__list li {
+  margin-bottom: 4px;
+}
+.asidelist__list {
+  padding: 0;
 }
   /* .maincard__container {
   max-width: 480px !important;
