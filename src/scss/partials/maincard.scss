@@ -159,6 +159,7 @@ h2.maincard__title {
   .tag_default {
     color: #858fa3;
     background: #f9fafb;
+    font-size: 10px;
   }
   a:hover {
     color: #37f;
@@ -390,6 +391,7 @@ h2.maincard__title {
       }
     }
   }
+  
 }
 @include small-screen {
   .maincard__wrapper {
@@ -440,6 +442,15 @@ h2.maincard__title {
       min-width: 600px;
     }
   }
+  #mainblock_marketingsegment {
+     .maincard__content {
+      max-width: 600px;
+      min-width: 600px;
+    }
+    .maincard__image img {
+      max-width: unset;
+    }
+  }
   #mainblock_signals {
     .maincard__content {
       max-width: 532px;
@@ -466,4 +477,5 @@ h2.maincard__title {
 }
 
 @include medium-screen {
+   
 }
