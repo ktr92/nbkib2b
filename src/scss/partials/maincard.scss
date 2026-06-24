@@ -436,6 +436,16 @@ h2.maincard__title {
       }
     }
   }
+  #mainblock_marketing_diversification {
+     .maincard__content {
+      max-width: 600px;
+      min-width: 600px;
+    }
+    .maincard__image  {
+      justify-content: center;
+      transform: translateX(-122px);
+    }
+  }
   #mainblock_marketingsignals {
      .maincard__content {
       max-width: 600px;
