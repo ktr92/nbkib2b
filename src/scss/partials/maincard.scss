@@ -429,6 +429,12 @@ h2.maincard__title {
       }
     }
   }
+  #mainblock_loan {
+    .maincard__image.onlyDesktop {
+      max-width: 470px;
+      margin-right: 50px;
+    }
+  }
 }
 
 @include medium-screen {
