@@ -637,6 +637,35 @@ line-height: 120%;
   max-width: 343px;
   margin-left: auto;margin-right: auto;
 }
+.tablecolor__table {
+  max-width: 100%;
+  overflow: auto;
+}
+.ratetable__description.text {
+   p {
+    font-size: 8px;
+line-height: 150%;
+letter-spacing: -0.03em;
+  }
+}
+.tablecolor span.td, .tablecolor span.th, .tablecolor thead th span.th, .tablecolor tbody td:first-child span.td {
+  font-size: 7px;
+ min-width: 134px;
+}
+.tablecolor th[rowspan="2"] span.th {
+  min-height: 52px;
+}
+.tablecolor span.th {
+  min-height: 26px;
+}
+.tablecolor span.td {
+  min-height: 48px;
+}
+.ratetable__tag  {
+  span {
+    font-size: 6px !important;
+  }
+}
   /* .maincard__container {
   max-width: 480px !important;
   margin-left: auto;
