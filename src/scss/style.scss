@@ -1190,6 +1190,9 @@ h1 {
 .offers__item_sm {
   height: 168px;
 }
+.offers__item_159 {
+  height: 159px;
+}
 footer#footer {
   padding: 32px 0 20px 0;
 }
@@ -1322,8 +1325,12 @@ footer#footer {
     z-index: -999; */
   }
 }
-.offercard__image {
+.card:not(.card_sm) .offercard__image {
+  min-width: 108px;
+  img {
   min-width: 90px;
+  }
+
 }
 .offercard__content {
   gap: 20px;

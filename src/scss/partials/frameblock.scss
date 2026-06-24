@@ -80,6 +80,9 @@
     align-items: flex-start;
   }
 }
+.frameblock_white {
+  background: #fff;
+}
 @include medium-screen {
   .frameblock__image.onlyDesktop {
     display: none;
@@ -105,7 +108,7 @@
   }
 
   .frameblock__footer {
-    position: static;
+   /*  position: static; */
     margin-top: 40px;
 
     .btn_main {
@@ -183,7 +186,7 @@
   .frameblock__title {
     font-size: 20px;
   }
-  .frameblock_imagetop {
+/*   .frameblock_imagetop { */
     .frameblock__footer {
       position: absolute;
       bottom: 0;
@@ -201,10 +204,11 @@
     .frameblock__main {
       padding: 24px 16px;
     }
-  }
+/*   } */
   .frameblock__image.onlyDesktop {
    display: none !important
   }
+  
 }
 @include small-screen {
   .frameblock {
@@ -216,9 +220,47 @@
   #frameblock_risks_fssp .frameblock__image {
     transform: translateY(32px) translateX(-141px);
   }
+  #frameblock_msb {
+    .frameblock__content {
+      max-width: 590px;
+    }
+    .frameblock__image {
+          transform: translateX(-132px) translateY(-13px);
+    }
+  }
+  .frameblock_imgabs {
+    .frameblock__main {
+      padding: 32px 32px 32px 50px;
+    }
+    .maincard__list ul {
+      list-style: disc;
+      padding-left: 15px;
+    }
+    .maincard__list ul li {
+      padding-right: 0;
+    }
+    .frameblock__content {
+      max-width: 502px;
+      min-width: 502px;
+      z-index: 1;
+    }
+    .frameblock__image  {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      transform: none;
+      img {
+        max-width: unset;
+      }
+    }
+  }
 }
 @include medium-screen {
   #frameblock_risks_fssp {
     height: 610px !important;
+  }
+  .frameblock#frameblock_msb {
+      height: 525px !important;
   }
 }

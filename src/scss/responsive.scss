@@ -632,7 +632,11 @@ line-height: 120%;
     }
   }
 }
-
+.cardpopup .card {
+  padding: 16px;
+  max-width: 343px;
+  margin-left: auto;margin-right: auto;
+}
   /* .maincard__container {
   max-width: 480px !important;
   margin-left: auto;

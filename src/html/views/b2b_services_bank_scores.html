@@ -1,741 +1,803 @@
 <% var data={ title: "Национальное бюро кредитных историй" , author: "" }; %>
- <%= _.template(require('../includes/head.html').default)(data) %>
-  <%= _.template(require('../includes/header.html').default)(data) %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
 
-   <main>
-    <div class="pageheader">
-     <div class="breadcrumbs ">
-      <div class="container">
-       <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="НБКИ для бизнеса"><span itemprop="name">НБКИ для бизнеса</span>
-          <meta itemprop="position" content="1">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="Банкам и МФИ"><span itemprop="name">Банкам и МФИ</span>
-          <meta itemprop="position" content="1">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="Управление рисками"><span itemprop="name">Управление рисками</span>
-          <meta itemprop="position" content="1">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-         <meta itemprop="item" content="b2b_services_bank_scores.html"><span itemprop="name">ФССП</span>
-         <meta itemprop="position" content="2">
-        </li>
-       </ul>
-      </div>
-     </div>
-     <div class="mainblock pb-32 mob-pb-0" id="mainblock_signals">
-      <div class="container">
-
-       <div class="maincard  maincard_full">
-        <div class="maincard__wrapper">
-         <div class="maincard__container mob-pb-0">
-
-          <div class="maincard__content">
-           <h1 class="maincard__title">Скоринги<br> и рейтинги НБКИ</h1>
-            <div class="maincard__text ">
-             <p>Модели НБКИ позволяют управлять маркетингом <br>и рисками на всех этапах взаимодействия с клиентами</p>
-
+      <main>
+        <div class="pageheader">
+          <div class="breadcrumbs ">
+            <div class="container">
+              <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                    href="/" title="НБКИ для бизнеса"><span itemprop="name">НБКИ для бизнеса</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                    href="/" title="Банкам и МФИ"><span itemprop="name">Банкам и МФИ</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item"
+                    href="/" title="Управление рисками"><span itemprop="name">Управление рисками</span>
+                    <meta itemprop="position" content="1">
+                  </a>
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  <meta itemprop="item" content="b2b_services_bank_scores.html"><span itemprop="name">ФССП</span>
+                  <meta itemprop="position" content="2">
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="maincard__footer">
-           <div class="maincard__button">
-            <a href="#formsection" class="scrollTo btn_main">Оставить заявку</a>
-           </div>
-          </div><!-- /.maincard__footer -->
-         </div><!-- /.maincard__container -->
-         <div class="maincard__image ">
-          <img src="img/Take1_mainblock.webp" width="470" height="352" fetchpriority="high"
-           alt="Скоринги и рейтинги НБКИ">
-         </div><!-- /.maincard__image -->
-         
-        </div><!-- /.maincard__wrapper -->
-       </div>
+          <div class="mainblock pb-32 mob-pb-0" id="mainblock_signals">
+            <div class="container">
 
-      </div><!-- /.container -->
-     </div><!-- /.mainblock -->
-    </div><!-- /.pageheader -->
+              <div class="maincard  maincard_full">
+                <div class="maincard__wrapper">
+                  <div class="maincard__container mob-pb-0">
 
+                    <div class="maincard__content">
+                      <h1 class="maincard__title">Скоринги<br> и рейтинги НБКИ</h1>
+                      <div class="maincard__text ">
+                        <p>Модели НБКИ позволяют управлять маркетингом <br>и рисками на всех этапах взаимодействия с
+                          клиентами</p>
 
-    <div class="p-32-0 mob-pb-20">
-     <div class="container">
-      <div class="cardsinfo flex mob-flexwrap gap-16">
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Предиктивная аналитика</div>
-        <div class="text m-0">Многолетнее наблюдение НБКИ за финансовым поведением заемщиков</div>
-       </div><!-- /.card -->
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Актуальные тенденции рынка</div>
-        <div class="text m-0">НБКИ внедряем успешные разработки, доказавшие свою эффективность</div>
-       </div><!-- /.card -->
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Нейроскоринг и AI</div>
-        <div class="text m-0">НБКИ применяет новейшие разработки в области искусственного интеллекта</div>
-       </div><!-- /.card -->
+                      </div>
+                    </div>
+                    <div class="maincard__footer">
+                      <div class="maincard__button">
+                        <a href="#formsection" class="scrollTo btn_main">Оставить заявку</a>
+                      </div>
+                    </div><!-- /.maincard__footer -->
+                  </div><!-- /.maincard__container -->
+                  <div class="maincard__image ">
+                    <img src="img/Take1_mainblock.webp" width="470" height="352" fetchpriority="high"
+                      alt="Скоринги и рейтинги НБКИ">
+                  </div><!-- /.maincard__image -->
 
-      </div>
-     </div><!-- /.container -->
-    </div>
-
-    <section class="flipcardssection p-32-0 mob-p-20-0">
-     <div class="container">
-      <h2 class="text-center mob-text-left">Комплекс скорингов НБКИ</h2>
-      <div class="subtitle text-center mob-text-left">
-       <p>Мониторинг НБКИ является общепринятой практикой в работе служб<br> взыскания и профилактики дефолтов.
-        Пользователи выбирают тип<br> отчета в зависимости от потребностей</p>
-      </div>
-
-      <div class="tabscenter" data-tabs="tabscenter">
-       <div class="tabscenter__nav m-32-0 mob-m-20-0">
-        <ul data-tabsheader="tabscenter" role="tablist" aria-label="cardss">
-         <li data-tabsbutton="tabscenter" class="active" role="tab" aria-selected="true" aria-controls="cardspanel-1"
-          id="cardstab-1" tabindex="0">PD модели</li>
-         <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-2" id="cardstab-2"
-          tabindex="1">Pre-Scoring</li>
-         <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-3" id="cardstab-3"
-          tabindex="2">Банкротство</li>
-         <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-4" id="cardstab-4"
-          tabindex="3">Взятие</li>
-
-        </ul>
-       </div>
-       <div class="tabscenter__container">
-        <div class="tabscenter__content active" data-tabscontent="tabsblock" id="cardspanel-1" role="tabpanel"
-         aria-labelledby="cardstab-1" tabindex="0">
-         <div class="cardsinfo flex mob-flexwrap gap-24 mob-gap-8 items-2">
-          <div class="card offercard offercard_md">
-           <div class="offercard__content content_h">
-            <div class="offercard__top  ">
-             <div class="maincard__tags mb-8">
-              <div class="maincard__tag"><a href="#">90@12MOB</a></div>
-              <div class="maincard__tag"><a href="#">60@9MOB</a></div>
-             </div>
-             <div class="title ">Универсальные <br>PD модели</div>
-             <div class="text">
-              <p>Оценивают вероятность дефолта <br>субъекта кредитной истории</p>
-             </div>
-            </div>
-            <div class="offercard__footer">
-
-             <div class="offercard__button">
-              <a href="#" data-modalbutton="offercard_1" class="btn_main btn_main_light btn_main_icon mob-full">
-               <span>Подробнее</span>
-              </a>
-             </div><!-- /.offercard__button -->
-            </div>
-           </div><!-- /.offercard__content content_h -->
-
-           <div class="cardpopup" data-modal="offercard_1">
-            <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
-             <div class="offercard__content content_h">
-              <div class="cardpopup__wrapper">
-               <div class="cardpopup__main">
-                <div class="offercard__item ">
-                 <div class="offercard__header mb-8">
-                  <span class="offercard__title title">Retail PV 2.0</span>
-                  <div class="offercard__info">
-                   <span>Целевой признак: просрочка 90@12МОВ</span>
-                  </div>
-                 </div>
-                 <div class="offercard__top mb-30 mob-mb-30">
-                  <div class="offercard__text text">Оценивает вероятность дефолта субъекта кредитной истории. Базовая
-                   версия, подходит для всех видов кредитования</div>
-                 </div>
-                </div>
-                <div class="offercard__item ">
-                 <div class="offercard__header mb-8">
-                  <span class="offercard__title title">Retail PV 3</span>
-                  <div class="offercard__info">
-                   <span>Целевой признак: просрочка 60@9МОВ</span>
-                  </div>
-                 </div>
-                 <div class="offercard__top mb-40 mob-mb-30">
-                  <div class="offercard__text text">Построен на новом формате кредитной истории GUTDF. <br>
-                   <i>Модель на пилоте</i>
-                  </div>
-                 </div>
-                </div>
-               </div>
-               <div class="cardpopup__aside">
-                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_1">
-                 <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-                </span>
-               </div>
-              </div><!-- /.cardpopup__wrapper -->
-              <div class="offercard__footer">
-               <div class="offercard__button text-center">
-                <a href="#" data-modalbutton="offercard_3" class="btn_main   mob-full">
-                 <span>Оставить заявку</span>
-                </a>
-               </div><!-- /.offercard__button -->
+                </div><!-- /.maincard__wrapper -->
               </div>
-             </div>
+
+            </div><!-- /.container -->
+          </div><!-- /.mainblock -->
+        </div><!-- /.pageheader -->
+
+
+        <div class="p-32-0 mob-pb-20">
+          <div class="container">
+            <div class="cardsinfo flex mob-flexwrap gap-16">
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Предиктивная аналитика</div>
+                <div class="text m-0">Многолетнее наблюдение НБКИ за финансовым поведением заемщиков</div>
+              </div><!-- /.card -->
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Актуальные тенденции рынка</div>
+                <div class="text m-0">НБКИ внедряем успешные разработки, доказавшие свою эффективность</div>
+              </div><!-- /.card -->
+              <div class="card card_24_22">
+                <div class="title title_md mb-20 mob-mb-8">Нейроскоринг и AI</div>
+                <div class="text m-0">НБКИ применяет новейшие разработки в области искусственного интеллекта</div>
+              </div><!-- /.card -->
+
             </div>
-           </div><!-- /.cardpopup -->
-
-          </div><!-- /.card -->
-          <div class="card offercard offercard_md">
-           <div class="offercard__content content_h">
-            <div class="offercard__top  ">
-             <div class="maincard__tags mb-8">
-              <div class="maincard__tag"><a href="#">90@12MOB</a></div>
-              <div class="maincard__tag"><a href="#">60@9MOB</a></div>
-             </div>
-             <div class="title ">Продуктовые <br>PD модели</div>
-             <div class="text">
-              <p>Прогноз дефолта по разным <br>типам кредита</p>
-             </div>
-            </div>
-            <div class="offercard__footer">
-
-             <div class="offercard__button">
-              <a href="#" data-modalbutton="offercard_2" class="btn_main btn_main_light btn_main_icon mob-full">
-               <span>Подробнее</span>
-              </a>
-             </div><!-- /.offercard__button -->
-            </div>
-           </div><!-- /.offercard__content content_h -->
-
-           <div class="cardpopup" data-modal="offercard_2">
-            <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
-             <div class="offercard__content content_h">
-              <div class="cardpopup__wrapper">
-               <div class="cardpopup__main">
-                <div class="offercard__item ">
-                 <div class="offercard__header mb-24">
-                  <div class="offercard__info">
-                   <span>Целевой признак: просрочка 90@12МОВ</span>
-                  </div>
-                 </div>
-                 <div class="offercard__top">
-                  <span class="offercard__title title">Retail PV Personal Loan</span>
-                  <div class="offercard__text text">Прогноз дефолта по необеспеченному кредиту (наличными)</div>
-                 </div>
-                </div><!-- /.offercard__item -->
-                <div class="offercard__item ">
-                 <div class="offercard__top">
-                  <span class="offercard__title title">Retail PV Auto</span>
-                  <div class="offercard__text text">Прогноз дефолта по автокредиту</div>
-                 </div>
-                </div><!-- /.offercard__item -->
-                <div class="offercard__item ">
-                 <div class="offercard__top">
-                  <span class="offercard__title title">Retail PV Mortgage</span>
-                  <div class="offercard__text text">Прогноз дефолта по ипотеке</div>
-                 </div>
-                </div><!-- /.offercard__item -->
-                <div class="offercard__item ">
-                 <div class="offercard__top">
-                  <span class="offercard__title title">Retail PV Credit Card Score</span>
-                  <div class="offercard__text text">Прогноз дефолта клиента по кредитной карте</div>
-                 </div>
-                </div><!-- /.offercard__item -->
-               </div>
-               <div class="cardpopup__aside">
-                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_2">
-                 <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-                </span>
-               </div>
-              </div><!-- /.cardpopup__wrapper -->
-              <div class="offercard__footer">
-               <div class="offercard__button text-center">
-                <a href="#" data-modalbutton="offercard_3" class="btn_main   mob-full">
-                 <span>Оставить заявку</span>
-                </a>
-               </div><!-- /.offercard__button -->
-              </div>
-             </div>
-            </div>
-           </div><!-- /.cardpopup -->
-
-          </div><!-- /.card -->
-          <div class="card offercard offercard_md">
-           <div class="offercard__content content_h">
-            <div class="offercard__item ">
-             <div class="offercard__top  ">
-              <div class="maincard__tags mb-8">
-               <div class="maincard__tag"><a href="#">90@12MOB</a></div>
-              </div>
-              <div class="title ">Smart Score</div>
-              <div class="text">
-               <p>Универсальная модель, дополненная <br>агрегатами из кредитной истории</p>
-              </div>
-             </div>
-            </div>
-            <div class="offercard__footer">
-             <div class="offercard__button ">
-              <a href="#" data-modalbutton="offercard_3" class="btn_main btn_main_light btn_main_icon mob-full">
-               <span>Подробнее</span>
-              </a>
-             </div><!-- /.offercard__button -->
-            </div>
-           </div><!-- /.offercard__content content_h -->
-
-           <div class="cardpopup" data-modal="offercard_3">
-            <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
-             <div class="offercard__content content_h">
-              <div class="cardpopup__wrapper">
-               <div class="cardpopup__main">
-                <div class="offercard__header mb-24">
-                 <div class="offercard__info">
-                  <span>Целевой признак: просрочка 90@12МОВ</span>
-                 </div>
-
-                </div>
-                <div class="offercard__top mb-40 mob-mb-30">
-                 <span class="offercard__title title">Smart Score</span>
-                 <div class="offercard__text text">Универсальная модель, применимая для всех типов <br>кредитов.
-                  Возвращает значение PD-скора и агрегаты <br>из кредитной истории по ТЗ заказчика. <br><i>Кросс-селл,
-                   управление портфелем</i></div>
-                </div>
-
-               </div>
-               <div class="cardpopup__aside">
-                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_3">
-                 <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-                </span>
-               </div>
-              </div><!-- /.cardpopup__wrapper -->
-              <div class="offercard__footer">
-               <div class="offercard__button text-center">
-                <a href="#" data-modalbutton="offercard_3" class="btn_main   mob-full">
-                 <span>Оставить заявку</span>
-                </a>
-               </div><!-- /.offercard__button -->
-              </div>
-             </div>
-            </div>
-           </div><!-- /.cardpopup -->
-
-          </div><!-- /.card -->
-          <div class="card offercard offercard_md">
-           <div class="offercard__content content_h">
-            <div class="offercard__item ">
-             <div class="offercard__top  ">
-              <div class="maincard__tags mb-8">
-               <div class="maincard__tag"><a href="#">7+@45DOB</a></div>
-               <div class="maincard__tag"><a href="#">14+@2MOB</a></div>
-               <div class="maincard__tag"><a href="#">30+@3MOB</a></div>
-              </div>
-              <div class="title ">МФО</div>
-              <div class="text">
-               <p>Модель специально разработана <br>для применения в МФО и КПК</p>
-              </div>
-             </div>
-            </div>
-            <div class="offercard__footer">
-             <div class="offercard__button ">
-              <a href="#" data-modalbutton="offercard_4" class="btn_main btn_main_light btn_main_icon mob-full">
-               <span>Подробнее</span>
-              </a>
-             </div><!-- /.offercard__button -->
-            </div>
-           </div><!-- /.offercard__content content_h -->
-
-           <div class="cardpopup" data-modal="offercard_4">
-            <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
-             <div class="offercard__content content_h">
-              <div class="cardpopup__wrapper">
-               <div class="cardpopup__main">
-                <div class="offercard__header mb-24">
-                 <div class="offercard__info">
-                  <span>Целевой признак: просрочка 7+@45DOB, 14+@2MOB, 30+@3MOB</span>
-                 </div>
-
-                </div>
-                <div class="offercard__top mb-40 mob-mb-30">
-                 <span class="offercard__title title">МФО v 3.0</span>
-                 <div class="offercard__text text">Модель разработана для продуктов МФО и МКК, основана на новой версии
-                  кредитной истории в формате GUTDF. <br>
-                  Скоринг эффективен как в качестве самостоятельного <br>инструмента принятия решений,
-                  так и в качестве<br> дополняющей силы к собственным моделям</div>
-                </div>
-
-               </div>
-               <div class="cardpopup__aside">
-                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_4">
-                 <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-                </span>
-               </div>
-              </div><!-- /.cardpopup__wrapper -->
-              <div class="offercard__footer">
-               <div class="offercard__button text-center">
-                <a href="#" data-modalbutton="offercard_3" class="btn_main   mob-full">
-                 <span>Оставить заявку</span>
-                </a>
-               </div><!-- /.offercard__button -->
-              </div>
-             </div>
-            </div>
-           </div><!-- /.cardpopup -->
-
-          </div><!-- /.card -->
-          <div class="card offercard offercard_md">
-           <div class="offercard__content content_h">
-            <div class="offercard__item ">
-             <div class="offercard__top  ">
-              <div class="maincard__tags mb-8">
-
-               <div class="maincard__tag"><a href="#">30+@3MOB</a></div>
-              </div>
-              <div class="title ">Скоринг индивидуальных <br>предпринимателей</div>
-              <div class="text">
-               <p>МУправление рисками<br> в кредитовании ИП</p>
-              </div>
-             </div>
-            </div>
-            <div class="offercard__footer">
-             <div class="offercard__button ">
-              <a href="#" data-modalbutton="offercard_5" class="btn_main btn_main_light btn_main_icon mob-full">
-               <span>Подробнее</span>
-              </a>
-             </div><!-- /.offercard__button -->
-            </div>
-           </div><!-- /.offercard__content content_h -->
-
-           <div class="cardpopup" data-modal="offercard_5">
-            <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
-             <div class="offercard__content content_h">
-              <div class="cardpopup__wrapper">
-               <div class="cardpopup__main">
-                <div class="offercard__header mb-24">
-                 <div class="offercard__info">
-                  <span>Целевой признак: просрочка 30+@3MOB</span>
-                 </div>
-
-                </div>
-                <div class="offercard__top mb-40 mob-mb-30">
-                 <span class="offercard__title title">Individual Entrepreneur</span>
-                 <div class="offercard__text text">
-                  <p>Для кредиторов‑специалистов в работе с ИП — дополнительный фактор для сегментации клиентов на всех
-                   этапах взаимодействия.
-                  </p>
-                  <p>Для кредиторов‑новичков в кредитовании ИП — инструмент оценки кредитного риска и прогноза
-                   возвратности выданных средств</p>
-                 </div>
-                </div>
-
-               </div>
-               <div class="cardpopup__aside">
-                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_5">
-                 <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-                </span>
-               </div>
-              </div><!-- /.cardpopup__wrapper -->
-              <div class="offercard__footer">
-               <div class="offercard__button text-center">
-                <a href="#" data-modalbutton="offercard_3" class="btn_main   mob-full">
-                 <span>Оставить заявку</span>
-                </a>
-               </div><!-- /.offercard__button -->
-              </div>
-             </div>
-            </div>
-           </div><!-- /.cardpopup -->
-
-          </div><!-- /.card -->
-
-         </div>
+          </div><!-- /.container -->
         </div>
-        <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-2" role="tabpanel"
-         aria-labelledby="cardstab-2" tabindex="0">
-         2
-        </div>
-        <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-3" role="tabpanel"
-         aria-labelledby="cardstab-3" tabindex="0">
-         3
-        </div>
-        <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-4" role="tabpanel"
-         aria-labelledby="cardstab-4" tabindex="0">
-         4
-        </div>
-       </div><!-- /.tabscenter__container -->
-      </div><!-- /.tabscenter -->
-     </div>
-    </section>
 
-    <section class="flipcardssection p-32-0 mob-p-20-0">
-     <div class="container">
-      <h2>Виды сигнальных отчетов</h2>
-      <div class="subtitle ">
-       <p>Мониторинг НБКИ является общепринятой практикой в работе служб<br> взыскания и профилактики дефолтов.
-        Пользователи выбирают тип<br> отчета в зависимости от потребностей</p>
-      </div>
-      <div class="offers offers_flip">
-       <div class="offers__items">
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">По основной части<br> кредитной истории</span>
-            <div class="offercard__text text">Максимально широкий набор данных<br> из кредитной истории физического<br>
-             или юридического лица каждые сутки</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/KO_ul.svg" alt="KO_ul" width="104" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> 1 раз в сутки</span>
+        <section class="flipcardssection p-32-0 mob-p-20-0">
+          <div class="container">
+            <h2 class="text-center mob-text-left">Комплекс скорингов НБКИ</h2>
+            <div class="subtitle text-center mob-text-left">
+              <p>Мониторинг НБКИ является общепринятой практикой в работе служб<br> взыскания и профилактики дефолтов.
+                Пользователи выбирают тип<br> отчета в зависимости от потребностей</p>
             </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
 
+            <div class="tabscenter" data-tabs="tabscenter">
+              <div class="tabscenter__nav m-32-0 mob-m-20-0">
+                <ul data-tabsheader="tabscenter" role="tablist" aria-label="cardss">
+                  <li data-tabsbutton="tabscenter" class="active" role="tab" aria-selected="true"
+                    aria-controls="cardspanel-1" id="cardstab-1" tabindex="0">PD модели</li>
+                  <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-2"
+                    id="cardstab-2" tabindex="1">Pre-Scoring</li>
+                  <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-3"
+                    id="cardstab-3" tabindex="2">Банкротство</li>
+                  <li data-tabsbutton="tabscenter" role="tab" aria-selected="false" aria-controls="cardspanel-4"
+                    id="cardstab-4" tabindex="3">Взятие</li>
 
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Точная оценка динамики <br>кредитного риска</span>
-            <div class="offercard__text text">Отчет содержит следующую информацию: открытие счета, возникновение
-             просрочки, погашение всех просрочек, изменение лимита по кредиту более, чем на n%, изменение текущей
-             задолженности более, чем на n%, закрытие или удаление счета, запрос КИ, изменение/появление сведений о
-             недееспособности, несостоятельности (банкротстве) и др.</div>
-           </div>
+                </ul>
+              </div>
+              <div class="tabscenter__container">
+                <div class="tabscenter__content active" data-tabscontent="tabsblock" id="cardspanel-1" role="tabpanel"
+                  aria-labelledby="cardstab-1" tabindex="0">
+                  <div class="cardsinfo flex mob-flexwrap gap-24 mob-gap-8 items-2">
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">90@12MOB</a></div>
+                            <div class="maincard__tag"><a href="#">60@9MOB</a></div>
+                          </div>
+                          <div class="title ">Универсальные <br>PD модели</div>
+                          <div class="text">
+                            <p>Оценивают вероятность дефолта <br>субъекта кредитной истории</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
 
+                          <div class="offercard__button">
+                            <a href="#" data-modalbutton="offercard_1"
+                              class="btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+
+                      <div class="cardpopup" data-modal="offercard_1">
+                        <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
+                          <div class="offercard__content content_h">
+                            <div class="cardpopup__wrapper">
+                              <div class="cardpopup__main">
+                                <div class="offercard__item ">
+                                  <div class="offercard__header mb-8">
+                                    <span class="offercard__title title">Retail PV 2.0</span>
+                                    <div class="offercard__info">
+                                      <span>Целевой признак: просрочка 90@12МОВ</span>
+                                    </div>
+                                  </div>
+                                  <div class="offercard__top mb-30 mob-mb-30">
+                                    <div class="offercard__text text">Оценивает вероятность дефолта субъекта кредитной
+                                      истории. Базовая
+                                      версия, подходит для всех видов кредитования</div>
+                                  </div>
+                                </div>
+                                <div class="offercard__item ">
+                                  <div class="offercard__header mb-8">
+                                    <span class="offercard__title title">Retail PV 3</span>
+                                    <div class="offercard__info">
+                                      <span>Целевой признак: просрочка 60@9МОВ</span>
+                                    </div>
+                                  </div>
+                                  <div class="offercard__top mb-40 mob-mb-30">
+                                    <div class="offercard__text text">Построен на новом формате кредитной истории GUTDF.
+                                      <br>
+                                      <i>Модель на пилоте</i>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="cardpopup__aside">
+                                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_1">
+                                  <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
+                                </span>
+                              </div>
+                            </div><!-- /.cardpopup__wrapper -->
+                            <div class="offercard__footer">
+                              <div class="offercard__button text-center">
+                                <a href="#formsection" class="scrollTo btn_main   mob-full">
+                                  <span>Оставить заявку</span>
+                                </a>
+                              </div><!-- /.offercard__button -->
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.cardpopup -->
+
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">90@12MOB</a></div>
+                            <div class="maincard__tag"><a href="#">60@9MOB</a></div>
+                          </div>
+                          <div class="title ">Продуктовые <br>PD модели</div>
+                          <div class="text">
+                            <p>Прогноз дефолта по разным <br>типам кредита</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+
+                          <div class="offercard__button">
+                            <a href="#" data-modalbutton="offercard_2"
+                              class="btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+
+                      <div class="cardpopup" data-modal="offercard_2">
+                        <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
+                          <div class="offercard__content content_h">
+                            <div class="cardpopup__wrapper">
+                              <div class="cardpopup__main">
+                                <div class="offercard__item ">
+                                  <div class="offercard__header mb-24">
+                                    <div class="offercard__info">
+                                      <span>Целевой признак: просрочка 90@12МОВ</span>
+                                    </div>
+                                  </div>
+                                  <div class="offercard__top">
+                                    <span class="offercard__title title">Retail PV Personal Loan</span>
+                                    <div class="offercard__text text">Прогноз дефолта по необеспеченному кредиту
+                                      (наличными)</div>
+                                  </div>
+                                </div><!-- /.offercard__item -->
+                                <div class="offercard__item ">
+                                  <div class="offercard__top">
+                                    <span class="offercard__title title">Retail PV Auto</span>
+                                    <div class="offercard__text text">Прогноз дефолта по автокредиту</div>
+                                  </div>
+                                </div><!-- /.offercard__item -->
+                                <div class="offercard__item ">
+                                  <div class="offercard__top">
+                                    <span class="offercard__title title">Retail PV Mortgage</span>
+                                    <div class="offercard__text text">Прогноз дефолта по ипотеке</div>
+                                  </div>
+                                </div><!-- /.offercard__item -->
+                                <div class="offercard__item ">
+                                  <div class="offercard__top">
+                                    <span class="offercard__title title">Retail PV Credit Card Score</span>
+                                    <div class="offercard__text text">Прогноз дефолта клиента по кредитной карте</div>
+                                  </div>
+                                </div><!-- /.offercard__item -->
+                              </div>
+                              <div class="cardpopup__aside">
+                                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_2">
+                                  <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
+                                </span>
+                              </div>
+                            </div><!-- /.cardpopup__wrapper -->
+                            <div class="offercard__footer">
+                              <div class="offercard__button text-center">
+                                <a href="#formsection" class="scrollTo btn_main   mob-full">
+                                  <span>Оставить заявку</span>
+                                </a>
+                              </div><!-- /.offercard__button -->
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.cardpopup -->
+
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__item ">
+                          <div class="offercard__top  ">
+                            <div class="maincard__tags mb-8">
+                              <div class="maincard__tag"><a href="#">90@12MOB</a></div>
+                            </div>
+                            <div class="title ">Smart Score</div>
+                            <div class="text">
+                              <p>Универсальная модель, дополненная <br>агрегатами из кредитной истории</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+                          <div class="offercard__button ">
+                            <a href="#" data-modalbutton="offercard_3"
+                              class="btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+
+                      <div class="cardpopup" data-modal="offercard_3">
+                        <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
+                          <div class="offercard__content content_h">
+                            <div class="cardpopup__wrapper">
+                              <div class="cardpopup__main">
+                                <div class="offercard__header mb-24">
+                                  <div class="offercard__info">
+                                    <span>Целевой признак: просрочка 90@12МОВ</span>
+                                  </div>
+
+                                </div>
+                                <div class="offercard__top mb-40 mob-mb-30">
+                                  <span class="offercard__title title">Smart Score</span>
+                                  <div class="offercard__text text">Универсальная модель, применимая для всех типов
+                                    <br>кредитов.
+                                    Возвращает значение PD-скора и агрегаты <br>из кредитной истории по ТЗ заказчика.
+                                    <br><i>Кросс-селл,
+                                      управление портфелем</i>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="cardpopup__aside">
+                                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_3">
+                                  <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
+                                </span>
+                              </div>
+                            </div><!-- /.cardpopup__wrapper -->
+                            <div class="offercard__footer">
+                              <div class="offercard__button text-center">
+                                <a href="#formsection" class="scrollTo btn_main   mob-full">
+                                  <span>Оставить заявку</span>
+                                </a>
+                              </div><!-- /.offercard__button -->
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.cardpopup -->
+
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__item ">
+                          <div class="offercard__top  ">
+                            <div class="maincard__tags mb-8">
+                              <div class="maincard__tag"><a href="#">7+@45DOB</a></div>
+                              <div class="maincard__tag"><a href="#">14+@2MOB</a></div>
+                              <div class="maincard__tag"><a href="#">30+@3MOB</a></div>
+                            </div>
+                            <div class="title ">МФО</div>
+                            <div class="text">
+                              <p>Модель специально разработана <br>для применения в МФО и КПК</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+                          <div class="offercard__button ">
+                            <a href="#" data-modalbutton="offercard_4"
+                              class="btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+
+                      <div class="cardpopup" data-modal="offercard_4">
+                        <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
+                          <div class="offercard__content content_h">
+                            <div class="cardpopup__wrapper">
+                              <div class="cardpopup__main">
+                                <div class="offercard__header mb-24">
+                                  <div class="offercard__info">
+                                    <span>Целевой признак: просрочка 7+@45DOB, 14+@2MOB, 30+@3MOB</span>
+                                  </div>
+
+                                </div>
+                                <div class="offercard__top mb-40 mob-mb-30">
+                                  <span class="offercard__title title">МФО v 3.0</span>
+                                  <div class="offercard__text text">Модель разработана для продуктов МФО и МКК, основана
+                                    на новой версии
+                                    кредитной истории в формате GUTDF. <br>
+                                    Скоринг эффективен как в качестве самостоятельного <br>инструмента принятия решений,
+                                    так и в качестве<br> дополняющей силы к собственным моделям</div>
+                                </div>
+
+                              </div>
+                              <div class="cardpopup__aside">
+                                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_4">
+                                  <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
+                                </span>
+                              </div>
+                            </div><!-- /.cardpopup__wrapper -->
+                            <div class="offercard__footer">
+                              <div class="offercard__button text-center">
+                                <a href="#formsection" class="scrollTo btn_main   mob-full">
+                                  <span>Оставить заявку</span>
+                                </a>
+                              </div><!-- /.offercard__button -->
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.cardpopup -->
+
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__item ">
+                          <div class="offercard__top  ">
+                            <div class="maincard__tags mb-8">
+
+                              <div class="maincard__tag"><a href="#">30+@3MOB</a></div>
+                            </div>
+                            <div class="title ">Скоринг индивидуальных <br>предпринимателей</div>
+                            <div class="text">
+                              <p>МУправление рисками<br> в кредитовании ИП</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+                          <div class="offercard__button ">
+                            <a href="#" data-modalbutton="offercard_5"
+                              class="btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+
+                      <div class="cardpopup" data-modal="offercard_5">
+                        <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap">
+                          <div class="offercard__content content_h">
+                            <div class="cardpopup__wrapper">
+                              <div class="cardpopup__main">
+                                <div class="offercard__header mb-24">
+                                  <div class="offercard__info">
+                                    <span>Целевой признак: просрочка 30+@3MOB</span>
+                                  </div>
+
+                                </div>
+                                <div class="offercard__top mb-40 mob-mb-30">
+                                  <span class="offercard__title title">Individual Entrepreneur</span>
+                                  <div class="offercard__text text">
+                                    <p>Для кредиторов‑специалистов в работе с ИП — дополнительный фактор для сегментации
+                                      клиентов на всех
+                                      этапах взаимодействия.
+                                    </p>
+                                    <p>Для кредиторов‑новичков в кредитовании ИП — инструмент оценки кредитного риска
+                                      и прогноза
+                                      возвратности выданных средств</p>
+                                  </div>
+                                </div>
+
+                              </div>
+                              <div class="cardpopup__aside">
+                                <span class="btn_main btn_main_light btn_img" data-modalclose="offercard_5">
+                                  <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
+                                </span>
+                              </div>
+                            </div><!-- /.cardpopup__wrapper -->
+                            <div class="offercard__footer">
+                              <div class="offercard__button text-center">
+                                <a href="#formsection" class="scrollTo btn_main   mob-full">
+                                  <span>Оставить заявку</span>
+                                </a>
+                              </div><!-- /.offercard__button -->
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.cardpopup -->
+
+                    </div><!-- /.card -->
+
+                  </div>
+                </div>
+                <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-2" role="tabpanel"
+                  aria-labelledby="cardstab-2" tabindex="1">
+                  <div class="cardsinfo flex mob-flexwrap gap-24 mob-gap-8 items-2">
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">Просрочка</a></div>
+                          </div>
+                          <div class="title ">Digital</div>
+                          <div class="text">
+                            <p>Универсальная модель, предсказывает<br> негатив на основании информационной<br> части
+                              кредитной истории</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+
+                          <div class="offercard__button">
+                            <a href="#" data-modalbutton="offercard_6"
+                              class=" btn_main btn_main_light btn_main_icon mob-full">
+                              <span>Подробнее</span>
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+                    </div>
+                  </div>
+                </div>
+                <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-3" role="tabpanel"
+                  aria-labelledby="cardstab-3" tabindex="2">
+                  <div class="cardsinfo flex mob-flexwrap gap-24 mob-gap-8 items-2">
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">6 месяцев</a></div>
+                            <div class="maincard__tag"><a href="#">Заявка</a></div>
+                            <div class="maincard__tag"><a href="#">Просрочка</a></div>
+                          </div>
+                          <div class="title ">Bankrupt Score Application</div>
+                          <div class="text">
+                            <p>Сегментация на этапе кредитной<br> заявки. Дополняет PD-модели</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+
+                          <div class="offercard__button">
+                            <a href="#formsection" class="scrollTo btn_main   mob-full">
+                              Оставить заявку
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">6 месяцев</a></div>
+                            <div class="maincard__tag"><a href="#">Заявка</a></div>
+                            <div class="maincard__tag"><a href="#">Просрочка</a></div>
+                          </div>
+                          <div class="title ">Bankrupt Score Collection</div>
+                          <div class="text">
+                            <p>Сегментация на ранней стадии просрочки. <br>Позволяет точнее выделять потенциальных<br>
+                              банкротов и скорректировать тактику взыскания.</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+                          <div class="offercard__button">
+                            <a href="#formsection" class="scrollTo btn_main   mob-full">
+                              Оставить заявку
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+                    </div><!-- /.card -->
+                  </div>
+                </div>
+                <div class="tabscenter__content " data-tabscontent="tabsblock" id="cardspanel-4" role="tabpanel"
+                  aria-labelledby="cardstab-4" tabindex="3">
+                  <div class="cardsinfo flex mob-flexwrap gap-24 mob-gap-8 items-2">
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">Кросс-селл</a></div>
+                            <div class="maincard__tag"><a href="#">Кросс-селл</a></div>
+                          </div>
+                          <div class="title ">Take Cash Score</div>
+                          <div class="text">
+                            <p>Модель предсказывает вероятность взятия потребительского кредита клиентом. Кросс-селл и
+                              ап-селл</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+
+                          <div class="offercard__button">
+                            <a href="#formsection" class="scrollTo btn_main   mob-full">
+                              Оставить заявку
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+                    </div><!-- /.card -->
+                    <div class="card offercard offercard_md">
+                      <div class="offercard__content content_h">
+                        <div class="offercard__top  ">
+                          <div class="maincard__tags mb-8">
+                            <div class="maincard__tag"><a href="#">Кросс-селл</a></div>
+                            <div class="maincard__tag"><a href="#">Кросс-селл</a></div>
+                          </div>
+                          <div class="title ">Take Card Score 2.0</div>
+                          <div class="text">
+                            <p>Модель предсказывает вероятность взятия кредитной карты клиентом. Модели универсальны для
+                              всех банков и могут применяться для ранжирования всех клиентов (новых, повторных,
+                              зарплатных и т.д.)</p>
+                          </div>
+                        </div>
+                        <div class="offercard__footer">
+                          <div class="offercard__button">
+                            <a href="#formsection" class="scrollTo btn_main   mob-full">
+                              Оставить заявку
+                            </a>
+                          </div><!-- /.offercard__button -->
+                        </div>
+                      </div><!-- /.offercard__content content_h -->
+                    </div><!-- /.card -->
+                  </div>
+                </div>
+              </div><!-- /.tabscenter__container -->
+            </div><!-- /.tabscenter -->
           </div>
+        </section>
 
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">По информационной части кредитной истории</span>
-            <div class="offercard__text text">Данные из информационной части кредитной<br> истории клиента один раз в
-             сутки. Можно<br> использовать без согласия клиента по 218-ФЗ</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
+
+        <section class="sectionbanner p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="frameblock frameblock_white frameblock_imgabs" id="frameblock_ikr">
+              <div class="frameblock__wrapper">
+
+                <div class="frameblock__main">
+                  <div class="frameblock__content">
+                    <div class="frameblock__top">
+                      <div class="maincard__tags">
+                        <div class="maincard__tag"><a href="#">Маркетинг</a></div>
+                      </div>
+                      <h2 class="frameblock__title">Индивидуальный рейтинг субъекта</h2>
+                      <div class="frameblock__text">
+                        <p>Применяется для маркирования кредитных предложений и развития собственных программ
+                          лояльности.</p>
+                      </div>
+                      <div class="maincard__list mb-32 ">
+                        <ul>
+                          <li>Увеличивайте лояльностьк <br>лиентов</li>
+                          <li>Формируйте клиентский <br>портфель и управляйте риском</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="frameblock__footer">
+                      <div class="frameblock__buttons"><a href="#formsection"
+                          class="scrollTo btn_main mob-full">Оставить заявку</a></div>
+                    </div><!-- /.frameblock__footer -->
+                  </div><!-- /.frameblock__contents -->
+                </div><!-- /.frameblock__main -->
+                <div class="frameblock__image onlyDesktop">
+                  <img loading="lazy" src="img/ikr.webp" alt="Индивидуальный рейтинг субъекта" width="784" height="470">
+                </div>
+                <div class="frameblock__image onlyMobile">
+                  <img loading="lazy" src="img/ikr_mobile.webp" alt="Индивидуальный рейтинг субъекта" width="461"
+                    height="276">
+
+                </div><!-- /.frameblock__wrapper -->
+              </div><!-- /.frameblock -->
+            </div><!-- /.container -->
           </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/verify90.svg" alt="verify" width="90" height="90" loading="lazy">
+        </section>
+        <section class="offersection p-32-0 mob-p-20-0">
+          <div class="container">
+            <h2>Варианты получения скорингов</h2>
+
+            <div class="offers">
+              <div class="offers__items">
+                <div class="offers__item offers__item_159">
+                  <div class="offercard card flex content-between mob-flexwrap">
+                    <div class="offercard__content ">
+                      <div class="offercard__top mob-mb-40 ">
+                        <div class="offercard__title title">Массовые запросы</div>
+                        <div class="offercard__text text">НБКИ обрабатывает пакетные запросы. Каждый запрос может
+                          включать в себя <br> до&nbsp;30&nbsp;000&nbsp;строк (1&nbsp;строка&nbsp;=&nbsp;1&nbsp;запрос
+                          скоринга)</div>
+                      </div>
+
+                    </div>
+                    <div class="offercard__image mob-order-1 mob-mb-40">
+                      <img src="img/request.svg" alt="Массовые запросы" width="108" height="90" loading="lazy">
+                    </div>
+                  </div><!-- /.offercard -->
+                </div><!-- /.offers__item -->
+                <div class="offers__item offers__item_159">
+                  <div class="offercard card flex content-between mob-flexwrap">
+                    <div class="offercard__content ">
+                      <div class="offercard__top mob-mb-40 ">
+                        <div class="offercard__title title">Скоринговая оценка</div>
+                        <div class="offercard__text text">Получить скоринг сейчас можно по API (веб-сервис). Функционал
+                          запроса скорингов через<br> сайт находится в разработке</div>
+                      </div>
+
+                    </div>
+                    <div class="offercard__image mob-order-1 mob-mb-40">
+                      <img src="img/scores108.svg" alt="Скоринговая оценка" width="108" height="90" loading="lazy">
+                    </div>
+                  </div><!-- /.offercard -->
+                </div><!-- /.offers__item -->
+              </div>
+            </div>
           </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> 1 раз в сутки</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
+        </section>
+        <section class="sectionbanner p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="frameblock " id="frameblock_msb">
+              <div class="frameblock__wrapper">
+                <div class="frameblock__main">
+                  <div class="frameblock__content">
+                    <div class="frameblock__top mb-40">
+                      <h2 class="frameblock__title">Модельная песочница НБКИ</h2>
+                      <div class="frameblock__text">
+                        <p>Инфраструктура НБКИ подходит для разработки собственных моделей кредиторов или адаптации
+                          индустриальных моделей под свои потребности.
+                        </p>
+                        <p>НБКИ обеспечивает партнеров инструментами тестирования и мониторинга эффективности, которые
+                          предоставляются в рамках технологической и методологической поддержки</p>
+                      </div>
+                    </div>
+                    <div class="frameblock__footer">
+                      <div class="frameblock__buttons"><a href="#formsection"
+                          class="scrollTo btn_main mob-full">Оставить
+                          заявку</a></div>
+                    </div><!-- /.frameblock__footer -->
+                  </div><!-- /.frameblock__contents -->
+                </div><!-- /.frameblock__main -->
+                <div class="frameblock__image  onlyDesktop">
+                  <img loading="lazy" src="img/frameblock_msb.webp"
+                    alt="b2b_services_bank_risks_fssp" width="247" height="392">
+                </div>
+                <div class="frameblock__image onlyMobile">
+                  <img loading="lazy" src="img/frameblock_msb_mobile.webp"
+                    alt="b2b_services_bank_risks_fssp" width="268" height="329">
+                </div>
+              </div><!-- /.frameblock__wrapper -->
+            </div><!-- /.frameblock -->
+          </div><!-- /.container -->
+        </section>
 
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Возможность оценить клиента без действующего кредитного договора</span>
-            <div class="offercard__text text">
-             <p>Предварительная оценка кредитного риска и его динамики, потребности клиентов и оптимизация кампаний по
-              формированию кредитных предложений.
-             </p>
-             <p>Сигналы: появилась новая заявка, заявка одобрена, заявка отклонена, по заявке выдан кредит, по кредиту
-              произошел дефолт, кредит погашен, появились сведения об установке/снятии самозапрета</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">Сигнальные отчеты <br>online</span>
-            <div class="offercard__text text">Ограниченный набор данных для оперативной<br> оценки рисков. 15 минут —
-             максимальное время<br> ожидания сигнала</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/signals108.svg" alt="signals" width="108" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> до 15 минут после события</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Оперативное решение по&nbsp;изменениям в&nbsp;кредитной истории
-             субъекта</span>
-            <div class="offercard__text text">
-             <p>Частота предоставления – до 15 минут после наступления события в финансовом поведении клиента.</p>
-             <p>События: запрос кредитного отчета, скоринга, ССП, сведений о самозапрете</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">Сигнал online + <br>скоринг</span>
-            <div class="offercard__text text">Автоматический расчет скоринга вместе <br>со сработавшим сигналом online.
-             Результат <br>за&nbsp;20&nbsp;минут</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/signals2_108.svg" alt="signals" width="108" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> до 20 минут</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Взвешенное кредитное решение <br>по клиенту</span>
-            <div class="offercard__text text">
-             <p>Интервал реакции ~20 минут. Информация о событии и скоринговая оценка клиента для более точной
-              интерпретации события.</p>
-             <p>Вместе с сигналом можно выбрать один из трех скорингов НБКИ на усмотрение клиента: Retail PV, МФО 3.0
-              или Take</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-
-       </div><!-- /.offers__items -->
-      </div>
-     </div><!-- /.container -->
-    </section><!-- /.offersection -->
-
-
+        
     <section class="sectiontabs p-32-0 pb-0 mob-p-20-0">
      <div class="container">
       <h2>Другие услуги НБКИ для банков и МФИ</h2>
      </div><!-- /.container -->
-     <div class="cardssgrid onlyMobile">
+     <div class="solutionsgrid onlyMobile">
       <div class="container">
 
-       <div class="cardssgrid__items">
-        <div class="cardssgrid__item">
-         <a href="#" class="cardssgrid__card">
-          <div class="cardssgrid__image">
+       <div class="solutionsgrid__items">
+        <div class="solutionsgrid__item">
+         <a href="#" class="solutionsgrid__card">
+          <div class="solutionsgrid__image">
            <img loading="lazy" src="img/PD2_sm.webp" alt="PD2_sm" width="150" height="150">
           </div>
-          <div class="cardssgrid__title">Кредитные отчеты</div>
+          <div class="solutionsgrid__title">Кредитные отчеты</div>
          </a>
-        </div><!-- /.cardssgrid__item -->
-        <div class="cardssgrid__item">
-         <a href="#" class="cardssgrid__card">
-          <div class="cardssgrid__image">
+        </div><!-- /.solutionsgrid__item -->
+        <div class="solutionsgrid__item">
+         <a href="#" class="solutionsgrid__card">
+          <div class="solutionsgrid__image">
            <img loading="lazy" src="img/Take2_sm.webp" alt="Take2_sm" width="150" height="150">
           </div>
-          <div class="cardssgrid__title">Скоринги</div>
+          <div class="solutionsgrid__title">Скоринги</div>
          </a>
-        </div><!-- /.cardssgrid__item -->
-        <div class="cardssgrid__item">
-         <a href="#" class="cardssgrid__card">
-          <div class="cardssgrid__image">
+        </div><!-- /.solutionsgrid__item -->
+        <div class="solutionsgrid__item">
+         <a href="#" class="solutionsgrid__card">
+          <div class="solutionsgrid__image">
            <img loading="lazy" src="img/Reports2_sm.webp" alt="Reports2_sm" width="150" height="150">
           </div>
-          <div class="cardssgrid__title">Сигнальные отчеты</div>
+          <div class="solutionsgrid__title">Сигнальные отчеты</div>
          </a>
-        </div><!-- /.cardssgrid__item -->
-        <div class="cardssgrid__item">
-         <a href="#" class="cardssgrid__card">
-          <div class="cardssgrid__image">
+        </div><!-- /.solutionsgrid__item -->
+        <div class="solutionsgrid__item">
+         <a href="#" class="solutionsgrid__card">
+          <div class="solutionsgrid__image">
            <img loading="lazy" src="img/BI2_sm.webp" alt="BI2_sm" width="150" height="150">
           </div>
-          <div class="cardssgrid__title">Аналитика</div>
+          <div class="solutionsgrid__title">Аналитика</div>
          </a>
-        </div><!-- /.cardssgrid__item -->
-       </div><!-- /.cardssgrid__items -->
+        </div><!-- /.solutionsgrid__item -->
+       </div><!-- /.solutionsgrid__items -->
       </div><!-- /.container -->
 
      </div><!-- /.onlyMobile -->
-     <div class="tabscenter onlyDesktop">
+     <div class="tabsblock onlyDesktop">
 
-      <div class="tabscenter__content">
-       <div class="tabscenter__items">
-        <div class="tabscenter__item ">
-         <div class="cardss">
-          <div class="cardss__wrapper">
-           <div class="cardss__slider" data-slider="cardss">
-            <div class="cardss__slide">
-             <a href="#" class="cardscard">
-              <div class="cardscard__title">Кредитные отчеты для банков и МФИ</div>
-              <div class="cardscard__icon"></div>
+      <div class="tabsblock__content">
+       <div class="tabsblock__items">
+        <div class="tabsblock__item ">
+         <div class="solutions">
+          <div class="solutions__wrapper">
+           <div class="solutions__slider" data-slider="solutions">
+            <div class="solutions__slide">
+             <a href="#" class="solutioncard">
+              <div class="solutioncard__title">Кредитные отчеты для банков и МФИ</div>
+              <div class="solutioncard__icon"></div>
              </a>
             </div>
-            <div class="cardss__slide">
-             <a href="#" class="cardscard">
-              <div class="cardscard__title">ССП и сведения<br> о самозапрете</div>
-              <div class="cardscard__icon"></div>
+            <div class="solutions__slide">
+             <a href="#" class="solutioncard">
+              <div class="solutioncard__title">ССП и сведения<br> о самозапрете</div>
+              <div class="solutioncard__icon"></div>
              </a>
             </div>
-            <div class="cardss__slide">
-             <a href="#" class="cardscard">
-              <div class="cardscard__title">Сигнальные кредитные отчеты</div>
-              <div class="cardscard__icon"></div>
+            <div class="solutions__slide">
+             <a href="#" class="solutioncard">
+              <div class="solutioncard__title">Сигнальные кредитные отчеты</div>
+              <div class="solutioncard__icon"></div>
              </a>
             </div>
-            <div class="cardss__slide">
-             <a href="#" class="cardscard">
-              <div class="cardscard__title">Аналитика <br>НБКИ</div>
-              <div class="cardscard__icon"></div>
+            <div class="solutions__slide">
+             <a href="#" class="solutioncard">
+              <div class="solutioncard__title">Аналитика <br>НБКИ</div>
+              <div class="solutioncard__icon"></div>
              </a>
             </div>
-           </div><!-- /.cardss__slider -->
-          </div><!-- /.cardss__wrapper -->
-         </div><!-- /.cardss -->
+           </div><!-- /.solutions__slider -->
+          </div><!-- /.solutions__wrapper -->
+         </div><!-- /.solutions -->
         </div>
 
-       </div><!-- /.tabscenter__items -->
-      </div><!-- /.tabscenter__content -->
-     </div><!-- /.tabscenter -->
+       </div><!-- /.tabsblock__items -->
+      </div><!-- /.tabsblock__content -->
+     </div><!-- /.tabsblock -->
     </section>
+      </main>
 
-
-   </main>
-
-   <%= _.template(require('../includes/footer.html').default)(data) %>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

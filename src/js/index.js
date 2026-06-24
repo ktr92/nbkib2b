@@ -117,6 +117,11 @@ window.addEventListener("load", () => {
       if ($(this).closest("[data-toggle]").length) {
         $(this).closest("[data-toggle]").removeClass("active");
       }
+      if ($(this).closest("[data-modal]").length) {
+        $(this).closest("[data-modal]").removeClass("active");
+         $('.backdrop').removeClass('active')
+      }
+
       return false;
     });
   }
