@@ -4,7 +4,11 @@
 .maincard_xl {
   height: 427px;
 }
-
+.maincard__image {
+  img {
+    display: block;
+  }
+}
 .maincard_lg {
   height: 281px;
 }
@@ -30,9 +34,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.mainblock {
-  min-height: 370px;
-}
+
 .maincard__content {
 }
 .maincard__title {
@@ -65,7 +67,7 @@ h2.maincard__title {
 }
 .maincard__container {
   position: relative;
- /*  height: 100%; */
+  /*  height: 100%; */
   .maincard__footer {
     position: static;
     bottom: 0;
@@ -136,7 +138,8 @@ h2.maincard__title {
   margin-bottom: 24px;
 }
 
-.maincard__tag {
+.maincard__tag,
+.tag {
   display: inline-block;
   white-space: nowrap;
   font-weight: 400;
@@ -152,13 +155,14 @@ h2.maincard__title {
     color: #37f;
     background: rgba(0, 85, 255, 0.05);
   }
-  a {
+  a,
+  .tag_default {
     color: #858fa3;
     background: #f9fafb;
-    &:hover {
-      color: #37f;
-      background: rgba(0, 85, 255, 0.05);
-    }
+  }
+  a:hover {
+    color: #37f;
+    background: rgba(0, 85, 255, 0.05);
   }
 }
 
@@ -368,11 +372,11 @@ h2.maincard__title {
       display: block;
     }
   }
-  
-   .maincard__list {
+
+  .maincard__list {
     ul {
       column-count: 1;
-        margin-bottom: 0;
+      margin-bottom: 0;
       padding-left: 25px;
       list-style: disc;
       li {
@@ -394,6 +398,14 @@ h2.maincard__title {
 }
 
 @include min-medium-screen {
+  .maincard__container {
+    min-height: 370px;
+  }
+  .maincard__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .maincard_nobg {
     .maincard__container {
       padding: 50px 0 32px 0;
@@ -413,6 +425,15 @@ h2.maincard__title {
       min-width: 746px;
     }
   }
+  #mainblock_pdscore {
+    .maincard__image {
+      transform: translateX(-42px);
+
+      img {
+        max-width: unset;
+      }
+    }
+  }
   #mainblock_signals {
     .maincard__content {
       max-width: 532px;
@@ -429,6 +450,7 @@ h2.maincard__title {
       }
     }
   }
+
   #mainblock_loan {
     .maincard__image.onlyDesktop {
       max-width: 470px;

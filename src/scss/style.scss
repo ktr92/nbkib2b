@@ -396,7 +396,7 @@ main {
   display: inline-block;
   &:hover {
     background: rgba(0, 85, 255, 0.8);
-       /*  color: #05f;
+    /*  color: #05f;
     background: rgba(0, 85, 255, 0.1); */
   }
 }
@@ -1203,7 +1203,7 @@ footer#footer {
 .cardsinfo.items-2 {
   flex-wrap: wrap;
   > .card {
-    flex: 0 0 calc(50% - 12px); 
+    flex: 0 0 calc(50% - 12px);
   }
 }
 /* .frameblock__main {
@@ -1328,9 +1328,8 @@ footer#footer {
 .card:not(.card_sm) .offercard__image {
   min-width: 108px;
   img {
-  min-width: 90px;
+    min-width: 90px;
   }
-
 }
 .offercard__content {
   gap: 20px;
@@ -1450,8 +1449,8 @@ footer#footer {
   }
 
   &:hover {
-       background: rgba(0, 85, 255, 0.2);
-        color: $blue;
+    background: rgba(0, 85, 255, 0.2);
+    color: $blue;
   }
 }
 .content_h {
@@ -1498,13 +1497,11 @@ footer#footer {
   }
   .offercard__content {
     width: 100%;
- 
   }
   .title {
-      
-      font-size: 18px;
-line-height: 120%;
-    }
+    font-size: 18px;
+    line-height: 120%;
+  }
   .offercard__header {
     .title {
       margin-bottom: 0;
@@ -1523,7 +1520,7 @@ line-height: 120%;
 }
 .offercard__item {
   margin-bottom: 24px;
-  .offercard__text  {
+  .offercard__text {
     margin-top: 8px !important;
   }
   &:last-child {
@@ -1531,6 +1528,149 @@ line-height: 120%;
   }
 }
 
-.card_auto {
-  height: auto;
+.tablecolor table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgba(68, 83, 113, 0.15);
 }
+
+.tablecolor tbody td,
+.tablecolor thead th {
+  padding: 0;
+  border: 1px solid rgba(68, 83, 113, 0.15);
+
+  /*   border-left: 1px solid rgba(68, 83, 113, 0.15);
+  border-right: 1px solid rgba(68, 83, 113, 0.15);
+  border-bottom: 1px solid rgba(68, 83, 113, 0.15);
+  border-top: 1px solid rgba(68, 83, 113, 0.15); */
+}
+.tablecolor span.th {
+  min-height: 52px;
+}
+.tablecolor span.td {
+  min-height: 96px;
+}
+.tablecolor span.th,
+.tablecolor span.td {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #445371;
+
+  i {
+    color: #858fa3;
+    line-height: 157%;
+  }
+}
+.tablecolor th[rowspan="2"] span.th {
+  min-height: 104px;
+}
+
+.tablecolor tbody td:first-child span.td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155%;
+  text-align: center;
+}
+
+.tablecolor thead th span.th {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #445371;
+}
+
+.tablecolor {
+  table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  td,
+  th {
+    overflow: hidden;
+  }
+  tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+  /*   border-right: none;
+    border-bottom: none; */
+  }
+  tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+    /*  border-left: none;
+    border-bottom: none; */
+  }
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+   /*   border-right: none;
+    border-top: none; */
+  }
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+  /*    border-left: none;
+    border-top: none; */
+  }
+}
+/* .tablecolor {
+  tbody {
+    tr:last-child {
+      td:last-child {
+        span {
+          border-radius: 0 0 12px 0;
+        }      
+      }
+      td:first-child {
+        span {
+          border-radius: 0 12px 0  0;
+        }      
+      }
+    }
+  }
+} */
+/* 
+.tablecolor tbody td:last-child {
+  border-right: none;
+}
+
+.tablecolor tbody td:first-child {
+  border-left: none;
+}
+
+.tablecolor tbody td:first-child span {
+  border-left: none;
+}
+
+.tablecolor tbody tr:first-child td {
+  border-top: none;
+}
+
+.tablecolor tbody tr:last-child td {
+  border-bottom: none;
+
+}
+
+.tablecolor thead th:last-child {
+  border-right: none;
+}
+
+.tablecolor thead th:first-child {
+  border-left: none;
+}
+
+.tablecolor thead tr:first-child th {
+  border-top: none;
+}
+
+.tablecolor thead tr:last-child th {
+  border-bottom: none;
+}
+ */

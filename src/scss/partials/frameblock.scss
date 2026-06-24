@@ -217,6 +217,11 @@
 }
 
 @include min-medium-screen {
+  #frameblock__bi {
+    .frameblock__image {
+      transform: translateX(-51px);
+    }
+  }
   #frameblock_risks_fssp .frameblock__image {
     transform: translateY(32px) translateX(-141px);
   }
