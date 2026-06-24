@@ -588,96 +588,151 @@
     }
   }
 
- 
-.maincard__image {
+  .maincard__image {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-.tabscenter__nav  {
-  width: 100%;
-  overflow: auto;
-  justify-content: flex-start;
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }
+  .tabscenter__nav {
+    width: 100%;
+    overflow: auto;
+    justify-content: flex-start;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
     -ms-overflow-style: none; /* Hides scrollbar in IE and legacy Edge */
 
     &::-webkit-scrollbar {
       display: none;
     }
-  ul {
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
+    ul {
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
 
-    li {
-      font-size: 14px;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+  .subtitle {
+    margin-bottom: 20px;
+  }
+  .card.offercard_md {
+    min-height: 214px;
+    .title {
+      font-size: 18px;
+      line-height: 120%;
+      br {
+        display: none;
+      }
+    }
+    .text {
+      br {
+        display: block;
+      }
+    }
+  }
+  .cardpopup .card {
+    padding: 16px;
+    max-width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tablecolor__table {
+    max-width: 100%;
+    overflow: auto;
+  }
+  .ratetable__description.text {
+    p {
+      font-size: 8px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+    }
+  }
+  .tablecolor span.td,
+  .tablecolor span.th,
+  .tablecolor thead th span.th,
+  .tablecolor tbody td:first-child span.td {
+    font-size: 7px;
+    min-width: 134px;
+  }
+  .tablecolor th[rowspan="2"] span.th {
+    min-height: 52px;
+  }
+  .tablecolor span.th {
+    min-height: 26px;
+  }
+  .tablecolor span.td {
+    min-height: 48px;
+  }
+  .ratetable__tag {
+    span {
+      font-size: 8px;
+    }
+  }
+  .asidelist {
+    display: block;
+  }
+  .asidelist__left {
+  }
+  .asidelist__list li {
+    margin-bottom: 4px;
+  }
+  .asidelist__list {
+    padding: 0;
+  }
+  .tablecolor_type2 .tablecolor__cell_xs {
+    border-right: none;
+  }
 
-    }
+  .tablecolor.tablecolor_mobile {
+    overflow-y: hidden;
   }
+  .tablecolor__cell:after {
+    background: #fff;
 }
-.subtitle {
-  margin-bottom: 20px;
-}
-.card.offercard_md{
-  min-height: 214px;
-  .title {
-    font-size: 18px;
-line-height: 120%;
-    br {
-      display: none;
-    }
+  .tablecolor_type2 .tablecolor__aside .tablecolor__cell {
+    z-index: 9;
+    position: relative;
+    background: #fff;
   }
-  .text {
-    br {
-      display: block;
-    }
+  .tablecolor__tooltiptext {
+    max-width: 177px !important;
+    padding: 10px 7px;
   }
-}
-.cardpopup .card {
-  padding: 16px;
-  max-width: 343px;
-  margin-left: auto;margin-right: auto;
-}
-.tablecolor__table {
-  max-width: 100%;
-  overflow: auto;
-}
-.ratetable__description.text {
-   p {
-    font-size: 8px;
-line-height: 150%;
-letter-spacing: -0.03em;
+  .tablecolor_mobile .tablecolor__cell {}
+  .tablecolor__cell:after {
+    font-size: 7px;
+    border: none;
   }
-}
-.tablecolor span.td, .tablecolor span.th, .tablecolor thead th span.th, .tablecolor tbody td:first-child span.td {
-  font-size: 7px;
- min-width: 134px;
-}
-.tablecolor th[rowspan="2"] span.th {
-  min-height: 52px;
-}
-.tablecolor span.th {
-  min-height: 26px;
-}
-.tablecolor span.td {
-  min-height: 48px;
-}
-.ratetable__tag  {
-  span {
-    font-size: 6px !important;
+  .tablecolor_type2 .tablecolor__cell {
+    font-size: 7px;
+    height: 24px;
+    padding: 0;
+            justify-content: center;
   }
-}
-.asidelist {
-  display: block;
-}
-.asidelist__left {
-}
-.asidelist__list li {
-  margin-bottom: 4px;
-}
-.asidelist__list {
-  padding: 0;
-}
+  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm{
+    height: 24px;
+  }
+  .tablecolor_type2 .tablecolor__body {
+    margin-top: 24px;
+  }
+  .tablecolor_type2 .tablecolor__aside .tablecolor__cell {
+    width: 50px;
+  }
+  .tablecolor_type2 .tablecolor__main{
+    margin-left: 50px;
+  }
+  .tablecolor_type2 .tablecolor__aside .tablecolor__cell:first-child{
+    height: 48px;
+  }
+  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm, 
+  .tablecolor_mobile .tablecolor__body .tablecolor__cell {
+    font-size: 7px;
+
+  }
+  .tablecolor_type2 .tablecolor__col {
+    width: 66px;
+  }
   /* .maincard__container {
   max-width: 480px !important;
   margin-left: auto;

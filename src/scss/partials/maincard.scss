@@ -487,5 +487,11 @@ h2.maincard__title {
 }
 
 @include medium-screen {
-   
+  #mainblock_marketing_diversification {
+      .maincard__image.onlyMobile {
+      
+        transform: translateY(-35px);
+    }
+  }
+       
 }

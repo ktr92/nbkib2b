@@ -191,6 +191,7 @@ b {
 i {
   font-style: italic;
 }
+
 @include min-medium-screen {
   .card_24_22 {
 
@@ -341,5 +342,8 @@ letter-spacing: -0.04em;
 }
 .mob-mt-16 {
   margin-top: 16px !important;
+}
+.mob-fz-8 {
+  font-size: 8px !important;
 }
 }
