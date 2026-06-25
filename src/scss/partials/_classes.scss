@@ -197,6 +197,9 @@ i {
 .h_auto {
   height: auto;
 }
+.mt--18 {
+  margin-top: -18px;
+}
 @include min-medium-screen {
   .card_24_22 {
 
@@ -351,4 +354,11 @@ letter-spacing: -0.04em;
 .mob-fz-8 {
   font-size: 8px !important;
 }
+.mob-gap-40 {
+  gap: 40px;
+}
+.mob-mt-0 {
+  margin-top: 0;
+}
+
 }
