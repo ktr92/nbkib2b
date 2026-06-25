@@ -407,6 +407,10 @@ h2.maincard__title {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  
+    /* img {
+      max-width: unset;
+    } */
   }
   .maincard_nobg {
     .maincard__container {
@@ -433,6 +437,20 @@ h2.maincard__title {
 
       img {
         max-width: unset;
+      }
+    }
+  }
+   #mainblock_insurance {
+     .maincard__content {
+      max-width: 541px;
+      min-width: 541px;
+    }
+    .maincard__container {
+      padding-right: 0;
+    }
+    .maincard__image  {
+      img {
+        transform: translateX(0);
       }
     }
   }
@@ -484,9 +502,15 @@ h2.maincard__title {
       margin-right: 50px;
     }
   }
+ 
 }
 
 @include medium-screen {
+  #mainblock_insurance {
+    .maincard__image img {
+      max-width: 526px;
+    }
+  }
   #mainblock_marketing_diversification {
       .maincard__image.onlyMobile {
       

@@ -191,7 +191,12 @@ b {
 i {
   font-style: italic;
 }
-
+.p-20-0 {
+  padding: 20px 0;
+}
+.h_auto {
+  height: auto;
+}
 @include min-medium-screen {
   .card_24_22 {
 
