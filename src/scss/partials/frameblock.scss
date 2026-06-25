@@ -273,6 +273,11 @@
   }
 }
 @include medium-screen {
+  #frameblock__bi {
+    .maincard__tags {
+      justify-content: center;
+    }
+  }
   #frameblock_risks_fssp {
     height: 610px !important;
   }

@@ -835,6 +835,9 @@ h2 {
   background: rgba(68, 83, 113, 0.03);
 }
 .formsection__content {
+  h2 {
+    margin-bottom: 16px;
+  }
   h2,
   .subtitle,
   .subtitle p {
