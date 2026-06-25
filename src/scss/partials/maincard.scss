@@ -400,6 +400,12 @@ h2.maincard__title {
 }
 
 @include min-medium-screen {
+  .maincard__image img {
+    max-width: unset;
+  }
+  .maincard__wrapper {
+    overflow: hidden;
+  }
   .maincard__container {
     min-height: 370px;
   }
@@ -470,6 +476,18 @@ h2.maincard__title {
       min-width: 600px;
     }
   }
+   #mainblock_ko {
+    .maincard__content {
+      max-width: 547px;
+      min-width: 547px;
+    }
+    .maincard__container {
+      padding-bottom: 32px;
+    }
+    .maincard__image img {
+      transform: translateX(-80px);
+    }
+  }
   #mainblock_marketingsegment {
      .maincard__content {
       max-width: 600px;
@@ -506,6 +524,11 @@ h2.maincard__title {
 }
 
 @include medium-screen {
+  #mainblock_ko {
+    .maincard__image img {
+      transform: translateY(-27px);
+    }
+  }
   #mainblock_insurance {
     .maincard__image img {
       max-width: 526px;
