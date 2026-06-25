@@ -540,6 +540,12 @@ h2.maincard__title {
       transform: translateX(-30px);
     }
   }
+    #mainblock_signals {
+    .maincard__image img {
+      max-width: 404px;
+      transform: translateY(25px) translateX(-30px);
+    }
+  }
   #mainblock_ko {
     .maincard__image img {
       transform: translateY(-27px);

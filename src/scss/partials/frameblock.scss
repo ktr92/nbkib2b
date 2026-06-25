@@ -109,7 +109,7 @@
   }
 
   .frameblock__footer {
-   /*  position: static; */
+    /*  position: static; */
     margin-top: 40px;
 
     .btn_main {
@@ -187,29 +187,28 @@
   .frameblock__title {
     font-size: 20px;
   }
-/*   .frameblock_imagetop { */
-    .frameblock__footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-    .frameblock__wrapper {
-     height: 100%;
-    }
-    .frameblock__main {
-      height: 100%;
-    }
-    .frameblock__image {
-      align-items: flex-start;
-    }
-    .frameblock__main {
-      padding: 24px 16px;
-    }
-/*   } */
-  .frameblock__image.onlyDesktop {
-   display: none !important
+  /*   .frameblock_imagetop { */
+  .frameblock__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
-  
+  .frameblock__wrapper {
+    height: 100%;
+  }
+  .frameblock__main {
+    height: 100%;
+  }
+  .frameblock__image {
+    align-items: flex-start;
+  }
+  .frameblock__main {
+    padding: 24px 16px;
+  }
+  /*   } */
+  .frameblock__image.onlyDesktop {
+    display: none !important;
+  }
 }
 @include small-screen {
   .frameblock {
@@ -218,11 +217,10 @@
 }
 
 @include min-medium-screen {
-  
   .frameblock_imgabs {
     .frameblock__image {
-    transform: translateY(32px) translateX(-141px);
-  }
+      transform: translateY(32px) translateX(-141px);
+    }
     .frameblock__main {
       padding: 32px 32px 32px 50px;
     }
@@ -238,7 +236,7 @@
       min-width: 502px;
       z-index: 1;
     }
-    .frameblock__image  {
+    .frameblock__image {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -249,15 +247,15 @@
       }
     }
   }
-  #frameblock_retro  {
-.frameblock__image {
-  transform: translateX(-131px);
-}
-  .frameblock_imgabs .frameblock__content {
-    min-width: 590px;
-    max-width: 590px;
+  #frameblock_retro {
+    .frameblock__image {
+      transform: translateX(-131px);
+    }
+    .frameblock_imgabs .frameblock__content {
+      min-width: 590px;
+      max-width: 590px;
+    }
   }
-}
   #frameblock__bi {
     .frameblock__image {
       transform: translateX(-51px);
@@ -268,11 +266,13 @@
       max-width: 590px;
     }
     .frameblock__image {
-          transform: translateX(-132px) translateY(-13px);
+      transform: translateX(-132px) translateY(-13px);
     }
   }
 }
 @include medium-screen {
+
+
   #frameblock__bi {
     .maincard__tags {
       justify-content: center;
@@ -282,15 +282,14 @@
     height: 610px !important;
   }
   .frameblock#frameblock_msb {
-      height: 525px !important;
+    height: 525px !important;
   }
   .frameblock#frameblock_retro {
-      height: 510px !important;
-      .frameblock__title {
-        br {
-          display: block;
-        }
+    height: 510px !important;
+    .frameblock__title {
+      br {
+        display: block;
       }
-      
+    }
   }
 }
