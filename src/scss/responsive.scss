@@ -733,23 +733,19 @@
   .tablecolor_type2 .tablecolor__col {
     width: 66px;
   }
-  /* .maincard__container {
-  max-width: 480px !important;
-  margin-left: auto;
-  margin-right: auto;
-  .maincard__footer {
-      max-width: 480px !important;
+  .formsection__content {
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
   }
-} */
-  /*   .offercard__content  {
-    max-width: 280px;
-    min-width: 280px;
+}
+.frameblock__frame {
+  .title {
+    br {
+      display: none;
+    }
   }
-  .offercard.content-between {
-    justify-content: center;
-    gap: 16px;
-  }
-      */
+} 
 }
 /* mobile */
 @include extrasmall-screen {

@@ -431,6 +431,9 @@ h2.maincard__title {
     .maincard__wrapper {
       align-items: center;
     }
+    .maincard__image img {
+      transform: translateX(-43px);
+    }
     /*  .maincard__content {
       max-width: 746px;
       min-width: 746px;
@@ -537,7 +540,13 @@ h2.maincard__title {
       left: 0;
       right: 0;
       margin: auto;
-      transform: translateX(-30px);
+      /* transform: translateX(-30px); */
+    }
+  }
+  #mainblock_risks_fssp {
+    .maincard__image img {
+
+              transform: translateY(-62px);
     }
   }
     #mainblock_signals {

@@ -638,7 +638,7 @@ h2 {
   margin: 0 -4px;
 
   overflow: visible !important;
-  padding-top: 32px !important;
+ /*  padding-top: 32px !important; */
   padding-bottom: 50px !important;
 }
 
@@ -837,6 +837,8 @@ h2 {
 .formsection__content {
   h2 {
     margin-bottom: 16px;
+    font-size: 32px;
+line-height: 120%;
   }
   h2,
   .subtitle,
@@ -1973,6 +1975,9 @@ h1.innerpageh1 {
 }
 
 @include min-medium-screen {
+  .sectiontabs +.formsection  {
+  padding-top: 0 !important
+}
     .tablecolor_type2 .tablecolor__header {
         position:initial;
         margin-bottom: 0

@@ -232,8 +232,8 @@
       padding-right: 0;
     }
     .frameblock__content {
-      max-width: 502px;
-      min-width: 502px;
+      /* max-width: 502px;
+      min-width: 502px; */
       z-index: 1;
     }
     .frameblock__image {
@@ -272,7 +272,9 @@
 }
 @include medium-screen {
 
-
+.mob-h-auto {
+  height: auto !important;
+}
   #frameblock__bi {
     .maincard__tags {
       justify-content: center;
