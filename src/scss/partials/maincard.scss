@@ -228,7 +228,9 @@ h2.maincard__title {
     }
   }
 }
-
+.maincard__text + .maincard__tags {
+  margin-top: 20px;
+}
 @include medium-screen {
   .maincard {
     height: unset;
@@ -400,6 +402,7 @@ h2.maincard__title {
 
 @include min-medium-screen {
 /*   .maincard_abs { */
+
     .maincard__wrapper {
       position: relative;
       min-height: 427px;
@@ -445,6 +448,13 @@ h2.maincard__title {
       background: none;
       box-shadow: none;
       border: none;
+    }
+  }
+  #mainblock_bi {
+    .maincard__image {
+      img {
+        transform: translateX(-10px);
+      }
     }
   }
   #mainblock_utility {
@@ -568,6 +578,11 @@ h2.maincard__title {
       right: 0; */
       margin: auto;
       /* transform: translateX(-30px); */
+    }
+  }
+  #mainblock_bi {
+    .maincard__image img {
+              transform: translateY(-42px);
     }
   }
   #mainblock_utility {
