@@ -29,6 +29,11 @@
     @content;
   }
 }
+@mixin medium-large-screen() {
+  @media (min-width: 1000px) and (max-width: 1180px) {
+    @content;
+  }
+}
 
 @mixin medium-screen() {
   @media only screen and (max-width: 999px) {

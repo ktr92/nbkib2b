@@ -427,6 +427,13 @@ h2.maincard__title {
       border: none;
     }
   }
+  #mainblock_utility {
+    .maincard__image {
+      img {
+        transform: translateX(-50px);
+      }
+    }
+  }
   #mainblock_risks_fssp {
     .maincard__wrapper {
       align-items: center;
@@ -537,10 +544,15 @@ h2.maincard__title {
       max-width: 397px;
       position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
+      /* left: 0;
+      right: 0; */
       margin: auto;
       /* transform: translateX(-30px); */
+    }
+  }
+  #mainblock_utility {
+    .maincard__image img {
+      max-width: 392px;
     }
   }
   #mainblock_risks_fssp {

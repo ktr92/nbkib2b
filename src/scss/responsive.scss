@@ -3,6 +3,23 @@
 }
 /* laptop */
 @include large-screen {
+  
+}
+/* laptop only */
+@include medium-large-screen {
+  .footer__card {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .maincard__content {
+    min-width: 502px;
+  }
+  .footer__menuline, .footer__wrapper {
+    justify-content: space-between;
+  }
+  .menuline__item {
+    padding: 4px 8px;
+  }
 }
 
 /* tablet */

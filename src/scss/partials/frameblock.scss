@@ -210,11 +210,11 @@
     display: none !important;
   }
 }
-@include small-screen {
+/* @include small-screen {
   .frameblock {
     height: 541px !important;
   }
-}
+} */
 
 @include min-medium-screen {
   .frameblock_imgabs {
@@ -271,13 +271,20 @@
   }
 }
 @include medium-screen {
-
-.mob-h-auto {
-  height: auto !important;
-}
+  .frameblock {
+    height: 541px !important;
+  }
+  .mob-h-auto {
+    height: auto !important;
+  }
   #frameblock__bi {
+      height: 611px !important;
+
     .maincard__tags {
       justify-content: center;
+    }
+    .frameblock__footer {
+      position: static;
     }
   }
   #frameblock_risks_fssp {
