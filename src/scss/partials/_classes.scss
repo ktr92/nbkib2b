@@ -86,9 +86,15 @@ a {
 border-radius: 24px;
 padding: 24px 32px;
 box-shadow: 0 1px 0 0 rgba(38, 39, 90, 0.1);
-background: #fff;
+background-color: #fff;
 /* height: 100%;
  */}
+
+ .card_custom {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-color: #80aaff;
+  }
 .card_auto {
   height: auto;
 }
@@ -99,6 +105,10 @@ line-height: 120%;
 letter-spacing: -0.03em;
 color: #0e1117;
 margin-bottom: 12px;
+
+i {
+  font-weight: 400;
+}
 }
 .title_md {
   font-weight: 500;

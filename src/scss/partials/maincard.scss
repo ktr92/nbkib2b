@@ -134,6 +134,7 @@ h2.maincard__title {
 }
 .maincard__tags {
   display: flex;
+  min-height: 18px;
   gap: 4px;
   margin-bottom: 24px;
 }
