@@ -56,6 +56,9 @@ a {
 .m-32-0 {
   margin: 32px 0;
 }
+.mb-0 {
+  margin-bottom: 0 !important
+}
 
 .mt-32 {
   margin-top: 32px;
@@ -120,6 +123,17 @@ color: #445371;
 }
 .text p:last-child {
   margin-bottom: 0;
+}
+.text {
+  ul {
+    li {
+       font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.04em;
+color: #445371;
+    }
+  }
 }
 .title + .text {
   margin-top: 12px;
