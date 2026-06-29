@@ -293,6 +293,13 @@
   .frameblock#frameblock_msb {
     height: 525px !important;
   }
+  .frameblock#frameblock_msb_2 {
+    height: 510px !important;
+    .frameblock__image {
+      bottom: 20px;
+      width: 155px;
+    }
+  }
   .frameblock#frameblock_retro {
     height: 510px !important;
     .frameblock__title {

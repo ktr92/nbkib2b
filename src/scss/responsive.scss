@@ -3,7 +3,6 @@
 }
 /* laptop */
 @include large-screen {
-  
 }
 /* laptop only */
 @include medium-large-screen {
@@ -14,7 +13,8 @@
   .maincard__content {
     min-width: 502px;
   }
-  .footer__menuline, .footer__wrapper {
+  .footer__menuline,
+  .footer__wrapper {
     justify-content: space-between;
   }
   .menuline__item {
@@ -706,7 +706,7 @@
   }
   .tablecolor__cell:after {
     background: #fff;
-}
+  }
   .tablecolor_type2 .tablecolor__aside .tablecolor__cell {
     z-index: 9;
     position: relative;
@@ -716,7 +716,8 @@
     max-width: 177px !important;
     padding: 10px 7px;
   }
-  .tablecolor_mobile .tablecolor__cell {}
+  .tablecolor_mobile .tablecolor__cell {
+  }
   .tablecolor__cell:after {
     font-size: 7px;
     border: none;
@@ -725,9 +726,9 @@
     font-size: 7px;
     height: 24px;
     padding: 0;
-            justify-content: center;
+    justify-content: center;
   }
-  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm{
+  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm {
     height: 24px;
   }
   .tablecolor_type2 .tablecolor__body {
@@ -736,33 +737,38 @@
   .tablecolor_type2 .tablecolor__aside .tablecolor__cell {
     width: 50px;
   }
-  .tablecolor_type2 .tablecolor__main{
+  .tablecolor_type2 .tablecolor__main {
     margin-left: 50px;
   }
-  .tablecolor_type2 .tablecolor__aside .tablecolor__cell:first-child{
+  .tablecolor_type2 .tablecolor__aside .tablecolor__cell:first-child {
     height: 48px;
   }
-  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm, 
+  .tablecolor_type2 .tablecolor__body .tablecolor__cell_sm,
   .tablecolor_mobile .tablecolor__body .tablecolor__cell {
     font-size: 7px;
-
   }
   .tablecolor_type2 .tablecolor__col {
     width: 66px;
   }
   .formsection__content {
-  h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-}
-.frameblock__frame {
-  .title {
-    br {
-      display: none;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
     }
   }
-} 
+  .frameblock__frame {
+    .title {
+      br {
+        display: none;
+      }
+    }
+  }
+/*   .btn_main_icon-bi {
+    display: inline-block;
+    max-width: fit-content !important;
+    min-width: fit-content !important;
+    width: fit-content !important;
+  } */
 }
 /* mobile */
 @include extrasmall-screen {
