@@ -52,6 +52,13 @@ h2.maincard__title {
   letter-spacing: -0.03em;
   margin-bottom: 20px;
 }
+.maincard__title_lg {
+   font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
 .maincard__text {
   font-weight: 400;
   font-size: 16px;
@@ -112,6 +119,10 @@ h2.maincard__title {
     letter-spacing: -0.03em;
     color: #0e1117;
     margin-bottom: 20px;
+  }
+  .maincard__title_lg {
+    font-size: 24px;
+line-height: 120%;
   }
   .maincard__text {
     font-weight: 400;
@@ -232,6 +243,14 @@ h2.maincard__title {
 .maincard__text + .maincard__tags {
   margin-top: 20px;
 }
+
+.maincard_custom {
+  .maincard__block {
+    max-width: 620px;
+    min-width: 620px;
+  }
+}
+
 @include medium-screen {
   .maincard {
     height: unset;
