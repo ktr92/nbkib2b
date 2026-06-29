@@ -1,0 +1,550 @@
+<% var data={ title: "Национальное бюро кредитных историй" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+
+      <main>
+      <div class="pageheader">
+     <div class="breadcrumbs ">
+      <div class="container">
+       <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/" title="НБКИ для бизнеса"><span itemprop="name">НБКИ для&nbsp;бизнеса</span>
+          <meta itemprop="position" content="1">
+         </a>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+         <meta itemprop="item" content="b2b_services_connect.html"><span itemprop="name">Способы подключения
+          к&nbsp;НБКИ</span>
+         <meta itemprop="position" content="2">
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="mainblock pb-32 mob-pb-0" id="mainblock_connect">
+      <div class="container">
+
+       <div class="maincard  maincard_full maincard_nobg maincard_mob_abs">
+        <div class="maincard__wrapper">
+         <div class="maincard__container mob-pb-0">
+
+          <div class="maincard__content">
+           <h1 class="maincard__title">Способы подключения <br>к&nbsp;НБКИ</h1>
+           <div class="maincard__text ">
+            <p>Национальное бюро кредитных историй предоставляет широкий спектр<br> технологических возможностей
+             взаимодействия с источниками<br> и пользователями информации
+           </p></div>
+          </div>
+          <div class="maincard__footer">
+           <div class="maincard__button">
+            <a href="#formsection" class="scrollTo btn_main">Стать клиентом</a>
+           </div>
+          </div><!-- /.maincard__footer -->
+         </div><!-- /.maincard__container -->
+         <div class="maincard__image">
+          <img src="img/b2b_services_connect.webp" width="409" height="307" fetchpriority="high" alt="Способы подключения к НБКИ">
+         </div><!-- /.maincard__image -->
+
+        </div><!-- /.maincard__wrapper -->
+       </div>
+
+      </div><!-- /.container -->
+     </div><!-- /.mainblock -->
+    </div>
+    
+        <section class="sectiontabs p-32-0 pb-0 mob-p-20-0">
+          <div class="container">
+            <h2>Решения для&nbsp;вашего бизнеса</h2>
+          </div><!-- /.container -->
+          <div class="solutionsgrid onlyMobile">
+            <div class="container">
+
+              <div class="solutionsgrid__items">
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/PD2_sm.webp" alt="PD2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Кредитные отчеты</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/Take2_sm.webp" alt="Take2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Скоринги</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/Reports2_sm.webp" alt="Reports2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Сигнальные отчеты</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+                <div class="solutionsgrid__item">
+                  <a href="#" class="solutionsgrid__card">
+                    <div class="solutionsgrid__image">
+                      <img loading="lazy" src="img/BI2_sm.webp" alt="BI2_sm" width="150" height="150">
+                    </div>
+                    <div class="solutionsgrid__title">Аналитика</div>
+                  </a>
+                </div><!-- /.solutionsgrid__item -->
+              </div><!-- /.solutionsgrid__items -->
+            </div><!-- /.container -->
+
+          </div><!-- /.onlyMobile -->
+          <div class="tabsblock onlyDesktop" data-tabs="tabsblock">
+            <div class="tabsblock__header">
+              <div class="container">
+                <div class="tabsblock__nav">
+                  <ul data-tabsheader="tabsblock" role="tablist" aria-label="Solutions">
+                    <li data-tabsbutton="tabsblock" class="active" role="tab" aria-selected="true"
+                      aria-controls="solutionpanel-1" id="solutiontab-1" tabindex="0">Все сервисы</li>
+                    <li data-tabsbutton="tabsblock" role="tab" aria-selected="false" aria-controls="solutionpanel-2"
+                      id="solutiontab-2" tabindex="1">Аналитика НБКИ</li>
+                    <li data-tabsbutton="tabsblock" role="tab" aria-selected="false" aria-controls="solutionpanel-3"
+                      id="solutiontab-3" tabindex="2">Банкам и МФИ</li>
+                    <li data-tabsbutton="tabsblock" role="tab" aria-selected="false" aria-controls="solutionpanel-4"
+                      id="solutiontab-4" tabindex="3">Страховым компаниям</li>
+                    <li data-tabsbutton="tabsblock" role="tab" aria-selected="false" aria-controls="solutionpanel-5"
+                      id="solutiontab-5" tabindex="4">ЖКУ и услуги связи</li>
+                    <li data-tabsbutton="tabsblock" role="tab" aria-selected="false" aria-controls="solutionpanel-6"
+                      id="solutiontab-6" tabindex="5">Лизинг</li>
+                  </ul>
+                  <div class="tabslock__arrows" data-sliderarrows="solutions">
+
+                  </div><!-- /.tabslock_arrows -->
+                </div><!-- /.tabsblock__nav -->
+              </div><!-- /.contaienr -->
+            </div><!-- /.tabsblock__header -->
+            <div class="tabsblock__content">
+              <div class="tabsblock__items">
+                <div class="tabsblock__item active" data-tabscontent="tabsblock" id="solutionpanel-1" role="tabpanel"
+                  aria-labelledby="solutiontab-1" tabindex="0">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">BI аналитика <br> НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Аналитика кредитного рынка</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Кредитные отчеты для&nbsp;банков и МФИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">ССП и самозапрет на кредиты</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Скоринги НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сигнальные отчеты — триггеры НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Верификация данных заемщика</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Прескоринг заявок</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Скоринг <br> банкротства</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сегментация клиентской базы</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Кредитные отчеты и ССП</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Услуги НБКИ для&nbsp;ЖКУ и услуг связи</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">НБКИ для&nbsp;лизинговых компаний</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                <div class="tabsblock__item " data-tabscontent="tabsblock" id="solutionpanel-2" role="tabpanel"
+                  aria-labelledby="solutiontab-2" tabindex="1">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">BI аналитика <br> НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Аналитика кредитного рынка</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                <div class="tabsblock__item " data-tabscontent="tabsblock" id="solutionpanel-3" role="tabpanel"
+                  aria-labelledby="solutiontab-3" tabindex="2">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Кредитные отчеты для&nbsp;банков и МФИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">ССП и самозапрет на кредиты</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Скоринги НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сигнальные отчеты — триггеры НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Верификация данных заемщика</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Прескоринг заявок</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Скоринг <br> банкротства</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сегментация клиентской базы</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                <div class="tabsblock__item " data-tabscontent="tabsblock" id="solutionpanel-4" role="tabpanel"
+                  aria-labelledby="solutiontab-4" tabindex="3">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Кредитные отчеты и ССП</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Сигнальные отчеты — триггеры НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Скоринги НБКИ</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Верификация данных заемщика</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                <div class="tabsblock__item " data-tabscontent="tabsblock" id="solutionpanel-5" role="tabpanel"
+                  aria-labelledby="solutiontab-5" tabindex="4">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">Услуги НБКИ для&nbsp;ЖКУ и услуг связи</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+                <div class="tabsblock__item " data-tabscontent="tabsblock" id="solutionpanel-6" role="tabpanel"
+                  aria-labelledby="solutiontab-6" tabindex="5">
+                  <div class="solutions">
+                    <div class="solutions__wrapper">
+                      <div class="solutions__slider" data-slider="solutions">
+
+                        <div class="solutions__slide">
+                          <a href="#" class="solutioncard">
+                            <div class="solutioncard__title">НБКИ для&nbsp;лизинговых компаний</div>
+                            <div class="solutioncard__icon">
+
+                            </div>
+                          </a>
+                        </div>
+
+
+                      </div><!-- /.solutions__slider -->
+                    </div><!-- /.solutions__wrapper -->
+                  </div><!-- /.solutions -->
+                </div>
+              </div><!-- /.tabsblock__items -->
+            </div><!-- /.tabsblock__content -->
+          </div><!-- /.tabsblock -->
+        </section>
+
+        <section class="sectionbanner p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="frameblock">
+              <div class="frameblock__wrapper">
+                <div class="frameblock__main">
+                  <div class="frameblock__content">
+                    <div class="frameblock__top">
+                      <h2 class="frameblock__title">Способы подключения к&nbsp;НБКИ</h2>
+                      <div class="frameblock__text">
+                        <p>Подберите решение, делающее информационный обмен<br> комфортным и экономически целесообразным
+                        </p>
+                      </div>
+                    </div>
+                    <div class="frameblock__footer">
+                      <div class="frameblock__buttons"><a href="#" class="btn_main btn_main_light">Подробнее</a></div>
+                    </div><!-- /.frameblock__footer -->
+                  </div><!-- /.frameblock__contents -->
+                </div><!-- /.frameblock__main -->
+                <div class="frameblock__image onlyDesktop">
+                  <img loading="lazy" src="img/image60.webp" alt="Способы подключения к НБКИ"  width="401" height="307">
+                </div><!-- /.frameblock__image -->
+                <div class="frameblock__image onlyMobile" style="height: 260px; margin-top: -20px;">
+                  <img loading="lazy" src="img/image60.webp" alt="Способы подключения к НБКИ" width="401" height="307">
+                </div><!-- /.frameblock__image -->
+              </div><!-- /.frameblock__wrapper -->
+            </div><!-- /.frameblock -->
+          </div><!-- /.container -->
+        </section>
+
+        <section class="sectiontags p-32-0 mob-p-20-0">
+          <div class="container">
+            <h2>С кем мы работаем</h2>
+            <div class="subtitle mb-32 mob-mb-40 mob-center ">
+              <p>Отраслевые решения для&nbsp;вашего бизнеса</p>
+            </div><!-- /.subtitle -->
+            <div class="categories__items ">
+              <div class="categories__item">
+                <a href="#">Банки</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Микрофинансовые институты</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Ломбарды</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Цессионарии</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Маркетплейсы</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Ипотечные агенты</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Страховые компании</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Коллекторские агентства</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Управляющие компании ЖКХ</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Лизинговые или факторинговые компании</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Арбитражные управляющие</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Операторы инвестиционных платформ</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Специализированные финансовые общества</a>
+              </div>
+              <div class="categories__item">
+                <a href="#">Уполномоченные ДОМ.РФ компании</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     <section class="sectionbanner p-32-0 mob-p-20-0">
+          <div class="container">
+            <div class="frameblock" id="frameblock__bi">
+              <div class="frameblock__wrapper">
+                <div class="frameblock__main">
+                  <div class="frameblock__content">
+                    <div class="frameblock__top">
+                      <div class="maincard__tags">
+                        <div class="maincard__tag"><span>Бесплатная базовая версия</span></div>
+                      </div>
+                      <h2 class="frameblock__title">BI аналитика НБКИ</h2>
+                      <div class="frameblock__text mb-30">
+                        <p>Весь рынок кредитования в цифрах: дашборды <br> от этапа кредитных заявок до обслуживания
+                          долга</p>
+                      </div>
+                    </div>
+                    <div class="frameblock__footer">
+                      <div class="frameblock__buttons"><a href="#" class="btn_main mob-full">Запросить демо</a></div>
+                    </div><!-- /.frameblock__footer -->
+                  </div><!-- /.frameblock__contents -->
+                </div><!-- /.frameblock__main -->
+                <div class="frameblock__image onlyDesktop">
+                  <img loading="lazy" src="img/BI1_frameblock.webp" alt="BI аналитика НБКИ" width="470" height="352">
+                </div><!-- /.frameblock__image -->
+                <div class="frameblock__image onlyMobile" style="height: 350px;">
+                  <img loading="lazy" src="img/BI1_mobile.webp" alt="BI аналитика НБКИ" width="1108" height="831">
+                </div><!-- /.frameblock__image -->
+              </div><!-- /.frameblock__wrapper -->
+            </div><!-- /.frameblock -->
+          </div><!-- /.container -->
+        </section>
+
+      
+
+      <%= _.template(require('../includes/footer.html').default)(data) %>
