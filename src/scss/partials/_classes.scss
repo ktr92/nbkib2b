@@ -50,7 +50,7 @@ a {
   width: 100%;
 }
 .mb-24 {
-  margin-bottom: 24px;
+  margin-bottom: 24px !important;
 }
 
 .m-32-0 {
@@ -233,6 +233,9 @@ i {
 .flex_column {
   flex-direction: column;
 }
+.mt-0 {
+  margin-top: 0 !important
+}
 @include min-medium-screen {
   .card_24_22 {
 
@@ -404,5 +407,8 @@ letter-spacing: -0.04em;
 }
 .card_custom {
           background-size: 257px;        background-position: right -43px bottom;
+}
+.card.offercard_md {
+  padding: 16px;
 }
 }

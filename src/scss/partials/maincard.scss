@@ -622,4 +622,10 @@ h2.maincard__title {
       transform: translateY(-35px);
     }
   }
+  #mainblock_connect {
+    .maincard__image img {
+              max-width: 335px;
+              bottom: 70px;
+    }
+  }
 }

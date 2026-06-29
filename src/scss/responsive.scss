@@ -763,7 +763,18 @@
       }
     }
   }
-/*   .btn_main_icon-bi {
+  .frametext {
+    margin: 0;
+    width: 100%;
+    padding: 16px;
+  }
+  .text .frametext {
+    p {
+      font-size: 14px;
+      line-height: 143%;
+    }
+  }
+  /*   .btn_main_icon-bi {
     display: inline-block;
     max-width: fit-content !important;
     min-width: fit-content !important;
