@@ -53,7 +53,7 @@ h2.maincard__title {
   margin-bottom: 20px;
 }
 .maincard__title_lg {
-   font-weight: 500;
+  font-weight: 500;
   font-size: 32px;
   line-height: 120%;
   letter-spacing: -0.03em;
@@ -122,7 +122,7 @@ h2.maincard__title {
   }
   .maincard__title_lg {
     font-size: 24px;
-line-height: 120%;
+    line-height: 120%;
   }
   .maincard__text {
     font-weight: 400;
@@ -242,13 +242,6 @@ line-height: 120%;
 }
 .maincard__text + .maincard__tags {
   margin-top: 20px;
-}
-
-.maincard_custom {
-  .maincard__block {
-    max-width: 620px;
-    min-width: 620px;
-  }
 }
 
 @include medium-screen {
@@ -421,26 +414,26 @@ line-height: 120%;
 }
 
 @include min-medium-screen {
-/*   .maincard_abs { */
+  /*   .maincard_abs { */
 
-    .maincard__wrapper {
-      position: relative;
-      min-height: 427px;
-    }
-    .maincard__container {
-      position: relative;
-      z-index: 1;
-    }
-    .maincard__image img {
-      max-width: unset;
-      position: absolute;
-      right: 0;
-      max-width: unset;
-      bottom: 0;
-      max-height: unset;
-      z-index: 0;
-    }
-/*   } */
+  .maincard__wrapper {
+    position: relative;
+    min-height: 427px;
+  }
+  .maincard__container {
+    position: relative;
+    z-index: 1;
+  }
+  .maincard__image img {
+    max-width: unset;
+    position: absolute;
+    right: 0;
+    max-width: unset;
+    bottom: 0;
+    max-height: unset;
+    z-index: 0;
+  }
+  /*   } */
 
   .maincard__image img {
     max-width: unset;
@@ -600,9 +593,26 @@ line-height: 120%;
       /* transform: translateX(-30px); */
     }
   }
+  .maincard_custom .maincard__block {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .maincard_custom {
+    .maincard__container {
+      padding: 0;
+    }
+    .maincard__wrapper {
+      height: unset !important;
+      padding: 0;
+      background: none;
+    }
+    .maincard__block {
+      margin-top: 40px;
+    }
+  }
   #mainblock_bi {
     .maincard__image img {
-              transform: translateY(-42px);
+      transform: translateY(-42px);
     }
   }
   #mainblock_utility {
@@ -643,8 +653,8 @@ line-height: 120%;
   }
   #mainblock_connect {
     .maincard__image img {
-              max-width: 335px;
-              bottom: 70px;
+      max-width: 335px;
+      bottom: 70px;
     }
   }
 }

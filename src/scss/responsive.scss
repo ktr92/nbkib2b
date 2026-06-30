@@ -774,6 +774,35 @@
       line-height: 143%;
     }
   }
+  .stepform {
+    height: unset;
+  }
+
+  .stepform {
+    padding: 30px 16px;
+  }
+   .breadcrumbs_top{
+    order: -1;
+    padding-bottom: 12px;
+   }
+   .stepform__buttons {
+    flex-wrap: wrap;
+   }
+   .stepform__navigation{
+    order: -1;
+    width: 100%;
+    margin-bottom: 13px;
+   }
+   [data-stepbutton="next"] {
+    width: 100%;text-align: center;
+    span {
+      justify-content: center;
+      margin: auto;
+    }
+   }
+   .stepform__inputs {
+    margin-bottom: 24px;
+   }
   /*   .btn_main_icon-bi {
     display: inline-block;
     max-width: fit-content !important;
