@@ -407,6 +407,8 @@ h2.maincard__title {
     }
   }
 }
+
+
 @include small-screen {
   .maincard__wrapper {
     height: 541px !important;
@@ -461,6 +463,23 @@ h2.maincard__title {
       background: none;
       box-shadow: none;
       border: none;
+    }
+  }
+  #mainblock_become_success {
+    .maincard__title {
+      font-size: 44px;
+      line-height: 120%;
+    }
+    .maincard__container {
+      min-height: 310px;
+    }
+    .maincard__wrapper{
+      min-height: 310px;
+    }
+    .maincard__image img {
+      bottom: unset;
+        top: 50%;
+        transform: translateY(-50%);
     }
   }
   #mainblock_bi {
@@ -608,6 +627,12 @@ h2.maincard__title {
     }
     .maincard__block {
       margin-top: 40px;
+    }
+  }
+  #mainblock_become_success  {
+    .maincard__image img {
+      transform: translateY(-100px);
+      max-width: 335px;
     }
   }
   #mainblock_bi {

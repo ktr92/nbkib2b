@@ -803,6 +803,22 @@
    .stepform__inputs {
     margin-bottom: 24px;
    }
+   [data-stepbutton] {
+    font-weight: 400;
+    padding: 0 18px;
+   }
+   .check-block label:before {
+    width: 20px;
+    height: 20px;
+   }
+   .check-block_big label {
+    font-size: 14px;
+line-height: 171%;
+   }
+   
+   .stepform__title {
+    font-size: 15px;
+   }
   /*   .btn_main_icon-bi {
     display: inline-block;
     max-width: fit-content !important;
