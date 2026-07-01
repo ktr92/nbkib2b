@@ -83,6 +83,9 @@ h2.maincard__title {
   }
 }
 .maincard_sm {
+  .maincard__container {
+    padding: 0;
+  }
   .maincard__wrapper {
     padding: 24px 32px;
   }
@@ -105,12 +108,7 @@ h2.maincard__title {
   .maincard__container {
     padding: 50px;
   }
-  /* .maincard__content {
-    max-width: 502px;
-    min-width: 502px;
-  } */
   .maincard__container {
-    /* max-width: calc(502px + 50px + 50px); */
   }
   h1.maincard__title {
     font-weight: 500;
@@ -418,7 +416,7 @@ h2.maincard__title {
 @include min-medium-screen {
   /*   .maincard_abs { */
 
-  .maincard__wrapper {
+ .maincard_full .maincard__wrapper {
     position: relative;
     min-height: 427px;
   }
@@ -443,7 +441,7 @@ h2.maincard__title {
   .maincard__wrapper {
     overflow: hidden;
   }
-  .maincard__container {
+   .maincard_full .maincard__container {
     min-height: 370px;
   }
   .maincard__image {
@@ -503,10 +501,6 @@ h2.maincard__title {
     .maincard__image img {
       transform: translateX(-43px);
     }
-    /*  .maincard__content {
-      max-width: 746px;
-      min-width: 746px;
-    } */
   }
   #mainblock_pdscore {
     .maincard__image {
@@ -518,10 +512,6 @@ h2.maincard__title {
     }
   }
   #mainblock_insurance {
-    /* .maincard__content {
-      max-width: 541px;
-      min-width: 541px;
-    } */
     .maincard__container {
       padding-right: 0;
     }
@@ -532,26 +522,14 @@ h2.maincard__title {
     }
   }
   #mainblock_marketing_diversification {
-    /* .maincard__content {
-      max-width: 600px;
-      min-width: 600px;
-    } */
     .maincard__image {
       justify-content: center;
       transform: translateX(-122px);
     }
   }
   #mainblock_marketingsignals {
-    /*  .maincard__content {
-      max-width: 600px;
-      min-width: 600px;
-    } */
   }
   #mainblock_ko {
-    /* .maincard__content {
-      max-width: 547px;
-      min-width: 547px;
-    } */
     .maincard__container {
       padding-bottom: 32px;
     }
@@ -567,19 +545,12 @@ h2.maincard__title {
   }
 
   #mainblock_marketingsegment {
-    /* .maincard__content {
-      max-width: 600px;
-      min-width: 600px;
-    } */
     .maincard__image img {
       max-width: unset;
     }
   }
   #mainblock_signals {
-    /* .maincard__content {
-      max-width: 532px;
-      min-width: 532px;
-    } */
+  
     .maincard__container {
       padding-bottom: 32px;
     }
@@ -680,6 +651,11 @@ h2.maincard__title {
     .maincard__image img {
       max-width: 335px;
       bottom: 70px;
+    }
+  }
+  #mainblock_bank {
+    .maincard__image img {
+          transform: translateX(-33px);
     }
   }
 }

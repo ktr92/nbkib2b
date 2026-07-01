@@ -23,6 +23,9 @@
 .frameblock__content {
   position: relative;
   min-height: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .frameblock__title {
   font-weight: 500;
@@ -306,6 +309,11 @@
       br {
         display: block;
       }
+    }
+  }
+  #frameblock_b2b_home_white {
+    .frameblock__footer {
+      position: static;
     }
   }
 }
