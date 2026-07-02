@@ -819,6 +819,19 @@ line-height: 171%;
    .stepform__title {
     font-size: 15px;
    }
+   .offers__items_sm_mobile .offercard {
+    height: 100%;
+   }
+   .offers__items_sm_mobile .offercard__content {
+    justify-content: flex-start;
+   }
+   .offercard.card.flex.content-between.mob-flexwrap {
+    height: 100%;
+
+    .content_h {
+      height: unset;
+    }
+   }
   /*   .btn_main_icon-bi {
     display: inline-block;
     max-width: fit-content !important;

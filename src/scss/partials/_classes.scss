@@ -344,6 +344,9 @@ letter-spacing: -0.04em;
   .mob-mb-12 {
     margin-bottom: 12px !important
   }
+  .mob-static{
+    position: static !important;
+  }
   .mob-merge {
     gap: 0;
     background: #fff;

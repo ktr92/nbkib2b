@@ -415,10 +415,15 @@ h2.maincard__title {
 
 @include min-medium-screen {
   /*   .maincard_abs { */
+  .maincard_427 {
+    .maincard__container {
+      min-height: 427px !important;
+    }
 
+  }
  .maincard_full .maincard__wrapper {
     position: relative;
-    min-height: 427px;
+   /*  min-height: 427px; */
   }
   .maincard__container {
     position: relative;
@@ -434,7 +439,9 @@ h2.maincard__title {
     z-index: 0;
   }
   /*   } */
-
+.maincard_imgstatic .maincard__image img {
+    position: static;
+  }
   .maincard__image img {
     max-width: unset;
   }
@@ -462,6 +469,16 @@ h2.maincard__title {
       box-shadow: none;
       border: none;
     }
+  }
+  #mainblock_marketingsignals {
+    .maincard__image img {
+      max-width: 502px;
+    }
+  }
+  #mainblock_loanpv {
+        .maincard__image img {
+          transform: translateX(-79px);
+        }
   }
   #mainblock_become_success {
     .maincard__title {
@@ -496,11 +513,17 @@ h2.maincard__title {
   }
   #mainblock_risks_fssp {
     .maincard__wrapper {
-      align-items: center;
+      align-items: flex-start;
     }
-    .maincard__image img {
+
+    .maincard__image.onlyDesktop img {
+      bottom: unset;
+      top: 50%;
+      transform:  translateY(-50%) translateX(-43px);
+    }
+    /* .maincard__image img {
       transform: translateX(-43px);
-    }
+    } */
   }
   #mainblock_pdscore {
     .maincard__image {
@@ -533,9 +556,7 @@ h2.maincard__title {
     .maincard__container {
       padding-bottom: 32px;
     }
-    .maincard__image img {
-      transform: translateX(-80px);
-    }
+  
   }
   #mainblock_ins_ssp_szp {
     .maincard__content {
@@ -555,7 +576,7 @@ h2.maincard__title {
       padding-bottom: 32px;
     }
     .maincard__image {
-      transform: translateX(-42px);
+     
 
       img {
         max-width: unset;
@@ -564,9 +585,9 @@ h2.maincard__title {
   }
 
   #mainblock_loan {
-    .maincard__image.onlyDesktop {
+    .maincard__image.onlyDesktop img {
       max-width: 470px;
-      margin-right: 50px;
+      /* margin-right: 50px; */
     }
   }
 }
@@ -602,13 +623,13 @@ h2.maincard__title {
   }
   #mainblock_become_success  {
     .maincard__image img {
-      transform: translateY(-100px);
+    /*   transform: translateY(-100px); */
       max-width: 335px;
     }
   }
   #mainblock_bi {
     .maincard__image img {
-      transform: translateY(-42px);
+    /*   transform: translateY(-42px); */
     }
   }
   #mainblock_utility {
@@ -618,23 +639,23 @@ h2.maincard__title {
   }
   #mainblock_lising {
     .maincard__image img {
-      transform: translateY(25px);
+      /* transform: translateY(25px); */
     }
   }
   #mainblock_risks_fssp {
     .maincard__image img {
-      transform: translateY(-62px);
+      transform: translateY(-32px);
     }
   }
   #mainblock_signals {
     .maincard__image img {
-      max-width: 404px;
-      transform: translateY(25px) translateX(-30px);
+     /*  max-width: 404px; */
+     transform: translateY(30px);
     }
   }
   #mainblock_ko {
     .maincard__image img {
-      transform: translateY(-27px);
+     /*  transform: translateY(-27px); */
     }
   }
   #mainblock_insurance {
@@ -644,7 +665,7 @@ h2.maincard__title {
   }
   #mainblock_marketing_diversification {
     .maincard__image.onlyMobile {
-      transform: translateY(-35px);
+     /*  transform: translateY(-35px); */
     }
   }
   #mainblock_connect {
@@ -655,7 +676,54 @@ h2.maincard__title {
   }
   #mainblock_bank {
     .maincard__image img {
-          transform: translateX(-33px);
+          transform: translateX(-33px) ;
     }
+    .maincard__title {
+      margin: 0 !important;
+    }
+    .maincard__container{
+      padding-bottom: 0;
+    }
+  }
+    #mainblock_ko {
+  
+    .maincard__image img {
+    /*   transform: translateY(-90px); */
+    }
+  }
+  #mainblock_digital_score {
+    .maincard__wrapper {
+      height: 611px !important;
+    }
+    .maincard__image img {
+      transform: translateY(30px);
+    }
+  }
+  #mainblock_risks_fssp {
+    .maincard__wrapper {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+    }
+    
+  }
+
+  #mainblock_loan, #mainblock_marketingsignals {
+    .maincard__image {
+      img {
+        max-width: 470px;
+      }
+    }
+  }
+  #mainblock_bi {
+    .maincard__image {
+      img[src="img/BI1_mainblock.webp"] {
+        max-width: 418px;
+      }
+    }
+  }
+  .maincard__image img {
+    position: absolute;
+    bottom: 0;
   }
 }

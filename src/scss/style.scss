@@ -936,6 +936,10 @@ input.error_input,
   align-items: center;
   justify-content: space-between;
 }
+* {
+  font-family: var(--font-family);
+
+}
 .btn_submit {
   border: none;
   padding: 12px 30px;
@@ -2283,6 +2287,14 @@ h1.innerpageh1 {
 .offercard__top  {
   min-height: 43px;
 }
+
+.tabsblock__content {
+    margin: 0 auto;
+    max-width: 1172px;
+    padding: 0 16px;
+    width: 100%;
+}
+
 @include min-medium-screen {
   .h_280 {
     height: 280px;
