@@ -725,5 +725,8 @@ h2.maincard__title {
   .maincard__image img {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }

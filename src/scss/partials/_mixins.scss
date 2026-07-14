@@ -30,24 +30,24 @@
   }
 }
 @mixin medium-large-screen() {
-  @media (min-width: 1000px) and (max-width: 1180px) {
+  @media (min-width: 1024px) and (max-width: 1180px) {
     @content;
   }
 }
 
 @mixin medium-screen() {
-  @media only screen and (max-width: 999px) {
+  @media only screen and (max-width: 1023px) {
     @content;
   }
 }
 @mixin min-medium-screen() {
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin small-screen() {
-  @media only screen and (max-width: 999px) {
+  @media only screen and (max-width: 1023px) {
     @content;
   }
 }

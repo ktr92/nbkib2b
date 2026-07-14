@@ -3,9 +3,25 @@
 }
 /* laptop */
 @include large-screen {
+  .tabsblock__nav ul li {
+    font-size: 16px;
+  }
+  .tabsblock__nav ul {
+    gap: 16px;
+  }
 }
 /* laptop only */
 @include medium-large-screen {
+  .offers__item  .card {
+    padding-left: 24px !important;
+    padding-right: 24px !important; 
+  }
+  .offercard__top  .title {
+    font-size: 20px !important;
+  }
+  .offers__item_sm .title_md {
+    font-size: 16px !important;
+  }
   .footer__card {
     max-width: 300px;
     min-width: 300px;
@@ -467,6 +483,7 @@
     }
   }
   .breadcrumbs ul {
+    align-items: center;
     display: flex;
     white-space: nowrap;
   }
@@ -831,6 +848,13 @@ line-height: 171%;
     .content_h {
       height: unset;
     }
+   }
+   .tablecolor__cell.tablecolor__cell_xs {
+        width: calc(100% - 31px);
+    overflow: hidden;
+   }
+   .tablecolor__cell_s2:after {
+        height: calc(300% + 30px);
    }
   /*   .btn_main_icon-bi {
     display: inline-block;

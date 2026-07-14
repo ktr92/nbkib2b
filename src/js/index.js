@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
     //lazyLoadSrc("iframe");
 
     //hideAnotherModal();
-    //statsAnimate(".stats", ".stats__title span");
+    statsAnimate(".stats", ".stats__numb");
     initToggleClick();
     solutionsSlider();
 
@@ -85,6 +85,8 @@ window.addEventListener("load", () => {
       dots: true,
       appendDots: $(".mainblock__mobile .slider-controls"),
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 1000,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -242,7 +244,9 @@ window.addEventListener("load", () => {
   function solutionsSlider() {
     $('[data-slider="solutions"]').each(function (index) {
       $(this).attr("data-sliderindex", index);
-      $(this).slick({
+      const slides = $(this).find('.solutions__slide').length;
+      if (slides > 4) {
+        $(this).slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
@@ -267,6 +271,8 @@ window.addEventListener("load", () => {
           },
         ],
       });
+      }
+      
     });
     switchArrows();
   }
