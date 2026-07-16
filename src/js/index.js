@@ -576,5 +576,23 @@ window.addEventListener("load", () => {
     });
   }
 
+   
+
   initFE();
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  ;(function nbsp() {
+    const elements = document.querySelectorAll("p, h1, h2, h3, li, p a, p span");
+    
+    elements.forEach((el) => {
+      el.innerHTML = el.innerHTML.replace(/\s+/g, " ").trim();       
+      el.innerHTML = el.innerHTML.replace(
+        /(\s|^)(в|во|на|о|об|со|ко|до|из|к|по|за|от|у|и|а|но|да|или|ли|бы|при|про|около|чтобы|что|так|как|ни|не|кто|над|под|с|перед|без|для)\s/gi,
+        "$1$2&nbsp;",
+      ); 
+      el.innerHTML = el.innerHTML.replace(/(&nbsp;)([а-яёА-ЯЁ]{1,3})\s/g, '$1$2&nbsp;');
+    });
+  })();
+})
