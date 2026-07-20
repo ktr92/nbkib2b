@@ -1,4 +1,5 @@
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
+
   function initFE() {
     mainSlider();
     initTelMask();
@@ -21,6 +22,113 @@ window.addEventListener("load", () => {
     formsInit();
     initFlip();
     modalInit();
+    customScrollbar();
+    
+  }
+
+  function customScrollbar() {
+    if (document.querySelector(".custom-scrollbar")) {
+   
+      const content = document.querySelector(".select-wrapper");
+      const thumb = document.getElementById("customThumb");
+      const scrollbar = document.getElementById("customScrollbar");
+
+      let isDragging = false;
+      let dragStartY = 0;
+      let startScrollTop = 0;
+
+      let animationFrameId = null; 
+
+      function updateThumb() {
+        if (animationFrameId) {
+          cancelAnimationFrame(animationFrameId);
+        }
+
+        animationFrameId = requestAnimationFrame(() => {
+          const containerHeight = content.clientHeight;
+          const contentHeight = content.scrollHeight;
+          const scrollTop = content.scrollTop;
+
+          const thumbHeight = Math.max(
+            (containerHeight * containerHeight) / contentHeight,
+            40,
+          );
+          thumb.style.height = thumbHeight - 20 + "px";
+
+          const maxScrollTop = contentHeight - containerHeight;
+          const maxThumbTop = containerHeight - thumbHeight;
+          const thumbTop = (scrollTop / maxScrollTop) * maxThumbTop;
+
+          thumb.style.transform = `translateY(${thumbTop}px)`;
+
+          thumb.style.display =
+            contentHeight > containerHeight ? "block" : "none";
+
+          animationFrameId = null;
+        });
+      }
+      
+      document.querySelector('.select-selected').addEventListener('click', function() {
+        updateThumb(); 
+      })
+      window.addEventListener("load", () => {
+        updateThumb(); 
+      });
+      content.addEventListener("scroll", updateThumb);
+
+      thumb.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        dragStartY = e.clientY;
+        startScrollTop = content.scrollTop;
+        document.body.style.userSelect = "none";
+        e.preventDefault();
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        const containerHeight = content.clientHeight;
+        const contentHeight = content.scrollHeight;
+        const thumbHeight = thumb.offsetHeight;
+        const maxScrollTop = contentHeight - containerHeight;
+        const maxThumbTop = containerHeight - thumbHeight;
+
+        const deltaY = e.clientY - dragStartY;
+        const thumbRatio = deltaY / maxThumbTop; 
+        const newScrollTop = startScrollTop + thumbRatio * maxScrollTop;
+
+        content.scrollTop = Math.max(0, Math.min(newScrollTop, maxScrollTop));
+      });
+
+      document.addEventListener("mouseup", () => {
+        if (isDragging) {
+          isDragging = false;
+          document.body.style.userSelect = "";
+        }
+      });
+
+      scrollbar.addEventListener("mousedown", (e) => {
+        if (e.target !== thumb) {
+          const rect = scrollbar.getBoundingClientRect();
+          const clickY = e.clientY - rect.top;
+          const thumbHeight = thumb.offsetHeight;
+          const containerHeight = content.clientHeight;
+          const contentHeight = content.scrollHeight;
+
+          const maxScrollTop = contentHeight - containerHeight;
+          const maxThumbTop = containerHeight - thumbHeight;
+
+          let newThumbTop = clickY - thumbHeight / 2;
+          newThumbTop = Math.max(0, Math.min(maxThumbTop, newThumbTop));
+
+          const thumbRatio = newThumbTop / maxThumbTop;
+          const newScrollTop = thumbRatio * (contentHeight - containerHeight);
+          content.scrollTop = newScrollTop;
+        }
+      });
+
+      
+   
+  }
   }
 
   function initFlip() {
@@ -51,30 +159,30 @@ window.addEventListener("load", () => {
     y = $(x).find("[minlength]");
     for (i = 0; i < y.length; i++) {
       if (y[i].value < +$(y).attr("minlength")) {
-        y[i].className += " error_input";
+        y[i].closest('div').className += " error_input";
         valid = false;
       } else {
-        y[i].classList.remove("error_input");
+        y[i].closest('div').classList.remove("error_input");
       }
     }
 
     let sel = $(x).find("select.required");
     for (i = 0; i < sel.length; i++) {
       if (sel[i].value == "") {
-        sel[i].className += " error_input";
+        sel[i].closest('div').className += " error_input";
         valid = false;
       } else {
-        sel[i].classList.remove("error_input");
+        sel[i].closest('div').classList.remove("error_input");
       }
     }
 
     let check = $(x).find("#idCorpCheck");
     for (i = 0; i < check.length; i++) {
       if (!check[i].checked) {
-        check[i].className += " error_input";
+        check[i].closest('div').className += " error_input";
         valid = false;
       } else {
-        check[i].classList.remove("error_input");
+        check[i].closest('div').classList.remove("error_input");
       }
     }
     return valid; // return the valid status
@@ -248,7 +356,7 @@ window.addEventListener("load", () => {
       if (slides > 4) {
         $(this).slick({
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         variableWidth: true,
         infinite: false,
         swipe: true,
@@ -295,6 +403,7 @@ window.addEventListener("load", () => {
       bb = document.createElement("DIV");
       b.setAttribute("class", "select-items select-hide");
       bb.setAttribute("class", "select-wrapper");
+      
       b.appendChild(bb);
       for (j = 0; j < ll; j++) {
         /* For each option in the original select element,
@@ -318,6 +427,7 @@ window.addEventListener("load", () => {
           for (i = 0; i < sl; i++) {
             if (s.options[i].innerHTML == this.innerHTML) {
               s.selectedIndex = i;
+              s.dispatchEvent(new Event('change'));
               h.innerHTML = this.innerHTML;
               y =
                 this.parentNode.parentNode.getElementsByClassName(
@@ -327,6 +437,7 @@ window.addEventListener("load", () => {
               for (k = 0; k < yl; k++) {
                 y[k].removeAttribute("class");
               }
+              s.options[i].setAttribute('selected', '')
               this.setAttribute("class", "same-as-selected");
               h.classList.add("active");
               break;
@@ -337,6 +448,10 @@ window.addEventListener("load", () => {
         bb.appendChild(c);
       }
       x[i].appendChild(b);
+      b.insertAdjacentHTML('beforeEnd', `<div class="custom-scrollbar" id="customScrollbar">
+        <div class="custom-thumb" id="customThumb"></div>
+      </div>
+      </div>`)
       a.addEventListener("click", function (e) {
         /* When the select box is clicked, close any other select boxes,
         and open/close the current select box: */
@@ -344,6 +459,7 @@ window.addEventListener("load", () => {
         closeAllSelect(this);
         this.nextSibling.classList.toggle("select-hide");
         this.classList.toggle("select-arrow-active");
+        
       });
     }
 
