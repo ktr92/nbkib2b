@@ -369,10 +369,15 @@ main {
   color: #05f;
 
   &:hover {
-    background: #05f;
-    color: #fff;
+   color: #0048d9;
+    background: rgba(0, 85, 255, 0.2);
+    border-color: #37f;
   }
 }
+.footercard__icons a:hover path {
+  fill: #05f
+}
+
 .btn_lk {
   span {
     padding-left: 20px;
@@ -429,6 +434,7 @@ button.btn_main {
     /*  background: rgba(0, 85, 255, 0.2); */
     color: #0048d9;
     background: rgba(0, 85, 255, 0.2);
+    border-color: #37f;
   }
 }
 
@@ -2388,6 +2394,9 @@ h1.innerpageh1 {
 }
 
 @include min-medium-screen {
+  .tabscenter__content.active {
+    min-height: 1280px;
+  }
   /*  [data-slider=solutions] .slick-slide {
     opacity: 0;
   } */
@@ -2486,7 +2495,7 @@ h1.innerpageh1 {
     }
 
     .offercard {
-      max-height: 710px;
+      max-height: calc(100vh - 32px);
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       height: 100vh;

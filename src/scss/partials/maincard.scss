@@ -474,6 +474,16 @@ h2.maincard__title {
       border: none;
     }
   }
+  #mainblock_risks_fssp {
+    .maincard__image  {
+      justify-content: center;
+      img {
+        top: 50%;
+        bottom: unset;
+        transform: translateY(-50%);
+      }
+    }
+  }
   #mainblock_marketingsignals {
     .maincard__image img {
       max-width: 502px;
