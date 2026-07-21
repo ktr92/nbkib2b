@@ -604,6 +604,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if ($(this).attr("data-overflow") === "body") {
         $("body").toggleClass("overflow");
       }
+      if ($(this).attr("data-toggleclick") === "mainmenu") {
+        $("body").toggleClass("menubg");
+      }
 
       switchAttribute($(this), "aria-expanded");
     });

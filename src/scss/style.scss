@@ -466,6 +466,16 @@ button.btn_main {
   font-size: 16px;
   line-height: 125%;
   color: #445371;
+  /* color: var(--atmr-fg-soft);
+font-family: Formular; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+
+}
+.menubg {
+  background: #fff !important;
 }
 
 sup {
