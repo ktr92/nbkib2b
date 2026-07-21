@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   function initFE() {
     mainSlider();
     initTelMask();
@@ -23,12 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initFlip();
     modalInit();
     customScrollbar();
-    
+    slideTabsInit();
   }
 
   function customScrollbar() {
     if (document.querySelector(".custom-scrollbar")) {
-   
       const content = document.querySelector(".select-wrapper");
       const thumb = document.getElementById("customThumb");
       const scrollbar = document.getElementById("customScrollbar");
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let dragStartY = 0;
       let startScrollTop = 0;
 
-      let animationFrameId = null; 
+      let animationFrameId = null;
 
       function updateThumb() {
         if (animationFrameId) {
@@ -67,12 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
           animationFrameId = null;
         });
       }
-      
-      document.querySelector('.select-selected').addEventListener('click', function() {
-        updateThumb(); 
-      })
+
+      document
+        .querySelector(".select-selected")
+        .addEventListener("click", function () {
+          updateThumb();
+        });
       window.addEventListener("load", () => {
-        updateThumb(); 
+        updateThumb();
       });
       content.addEventListener("scroll", updateThumb);
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const maxThumbTop = containerHeight - thumbHeight;
 
         const deltaY = e.clientY - dragStartY;
-        const thumbRatio = deltaY / maxThumbTop; 
+        const thumbRatio = deltaY / maxThumbTop;
         const newScrollTop = startScrollTop + thumbRatio * maxScrollTop;
 
         content.scrollTop = Math.max(0, Math.min(newScrollTop, maxScrollTop));
@@ -125,10 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
           content.scrollTop = newScrollTop;
         }
       });
-
-      
-   
-  }
+    }
   }
 
   function initFlip() {
@@ -159,30 +156,30 @@ document.addEventListener("DOMContentLoaded", () => {
     y = $(x).find("[minlength]");
     for (i = 0; i < y.length; i++) {
       if (y[i].value < +$(y).attr("minlength")) {
-        y[i].closest('div').className += " error_input";
+        y[i].closest("div").className += " error_input";
         valid = false;
       } else {
-        y[i].closest('div').classList.remove("error_input");
+        y[i].closest("div").classList.remove("error_input");
       }
     }
 
     let sel = $(x).find("select.required");
     for (i = 0; i < sel.length; i++) {
       if (sel[i].value == "") {
-        sel[i].closest('div').className += " error_input";
+        sel[i].closest("div").className += " error_input";
         valid = false;
       } else {
-        sel[i].closest('div').classList.remove("error_input");
+        sel[i].closest("div").classList.remove("error_input");
       }
     }
 
     let check = $(x).find("#idCorpCheck");
     for (i = 0; i < check.length; i++) {
       if (!check[i].checked) {
-        check[i].closest('div').className += " error_input";
+        check[i].closest("div").className += " error_input";
         valid = false;
       } else {
-        check[i].closest('div').classList.remove("error_input");
+        check[i].closest("div").classList.remove("error_input");
       }
     }
     return valid; // return the valid status
@@ -229,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       if ($(this).closest("[data-modal]").length) {
         $(this).closest("[data-modal]").removeClass("active");
-         $('.backdrop').removeClass('active')
+        $(".backdrop").removeClass("active");
       }
 
       return false;
@@ -352,35 +349,34 @@ document.addEventListener("DOMContentLoaded", () => {
   function solutionsSlider() {
     $('[data-slider="solutions"]').each(function (index) {
       $(this).attr("data-sliderindex", index);
-      const slides = $(this).find('.solutions__slide').length;
+      const slides = $(this).find(".solutions__slide").length;
       if (slides > 4) {
         $(this).slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        variableWidth: true,
-        infinite: false,
-        swipe: true,
-        arrows: true,
-        appendArrows: $('[data-sliderarrows="solutions"'),
-        prevArrow: `<button type="button" class="slick-arrow slick-prev" data-arrows="${index}"></button>`,
-        nextArrow: `<button type="button" class="slick-arrow slick-next" data-arrows="${index}"></button>`,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2.5,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          variableWidth: true,
+          infinite: false,
+          swipe: true,
+          arrows: true,
+          appendArrows: $('[data-sliderarrows="solutions"'),
+          prevArrow: `<button type="button" class="slick-arrow slick-prev" data-arrows="${index}"></button>`,
+          nextArrow: `<button type="button" class="slick-arrow slick-next" data-arrows="${index}"></button>`,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2.5,
+              },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1.5,
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1.5,
+              },
             },
-          },
-        ],
-      });
+          ],
+        });
       }
-      
     });
     switchArrows();
   }
@@ -403,7 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
       bb = document.createElement("DIV");
       b.setAttribute("class", "select-items select-hide");
       bb.setAttribute("class", "select-wrapper");
-      
+
       b.appendChild(bb);
       for (j = 0; j < ll; j++) {
         /* For each option in the original select element,
@@ -427,7 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
           for (i = 0; i < sl; i++) {
             if (s.options[i].innerHTML == this.innerHTML) {
               s.selectedIndex = i;
-              s.dispatchEvent(new Event('change'));
+              s.dispatchEvent(new Event("change"));
               h.innerHTML = this.innerHTML;
               y =
                 this.parentNode.parentNode.getElementsByClassName(
@@ -437,7 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
               for (k = 0; k < yl; k++) {
                 y[k].removeAttribute("class");
               }
-              s.options[i].setAttribute('selected', '')
+              s.options[i].setAttribute("selected", "");
               this.setAttribute("class", "same-as-selected");
               h.classList.add("active");
               break;
@@ -448,10 +444,13 @@ document.addEventListener("DOMContentLoaded", () => {
         bb.appendChild(c);
       }
       x[i].appendChild(b);
-      b.insertAdjacentHTML('beforeEnd', `<div class="custom-scrollbar" id="customScrollbar">
+      b.insertAdjacentHTML(
+        "beforeEnd",
+        `<div class="custom-scrollbar" id="customScrollbar">
         <div class="custom-thumb" id="customThumb"></div>
       </div>
-      </div>`)
+      </div>`,
+      );
       a.addEventListener("click", function (e) {
         /* When the select box is clicked, close any other select boxes,
         and open/close the current select box: */
@@ -459,7 +458,6 @@ document.addEventListener("DOMContentLoaded", () => {
         closeAllSelect(this);
         this.nextSibling.classList.toggle("select-hide");
         this.classList.toggle("select-arrow-active");
-        
       });
     }
 
@@ -523,22 +521,81 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function slideTabsInit() {
+      $(function () {
+    let $contents = null;
+    let currentIndex = 0;
+
+    // Изначально показываем первый
+    $('[data-slidetabs]').each(function () {
+      const $section = $(this);
+      const $items = $section.find('.tabsblock__item');
+      $items.eq(0).addClass('active').show();
+    });
+
+    // Обработчик
+    $('[data-slidetabs]').on(
+      'click',
+      '[data-slidetabsbutton]:not(.active)',
+      function () {
+        const $section = $(this).closest('[data-slidetabs]');
+        const $buttons = $section.find('[data-slidetabsbutton]');
+        const $contents = $section.find('.tabsblock__item');
+
+        const newIndex = $buttons.index(this);
+        if (newIndex === currentIndex) return;
+
+        const direction = newIndex > currentIndex ? 1 : -1; // направление
+
+        const $current = $contents.eq(currentIndex);
+        const $next = $contents.eq(newIndex);
+
+        // Обновляем названия кнопок
+        $buttons.removeClass('active');
+        $(this).addClass('active');
+
+        // Убираем display
+        $next.css('display', 'block');
+
+        // Задаем стартовые позиции
+        $next.css('transform', `translateX(${direction * 100}%)`);
+        $current.css('transform', 'translateX(0)');
+
+        // Запускаем анимацию
+        setTimeout(() => {
+          $current.css('transform', `translateX(${-direction * 100}%)`);
+          $next.css('transform', 'translateX(0)');
+        }, 20);
+
+        // После завершения анимации —
+        setTimeout(() => {
+          $current.removeClass('active').hide();
+          $next.addClass('active');
+          $current.css('transform', '');
+        }, 520);
+
+        currentIndex = newIndex;
+      }
+    );
+  });
+  }
+
   function modalInit() {
-    $('[data-modalbutton]').on('click', function(e) {
+    $("[data-modalbutton]").on("click", function (e) {
       e.preventDefault();
-      const $target = $(this).attr('data-modalbutton');
-      $(`[data-modal="${$target}"`).addClass('active')
-      $('.backdrop').addClass('active')
-    })
-    $('[data-modalclose]').on('click', function(e) {
+      const $target = $(this).attr("data-modalbutton");
+      $(`[data-modal="${$target}"`).addClass("active");
+      $(".backdrop").addClass("active");
+    });
+    $("[data-modalclose]").on("click", function (e) {
       e.preventDefault();
-      $(this).closest('[data-modal]').removeClass('active');
-      $('.backdrop').removeClass('active')
-    })
-    $('.backdrop').on('click', function(e) {
-      $('[data-modal]').removeClass('active')
-      $('.backdrop').removeClass('active')
-    })
+      $(this).closest("[data-modal]").removeClass("active");
+      $(".backdrop").removeClass("active");
+    });
+    $(".backdrop").on("click", function (e) {
+      $("[data-modal]").removeClass("active");
+      $(".backdrop").removeClass("active");
+    });
   }
 
   function switchAttribute(element, attribute) {
@@ -695,23 +752,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-   
-
   initFE();
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  (function nbsp() {
+    const elements = document.querySelectorAll(
+      "p, h1, h2, h3, li, p a, p span",
+    );
 
-document.addEventListener('DOMContentLoaded', () => {
-  ;(function nbsp() {
-    const elements = document.querySelectorAll("p, h1, h2, h3, li, p a, p span");
-    
     elements.forEach((el) => {
-      el.innerHTML = el.innerHTML.replace(/\s+/g, " ").trim();       
+      el.innerHTML = el.innerHTML.replace(/\s+/g, " ").trim();
       el.innerHTML = el.innerHTML.replace(
         /(\s|^)(в|во|на|о|об|со|ко|до|из|к|по|за|от|у|и|а|но|да|или|ли|бы|при|про|около|чтобы|что|так|как|ни|не|кто|над|под|с|перед|без|для)\s/gi,
         "$1$2&nbsp;",
-      ); 
-      el.innerHTML = el.innerHTML.replace(/(&nbsp;)([а-яёА-ЯЁ]{1,3})\s/g, '$1$2&nbsp;');
+      );
+      el.innerHTML = el.innerHTML.replace(
+        /(&nbsp;)([а-яёА-ЯЁ]{1,3})\s/g,
+        "$1$2&nbsp;",
+      );
     });
   })();
-})
+});

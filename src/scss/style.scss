@@ -56,11 +56,34 @@ img {
 [data-toggle].active {
   display: block;
 }
-[data-tabscontent] {
-  display: none;
+[data-slidetabscontent-wrapper] .tabsblock__item {
+  position: absolute; top: 0; left: 0; width: 100%; display: none;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
-[data-tabscontent].active {
-  display: block;
+[data-slidetabscontent-wrapper] {
+  position: relative;
+  height: 236px;
+  
+}
+[data-slidetabscontent-wrapper] .tabsblock__item.active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Или можно сделать только transform, если нужно */
+  display: block; /* Управлять показом отдельным классом */
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%; /* ширина для всех вкладок */
+}
+
+.tab-content {
+  min-width: 100%;
+  /* отступы и стили для содержимого */
 }
 /* [data-accordioncontent] {
   display: none;
