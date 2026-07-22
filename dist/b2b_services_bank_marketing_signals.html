@@ -1,938 +1,994 @@
-
- <!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>
-    Национальное бюро кредитных историй
-  </title>
-  <meta name="description" content="content">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-  <meta name="msapplication-navbutton-color" content="#ffffff">
-
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon"
-    href="img/apple-touch-icon-76x76.webp">
-  <link rel="apple-touch-icon" sizes="76x76"
-    href="img/apple-touch-icon-76x76.webp">
-  <link rel="apple-touch-icon" sizes="120x120"
-    href="img/apple-touch-icon-120x120.webp">
-  <link rel="apple-touch-icon" sizes="152x152"
-    href="img/apple-touch-icon-152x152.webp">
-  <link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-76x76.ico">
-  <link rel="preload" href="fonts/Formular.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular.woff" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Formular.ttf" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.ttf" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.ttf" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.ttf" as="font" type="font/woff2"
-    crossorigin>
-
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
-
-  <link rel="stylesheet" href="css/style.bundle.css">
-
-
-</head>
-
-<body>
-  <div class="jsbackdrop "></div>
-<header id="header" class="header ">
-  <div class="container">
-    <div class="header__wrapper">
-      <div class="header__logo">
-        <a href="/">
-          <div class="header__logoimg"><img loading="eager" src="img/nbki-logo.svg" alt="логотип" width="148" height="29"></div>
-          <div class="header__logotext onlyDesktop">для&nbsp;бизнеса</div>
-        </a>
-      </div><!-- /.header__logo -->
-      <div class="header__menu onlyDesktop">
-        <div class="menuline">
-          <div class="menuline__items">
-            <div class="menuline__item">
-              <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn" aria-expanded="false"
-                aria-controls="menu-main">Услуги</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Аналитика</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Способы подключения</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Стать клиентом</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Контакты</a>
-            </div>
-          </div><!-- /.menuline__items -->
-        </div><!-- /.menuline -->
-      </div><!-- /.header__menu -->
-      <div class="header__nav onlyDesktop">
-        <div class="headerlogin">
-          <a href="#" class="headerlogin__button">Войти</a>
-          <a href="#" class="headerlogin__icon">
-            <img loading="eager" src="img/User.svg" alt="User" width="18" height="18">
-          </a>
-        </div><!-- /.headerlogin -->
-      </div><!-- /.header__nav -->
-      <div class="header__burger onlyMobile" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
-      </div>
-    </div><!-- /.header__wrapper -->
-  </div><!-- /.container -->
-  <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true" id="menu-main">
-    <div class="mainmenu__wrapper">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <title>Национальное бюро кредитных историй</title>
+    <meta name="description" content="content" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-76x76.webp" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.webp" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.webp" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.webp" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-76x76.ico" />
+    <link rel="preload" href="fonts/Formular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+  <body>
+    <div class="jsbackdrop"></div>
+    <header id="header" class="header">
       <div class="container">
-        <div class="mainmenu__header onlyMobile">
-          <a href="#" class="btn_border btn_lk">
-            <span>Войти в ЛКП</span>
-          </a><!-- /.btn_border btn_lk -->
-          <div class="header__closeburger active" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/"
+              ><div class="header__logoimg">
+                <img loading="eager" src="img/nbki-logo.svg" alt="логотип" width="148" height="29" />
+              </div>
+              <div class="header__logotext onlyDesktop">для&nbsp;бизнеса</div></a
+            >
           </div>
-        </div><!-- /.mainmenu__header -->
-        <div class="mainmenu__union onlyDesktop">
-          <img loading="lazy" src="img/Union.svg" alt="Union" width="90" height="45">
-        </div><!-- /.mainmenu__union -->
-        <div class="mainmenu__main" data-tabs="mainmenu">
-          <div class="mainmenu__navouter onlyDesktop">
-
-            <div class="mainmenu__navbar" data-tabsheader="mainmenu" role="tablist" aria-label="Menu desktop">
-              <div class="mainmenu__nav active" data-tabsbutton="mainmenu" role="tab" aria-selected="true"
-                aria-controls="menupanel-1" id="menutab-1" tabindex="0">Банкам и МФИ</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-2" id="menutab-1" tabindex="1">Страховым компаниям</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-3" id="menutab-3" tabindex="2">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-4" id="menutab-4" tabindex="3">Лизингу и операторам инвестиционных платформ
-              </div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-5" id="menutab-5" tabindex="4">Аналитика НБКИ</div>
-            </div><!-- /.mainmenu__nav -->
-            <div class="mainmenu__subfooter">
-              <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-            </div><!-- /.mainmenu__subfooter -->
-          </div><!-- /.mainmenu__navouter -->
-
-
-
-          <div class="mainmenu__content">
-            <div class="mainmenu__tabsarea">
-
-
-              <div class="mainmenu__nav active onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-1" id="menuaccordion-1">Банкам и МФИ</div>
-
-              <div class="mainmenu__subcontent active" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-1" role="region tabpanel" aria-labelledby="menutab-1 menuaccordion-1"
-                tabindex="0" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Управление рисками</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Прескоринг кредитных заявок</a></li>
-                          <li><a href="#">Кредитные отчеты</a></li>
-                          <li><a href="#">ССП и самозапрет на кредиты</a></li>
-                          <li><a href="#">Мониторинг финансового поведения заемщика</a></li>
-                          <li><a href="#">Верификация данных заявителей</a></li>
-                          <li><a href="#">Противодействие мошенничеству</a></li>
-                          <li><a href="#">Скоринги и рейтинги</a></li>
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Кредитный портфель</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Скоринг действующих кредитов</a></li>
-                          <li><a href="#">Мониторинг должников</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Службы взыскания</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Взыскание на ранних этапах</a></li>
-                          <li><a href="#">Скоринг банкротства</a></li>
-                          <li><a href="#">Мониторинг должников</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                  <div class="mainmenu__subcol">
-
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Маркетинг</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Сегментация клиентской базы</a></li>
-                          <li><a href="#">Диверсификация кредитных предложений</a></li>
-                          <li><a href="#">Мониторинг клиентов (CRM)</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div><!-- /.mainmenu__submenu -->
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-2" id="menuaccordion-2">Страховым компаниям</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-2" role="region tabpanel" aria-labelledby="menutab-2 menuaccordion-2"
-                tabindex="1" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Страховым компаниям</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Кредитные отчеты и ССП</a></li>
-                          <li><a href="#">Мониторинг клиентской базы</a></li>
-                          <li><a href="#">Скоринги и рейтинги</a></li>
-                          <li><a href="#">Верификация данных</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
+          <div class="header__menu onlyDesktop">
+            <div class="menuline">
+              <div class="menuline__items">
+                <div class="menuline__item">
+                  <a
+                    href="#"
+                    data-toggleclick="mainmenu"
+                    id="mainmenu_btn"
+                    aria-expanded="false"
+                    aria-controls="menu-main"
+                    >Услуги</a
+                  >
                 </div>
+                <div class="menuline__item"><a href="#">Аналитика</a></div>
+                <div class="menuline__item"><a href="#">Способы подключения</a></div>
+                <div class="menuline__item"><a href="#">Стать клиентом</a></div>
+                <div class="menuline__item"><a href="#">Контакты</a></div>
               </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-3" id="menuaccordion-3">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-3" role="region tabpanel" aria-labelledby="menutab-3 menuaccordion-3"
-                tabindex="2" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Поставщикам ЖКУ и услуг связи</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Информация</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div>
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-4" id="menuaccordion-4">Лизингу и операторам инвестиционных
-                платформ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-4" role="region tabpanel" aria-labelledby="menutab-4 menuaccordion-4"
-                tabindex="3"  hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Лизингу и операторам инвестиционных платформ</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Передача данных по 218-ФЗ</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div>
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-5" id="menuaccordion-5">Аналитика НБКИ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-5" role="region tabpanel" aria-labelledby="menutab-5 menuaccordion-5"
-                tabindex="3" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Аналитика НБКИ</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Аналитические отчеты НБКИ</a></li>
-                          <li><a href="#">BI аналитика НБКИ</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
+            </div>
+          </div>
+          <div class="header__nav onlyDesktop">
+            <div class="headerlogin">
+              <a href="#" class="headerlogin__button">Войти</a>
+              <a href="#" class="headerlogin__icon"
+                ><img loading="eager" src="img/User.svg" alt="User" width="18" height="18"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="header__burger onlyMobile"
+            data-toggleclick="mainmenu"
+            data-button="burger"
+            data-overflow="body"
+          ></div>
+        </div>
+      </div>
+      <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true" id="menu-main">
+        <div class="mainmenu__wrapper">
+          <div class="container">
+            <div class="mainmenu__header onlyMobile">
+              <a href="#" class="btn_border btn_lk"><span>Войти в ЛКП</span></a>
+              <div
+                class="header__closeburger active"
+                data-toggleclick="mainmenu"
+                data-button="burger"
+                data-overflow="body"
+              ></div>
+            </div>
+            <div class="mainmenu__union onlyDesktop">
+              <img loading="lazy" src="img/Union.svg" alt="Union" width="90" height="45" />
+            </div>
+            <div class="mainmenu__main" data-tabs="mainmenu">
+              <div class="mainmenu__navouter onlyDesktop">
+                <div class="mainmenu__navbar" data-tabsheader="mainmenu" role="tablist" aria-label="Menu desktop">
+                  <div
+                    class="mainmenu__nav active"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="menupanel-1"
+                    id="menutab-1"
+                    tabindex="0"
+                  >
+                    Банкам и МФИ
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-2"
+                    id="menutab-1"
+                    tabindex="1"
+                  >
+                    Страховым компаниям
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-3"
+                    id="menutab-3"
+                    tabindex="2"
+                  >
+                    Поставщикам ЖКУ и услуг связи
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-4"
+                    id="menutab-4"
+                    tabindex="3"
+                  >
+                    Лизингу и операторам инвестиционных платформ
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-5"
+                    id="menutab-5"
+                    tabindex="4"
+                  >
+                    Аналитика НБКИ
+                  </div>
                 </div>
                 <div class="mainmenu__subfooter">
-                  <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-                </div><!-- /.mainmenu__subfooter -->
+                  <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a>
+                </div>
               </div>
-            </div><!-- /.mainmenu__tabsarea -->
-            <div class="mainmenu__staticarea onlyMobile">
-              <div class="mainmenu__staticmenu">
-                <ul>
-                  <li><a href="">Способы подключения</a></li>
-                  <li><a href="">Стать клиентом</a></li>
-                  <li><a href="">Контакты</a></li>
-                </ul>
-              </div><!-- /.mainmenu__staticmenu -->
-              <div class="mainmenu__staticbuttons">
-                <a href="https://nbki.ru" class="btn_arrow btn_icon btn_arrow_white btn_full" target="_blank">
-                  <span>Сайт для&nbsp;физических лиц</span></a>
-              </div><!-- /.mainmenu__staticbuttons -->
-            </div><!-- /.mainmenu -->
-          </div><!-- /.mainmenu__content -->
+              <div class="mainmenu__content">
+                <div class="mainmenu__tabsarea">
+                  <div
+                    class="mainmenu__nav active onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-1"
+                    id="menuaccordion-1"
+                  >
+                    Банкам и МФИ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent active"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-1"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-1 menuaccordion-1"
+                    tabindex="0"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Управление рисками</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Прескоринг кредитных заявок</a></li>
+                              <li><a href="#">Кредитные отчеты</a></li>
+                              <li><a href="#">ССП и самозапрет на кредиты</a></li>
+                              <li><a href="#">Мониторинг финансового поведения заемщика</a></li>
+                              <li><a href="#">Верификация данных заявителей</a></li>
+                              <li><a href="#">Противодействие мошенничеству</a></li>
+                              <li><a href="#">Скоринги и рейтинги</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Кредитный портфель</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Скоринг действующих кредитов</a></li>
+                              <li><a href="#">Мониторинг должников</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Службы взыскания</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Взыскание на ранних этапах</a></li>
+                              <li><a href="#">Скоринг банкротства</a></li>
+                              <li><a href="#">Мониторинг должников</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Маркетинг</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Сегментация клиентской базы</a></li>
+                              <li><a href="#">Диверсификация кредитных предложений</a></li>
+                              <li><a href="#">Мониторинг клиентов (CRM)</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-2"
+                    id="menuaccordion-2"
+                  >
+                    Страховым компаниям
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-2"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-2 menuaccordion-2"
+                    tabindex="1"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Страховым компаниям</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Кредитные отчеты и ССП</a></li>
+                              <li><a href="#">Мониторинг клиентской базы</a></li>
+                              <li><a href="#">Скоринги и рейтинги</a></li>
+                              <li><a href="#">Верификация данных</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-3"
+                    id="menuaccordion-3"
+                  >
+                    Поставщикам ЖКУ и услуг связи
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-3"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-3 menuaccordion-3"
+                    tabindex="2"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Поставщикам ЖКУ и услуг связи</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Информация</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-4"
+                    id="menuaccordion-4"
+                  >
+                    Лизингу и операторам инвестиционных платформ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-4"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-4 menuaccordion-4"
+                    tabindex="3"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Лизингу и операторам инвестиционных платформ</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Передача данных по 218-ФЗ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-5"
+                    id="menuaccordion-5"
+                  >
+                    Аналитика НБКИ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-5"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-5 menuaccordion-5"
+                    tabindex="3"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Аналитика НБКИ</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Аналитические отчеты НБКИ</a></li>
+                              <li><a href="#">BI аналитика НБКИ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mainmenu__subfooter">
+                      <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainmenu__staticarea onlyMobile">
+                  <div class="mainmenu__staticmenu">
+                    <ul>
+                      <li><a href="">Способы подключения</a></li>
+                      <li><a href="">Стать клиентом</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="mainmenu__staticbuttons">
+                    <a href="https://nbki.ru" class="btn_arrow btn_icon btn_arrow_white btn_full" target="_blank"
+                      ><span>Сайт для&nbsp;физических лиц</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div><!-- /.container -->
-    </div><!-- /.mainmenu__main -->
-  </div><!-- /.mainmenu -->
-</header>
-<!-- /#header.header -->
-
-   <main>
-    <div class="pageheader">
-     <div class="breadcrumbs ">
-      <div class="container">
-       <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="НБКИ для бизнеса"><span itemprop="name">НБКИ для&nbsp;бизнеса</span>
-          <meta itemprop="position" content="1">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="Банкам и МФИ"><span itemprop="name">Банкам и МФИ</span>
-          <meta itemprop="position" content="2">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"
-          title="Решения для маркетинга"><span itemprop="name">Решения для маркетинга</span>
-          <meta itemprop="position" content="3">
-         </a>
-        </li>
-        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-         <meta itemprop="item" content="b2b_services_bank_loan_signals.html"><span itemprop="name">Мониторинг клиентов
-          (CRM)</span>
-         <meta itemprop="position" content="4">
-        </li>
-       </ul>
       </div>
-     </div>
-     <div class="mainblock pb-32 mob-pb-0" id="mainblock_marketingsignals">
-      <div class="container">
-
-       <div class="maincard  maincard_full">
-        <div class="maincard__wrapper">
-         <div class="maincard__container mob-pb-0">
-
-          <div class="maincard__content">
-           <h1 class="maincard__title">Сигнальные кредитные <br>отчеты для маркетинга</h1>
-           <div class="maincard__text ">
-            <p>Решения для формирования продуктовых предложений <br>на основе поведенческих предпочтений и потребностей
-             клиентов</p>
-
-           </div>
+    </header>
+    <main>
+      <div class="pageheader">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="/" title="НБКИ для бизнеса"
+                  ><span itemprop="name">НБКИ для&nbsp;бизнеса</span><meta itemprop="position" content="1"
+                /></a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="/" title="Банкам и МФИ"
+                  ><span itemprop="name">Банкам и МФИ</span><meta itemprop="position" content="2"
+                /></a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="/" title="Решения для маркетинга"
+                  ><span itemprop="name">Решения для маркетинга</span><meta itemprop="position" content="3"
+                /></a>
+              </li>
+              <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <meta itemprop="item" content="b2b_services_bank_loan_signals.html" /><span itemprop="name"
+                  >Мониторинг клиентов (CRM)</span
+                ><meta itemprop="position" content="4" />
+              </li>
+            </ul>
           </div>
-          <div class="maincard__footer">
-           <div class="maincard__button">
-            <a href="#formsection" class="scrollTo btn_main">Оставить заявку</a>
-           </div>
-          </div><!-- /.maincard__footer -->
-         </div><!-- /.maincard__container -->
-         <div class="maincard__image ">
-          <img src="img/Reports1.webp" width="470" height="353" fetchpriority="high"
-           alt="Сигнальные кредитные отчеты НБКИ">
-         </div><!-- /.maincard__image -->
-         <
-        </div><!-- /.maincard__wrapper -->
-       </div>
-
-      </div><!-- /.container -->
-     </div><!-- /.mainblock -->
-    </div><!-- /.pageheader -->
-
-
-    <div class="p-32-0 pt-0 mob-pb-20">
-     <div class="container">
-      <div class="cardsinfo flex mob-flexwrap gap-16">
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Эффективно управляйте</div>
-        <div class="text m-0">формированием продуктовых<br> предложений</div>
-       </div><!-- /.card -->
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Повышайте</div>
-        <div class="text m-0">операционную эффективность <br>маркетинга </div>
-       </div><!-- /.card -->
-       <div class="card card_24_22">
-        <div class="title title_md mb-20 mob-mb-8">Улучшайте</div>
-        <div class="text m-0">лояльность клиентов за счет более релевантных предложений</div>
-       </div><!-- /.card -->
-
-      </div>
-     </div><!-- /.container -->
-    </div>
-
-    <section class="asidelistsection p-32-0 mob-p-20-0">
-     <div class="container">
-      <div class="asidelist">
-       <div class="asidelist__left">
-        <h2>Данные о финансовом поведении субъекта в&nbsp;других организациях</h2>
-       </div><!-- /.asidelist__left -->
-       <div class="asidelist__right">
-        <div class="asidelist__list ">
-         <ul class="list_blueround ">
-          <li>Открытие или закрытие кредита в другой организации</li>
-          <li>Изменение лимита по кредитным картам</li>
-          <li>Изменение суммы задолженности по кредитам</li>
-          <li>Установка или снятие самозапрета на получение кредита</li>
-          <li>Заявки на различные кредитные продукты и т. д.</li>
-         </ul>
-        </div><!-- /.asidelist__list -->
-       </div><!-- /.asidelist__right -->
-      </div><!-- /.asidelist -->
-     </div>
-    </section>
-
-    <section class="flipcardssection p-32-0 mob-p-20-0">
-     <div class="container">
-      <h2>Мониторинг финансового поведения</h2>
-      <div class="subtitle">
-       <p>Сигнальные кредитные отчеты НБКИ используются службами взыскания<br> кредиторов исходя из конкретных задач и
-        особенностей работы</p>
-      </div>
-      <div class="offers offers_flip">
-       <div class="offers__items">
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">По основной части<br> кредитной истории</span>
-            <div class="offercard__text text">Максимально широкий набор данных<br> из кредитной истории физического<br>
-             или юридического лица каждые сутки</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/KO_ul.svg" alt="KO_ul" width="104" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> 1 раз в сутки</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Точная оценка динамики <br>кредитного риска</span>
-            <div class="offercard__text text">Отчет содержит следующую информацию: открытие счета, возникновение
-             просрочки, погашение всех просрочек, изменение лимита по кредиту более, чем на n%, изменение текущей
-             задолженности более, чем на n%, закрытие или удаление счета, запрос КИ, изменение/появление сведений о
-             недееспособности, несостоятельности (банкротстве) и др.</div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">По информационной части кредитной истории</span>
-            <div class="offercard__text text">Данные из информационной части кредитной<br> истории клиента один раз в
-             сутки. Можно<br> использовать без согласия клиента по 218-ФЗ</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/verify90.svg" alt="verify" width="90" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> 1 раз в сутки</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Возможность оценить клиента без действующего кредитного договора</span>
-            <div class="offercard__text text">
-             <p>Предварительная оценка кредитного риска и его динамики, потребности клиентов и оптимизация кампаний по
-              формированию кредитных предложений.
-             </p>
-             <p>Сигналы: появилась новая заявка, заявка одобрена, заявка отклонена, по заявке выдан кредит, по кредиту
-              произошел дефолт, кредит погашен, появились сведения об установке/снятии самозапрета</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">Сигнальные отчеты <br>online</span>
-            <div class="offercard__text text">Ограниченный набор данных для&nbsp;оперативной<br> оценки рисков. 15 минут
-             —
-             максимальное время<br> ожидания сигнала</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/signals108.svg" alt="signals" width="108" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> до 15 минут после события</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Оперативное решение по&nbsp;изменениям в&nbsp;кредитной истории
-             субъекта</span>
-            <div class="offercard__text text">
-             <p>Частота предоставления – до 15 минут после наступления события в финансовом поведении клиента.</p>
-             <p>События: запрос кредитного отчета, скоринга, ССП, сведений о самозапрете</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
-        </div><!-- /.offers__item -->
-        <div class="offers__item" data-flipwrapper="flipcard">
-         <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
-          <div class="offercard__content content_h">
-           <div class="offercard__top mob-mb-20 ">
-            <span class="offercard__title title">Сигнал online + <br>скоринг</span>
-            <div class="offercard__text text">Автоматический расчет скоринга вместе <br>со сработавшим сигналом online. Результат <br>за&nbsp;20&nbsp;минут</div>
-           </div>
-           <div class="offercard__footer">
-            <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
-           </div>
-          </div>
-          <div class="offercard__image mob-order-1 mob-mb-30">
-           <img src="img/signals2_108.svg" alt="signals" width="108" height="90" loading="lazy">
-          </div>
-         </div><!-- /.offercard -->
-         <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
-          <div class="offercard__content content_h">
-           <div class="offercard__header">
-            <div class="offercard__info">
-             <span><b>Время обновления:</b> до 20 минут</span>
-            </div>
-            <div class="offercard__button">
-             <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard">
-              <img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24">
-             </span>
-            </div>
-           </div>
-
-
-           <div class="offercard__top mob-mb-0 ">
-            <span class="offercard__title title">Взвешенное кредитное решение <br>по клиенту</span>
-            <div class="offercard__text text">
-             <p>Интервал реакции ~20 минут. Информация о событии и скоринговая оценка клиента для&nbsp;более точной интерпретации события.</p>
-             <p>Вместе с сигналом можно выбрать один из трех скорингов НБКИ на усмотрение клиента: Retail PV, МФО 3.0 или Take</p>
-            </div>
-           </div>
-
-          </div>
-
-         </div><!-- /.offercard -->
         </div>
-       </div><!-- /.offers__items -->
-      </div>
-     </div><!-- /.container -->
-    </section><!-- /.offersection -->
- 
-    <section class="sectiontabs p-32-0 pb-0 mob-p-20-0">
-     <div class="container">
-      <h2>Другие услуги НБКИ для&nbsp;банков и МФИ</h2>
-     </div><!-- /.container -->
-     <div class="solutionsgrid onlyMobile">
-      <div class="container">
-
-       <div class="solutionsgrid__items">
-        <div class="solutionsgrid__item">
-         <a href="#" class="solutionsgrid__card">
-          <div class="solutionsgrid__image">
-           <img loading="lazy" src="img/PD2_sm.webp" alt="PD2_sm" width="150" height="150">
-          </div>
-          <div class="solutionsgrid__title">Кредитные отчеты</div>
-         </a>
-        </div><!-- /.solutionsgrid__item -->
-        <div class="solutionsgrid__item">
-         <a href="#" class="solutionsgrid__card">
-          <div class="solutionsgrid__image">
-           <img loading="lazy" src="img/Take2_sm.webp" alt="Take2_sm" width="150" height="150">
-          </div>
-          <div class="solutionsgrid__title">Скоринги</div>
-         </a>
-        </div><!-- /.solutionsgrid__item -->
-        <div class="solutionsgrid__item">
-         <a href="#" class="solutionsgrid__card">
-          <div class="solutionsgrid__image">
-           <img loading="lazy" src="img/Reports2_sm.webp" alt="Reports2_sm" width="150" height="150">
-          </div>
-          <div class="solutionsgrid__title">Сигнальные отчеты</div>
-         </a>
-        </div><!-- /.solutionsgrid__item -->
-        <div class="solutionsgrid__item">
-         <a href="#" class="solutionsgrid__card">
-          <div class="solutionsgrid__image">
-           <img loading="lazy" src="img/BI2_sm.webp" alt="BI2_sm" width="150" height="150">
-          </div>
-          <div class="solutionsgrid__title">Fraud скоринг <br>НБКИ</div>
-         </a>
-        </div><!-- /.solutionsgrid__item -->
-       </div><!-- /.solutionsgrid__items -->
-      </div><!-- /.container -->
-
-     </div><!-- /.onlyMobile -->
-     <div class="tabsblock onlyDesktop">
-
-      <div class="tabsblock__content">
-       <div class="tabsblock__items">
-        <div class="tabsblock__item ">
-         <div class="solutions">
-          <div class="solutions__wrapper">
-           <div class="solutions__slider" data-slider="solutions">
-            <div class="solutions__slide">
-             <a href="#" class="solutioncard">
-              <div class="solutioncard__title">Кредитные отчеты для&nbsp;банков и МФИ</div>
-              <div class="solutioncard__icon"></div>
-             </a>
+        <div class="mainblock pb-32 mob-pb-0" id="mainblock_marketingsignals">
+          <div class="container">
+            <div class="maincard maincard_full">
+              <div class="maincard__wrapper">
+                <div class="maincard__container mob-pb-0">
+                  <div class="maincard__content">
+                    <h1 class="maincard__title">Сигнальные кредитные<br />отчеты для маркетинга</h1>
+                    <div class="maincard__text">
+                      <p>
+                        Решения для формирования продуктовых предложений<br />на основе поведенческих предпочтений и
+                        потребностей клиентов
+                      </p>
+                    </div>
+                  </div>
+                  <div class="maincard__footer">
+                    <div class="maincard__button">
+                      <a href="#formsection" class="scrollTo btn_main">Оставить заявку</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="maincard__image">
+                  <img
+                    src="img/Reports1.webp"
+                    width="470"
+                    height="353"
+                    fetchpriority="high"
+                    alt="Сигнальные кредитные отчеты НБКИ"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="solutions__slide">
-             <a href="#" class="solutioncard">
-              <div class="solutioncard__title">ССП и сведения<br> о самозапрете</div>
-              <div class="solutioncard__icon"></div>
-             </a>
-            </div>
-            <div class="solutions__slide">
-             <a href="#" class="solutioncard">
-              <div class="solutioncard__title">Сигнальные кредитные отчеты</div>
-              <div class="solutioncard__icon"></div>
-             </a>
-            </div>
-            <div class="solutions__slide">
-             <a href="#" class="solutioncard">
-              <div class="solutioncard__title">Fraud скоринг <br>НБКИ</div>
-              <div class="solutioncard__icon"></div>
-             </a>
-            </div>
-           </div><!-- /.solutions__slider -->
-          </div><!-- /.solutions__wrapper -->
-         </div><!-- /.solutions -->
+          </div>
         </div>
-
-       </div><!-- /.tabsblock__items -->
-      </div><!-- /.tabsblock__content -->
-     </div><!-- /.tabsblock -->
-    </section>
-
-
-   
-
-   <section class="formsection p-32-0 mob-p-20-0" id="formsection">
-  <div class="container">
-    <div class="formsection__content">
-      <h2>Оставить заявку</h2>
-      <div class="subtitle">
-        <p>Опишите ваш запрос и менеджер НБКИ свяжется с вами</p>
-      </div><!-- /.subtitle -->
-      <div class="contactsform">
-
-        <form action="#" class="stform" data-entity="corp-page-form">
-          <div class="formcols__item">
-            <div class="formcols__input">
-              <div class="placeholder">Услуга *</div>
-              <div class="custom-select">
-                <select name="service" class="required">
-                  <option value="" selected>Выберите из списка</option>
-                  <option value="slmService$2302309">Digital скоринг</option>
-                  <option value="slmService$2302303">Fraud скоринг</option>
-                  <option value="slmService$2297520">Верификация данных заявителей</option>
-                  <option value="slmService$2297501">НБКИ-AFS</option>
-                  <option value="slmService$236518701">BI аналитика НБКИ</option>
-                  <option value="slmService$2297502">Отчет «Анализ долговой нагрузки частных заемщиков»</option>
-                  <option value="slmService$2297508">Отчеты «Бенчмаркинг»</option>
-                  <option value="slmService$2297505">Отчеты «Бенчмаркинг.Взыскание»</option>
-                  <option value="slmService$2297507">Отчеты «Винтажный анализ»</option>
-                  <option value="slmService$2297504">Отчеты «Поведенческий анализ заемщика после получения
-                    отказа»
-                  </option>
-                  <option value="slmService$2297515">Передача кредитных историй</option>
-                  <option value="slmService$2513606">Персональный кредитный рейтинг</option>
-                  <option value="slmService$2297529">Получение кредитных отчетов</option>
-                  <option value="slmService$2297538">Сигнальные кредитные отчеты</option>
-                  <option value="slmService$2302308">Скоринг бюро для&nbsp;выдачи кредита/займа</option>
-                  <option value="slmService$2302305">Скоринг бюро для&nbsp;управления портфелем</option>
-                  <!-- <option value="slmService$2302304">Скоринг МСБ</option> -->
-                  <option value="slmService$78324402">Прочее</option>
-                </select>
-              </div>
-              <div class="error_text" style="display: none;"></div>
-            </div>
-          </div>
-          <div class="formcols__item">
-            <div class="formcols__input">
-              <label for="input_company" class="placeholder">Организация *</label>
-              <input type="text" id="input_company" name="company" value="" minlength="2" class="forminput"
-                placeholder="">
-              <div class="error_text"></div>
-            </div>
-          </div>
-          <div class="formcols__items formcols__items_two">
-            <div class="formcols__item">
-              <div class="formcols__input">
-                <label for="input_inn" class="placeholder">ИНН</label>
-                <input id="input_inn" name="inn" type="text" value="" class="forminput" placeholder="">
-                <div class="error_text"></div>
-              </div>
-            </div>
-            <div class="formcols__item">
-              <div class="formcols__input">
-                <label for="input_code" class="placeholder">Код участника</label>
-                <input id="input_code" name="code" value="" type="text" class="forminput" placeholder="">
-                <div class="error_text"></div>
-              </div>
-            </div>
-          </div>
-          <!-- /.formcols__items -->
-
-          <div class="formcols__item">
-            <div class="formcols__input">
-              <label for="input_fio" class="placeholder">Фамилия, имя и&nbsp;отчество *</label>
-              <input id="input_fio" name="fio" type="text" value="" minlength="2" class="forminput" placeholder="">
-              <div class="error_text"></div>
-            </div>
-          </div>
-
-          <div class="formcols__items formcols__items_two">
-            <div class="formcols__item">
-              <div class="formcols__input">
-                <label for="input_email" class="placeholder">Электронная почта *</label>
-                <input id="input_email" name="email" type="email" value="" minlength="2" class="forminput"
-                  placeholder="">
-                <div class="error_text"></div>
-              </div>
-            </div>
-            <div class="formcols__item">
-              <div class="formcols__input">
-                <label for="input_phone" class="placeholder">Мобильный телефон *</label>
-                <input id="input_phone" name="phone" value="" type="tel" class="forminput" placeholder=""
-                  minlength="11">
-                <div class="error_text"></div>
-              </div>
-            </div>
-          </div>
-          <!-- /.formcols__items -->
-
-          <div class="formcols__item">
-            <div class="formcols__input">
-              <label for="input_comment" class="placeholder">Текст сообщения</label>
-              <textarea id="input_comment" name="comm" rows="5" class="forminput" placeholder=""></textarea>
-              <div class="error_text"></div>
-            </div>
-          </div>
-          <div class="pagerow">
-            <div class="buttoncaption">
-              <div class="buttoncaption__info">
-                АО «НБКИ» гарантирует безопасность ваших данных
-              </div><!-- /.buttoncaption__info -->
-              <div class="buttoncaption__button">
-                <button type="submit" class="btn btn_main btn_submit">Отправить</button>
-              </div>
-            </div>
-          </div>
-          <div class="formcheckinfo">
-            Нажимая кнопку «Отправить», вы подтверждаете свое согласие <a href="#" aria-label="formcheckinfo">на
-              обработку и использование
-              персональных данных</a>
-          </div><!-- /.formcheckinfo -->
-        </form>
       </div>
-    </div><!-- /.siteform -->
-  </div>
-</section>
-</main>
-
-<footer id="footer" class="footer">
-  <div class="footer__main">
-    <div class="container">
-      <div class="footer__wrapper mob-flexwrap">
-        <div class="footer__nav mob-center">
-          <div class="footer__menuline mob-flexwrap mob-full">
-            <div class="footer__menu mob-full">
-              <div class="footer__menumain">
-                <div class="footer__menutitle">Банкам&nbsp;и&nbsp;микрофинансовым институтам</div>
-                <div class="footer__menulist">
-                  <ul>
-                    <li><a href="#">Управление рисками</a></li>
-                    <li><a href="#">Маркетинг</a></li>
-                    <li><a href="#">Службы взыскания</a></li>
-                    <li><a href="#">Управление кредитным портфелем</a></li>
-                  </ul>
-                </div><!-- /.footer__menulist -->
-              </div><!-- /.footer__menumain -->
-
-              <!--  <div class="footer__menutitle footer__menutitle_bottom">
-        <a href="#">Аналитика НБКИ</a>
-       </div> -->
-
-            </div><!-- /.footer__menu -->
-            <div class="footer__menu mob-full">
-              <div class="footer__menutitle ">Страховым компаниям
-              </div>
-              <div class="footer__menulist">
-                <ul>
-                  <li><a href="#">Предоставление кредитных отчетов</a></li>
-                  <li><a href="#">Мониторинг клиентской базы</a></li>
-                  <li><a href="#">Скоринги и рейтинги</a></li>
-                  <li><a href="#">Верификация данных</a></li>
-                </ul>
-              </div><!-- /.footer__menulist -->
-              <!--  <div class="footer__menutitle footer__menutitle_bottom">
-        <a href="#">Лизинговым компаниям и операторам инвестиционных платформ</a>
-       </div> -->
-            </div><!-- /.footer__menu -->
-            <div class="footer__menu mob-full">
-              <div class="footer__menutitle">Способы подключения к&nbsp;НБКИ</div>
-              <div class="footer__menulist">
-                <ul>
-                  <li><a href="#">API (B2B соединение)</a></li>
-                  <li><a href="#">WEB: передача и запросы данных «НБКИ онлайн»</a></li>
-                  <li><a href="#">WEB: передача в 1 клик</a></li>
-                </ul>
-              </div><!-- /.footer__menulist -->
-              <!--  <div class="footer__menutitle footer__menutitle_bottom">
-        <a href="#">Поставщикам ЖКУ и услуг связи</a>
-       </div> -->
-            </div><!-- /.footer__menu -->
-          </div><!-- /.footer__menuline -->
-          <div class="footer__menuline mob-flexwrap mob-full">
-            <div class="footer__menu mob-full">
-              <div class="footer__menutitle mb-0">
-                <a href="#">Аналитика НБКИ</a>
-              </div>
+      <div class="p-32-0 pt-0 mob-pb-20">
+        <div class="container">
+          <div class="cardsinfo flex mob-flexwrap gap-16">
+            <div class="card card_24_22">
+              <div class="title title_md mb-20 mob-mb-8">Эффективно управляйте</div>
+              <div class="text m-0">формированием продуктовых<br />предложений</div>
             </div>
-            <div class="footer__menu mob-full">
-              <div class="footer__menutitle mb-0">
-                <a href="#">Лизинговым компаниям и операторам инвестиционных платформ</a>
-              </div>
+            <div class="card card_24_22">
+              <div class="title title_md mb-20 mob-mb-8">Повышайте</div>
+              <div class="text m-0">операционную эффективность<br />маркетинга</div>
             </div>
-            <div class="footer__menu mob-full">
-              <div class="footer__menutitle mb-0">
-                <a href="#">Поставщикам ЖКУ и услуг связи</a>
+            <div class="card card_24_22">
+              <div class="title title_md mb-20 mob-mb-8">Улучшайте</div>
+              <div class="text m-0">лояльность клиентов за счет более релевантных предложений</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="asidelistsection p-32-0 mob-p-20-0">
+        <div class="container">
+          <div class="asidelist">
+            <div class="asidelist__left">
+              <h2>Данные о финансовом поведении субъекта в&nbsp;других организациях</h2>
+            </div>
+            <div class="asidelist__right">
+              <div class="asidelist__list">
+                <ul class="list_blueround">
+                  <li>Открытие или закрытие кредита в другой организации</li>
+                  <li>Изменение лимита по кредитным картам</li>
+                  <li>Изменение суммы задолженности по кредитам</li>
+                  <li>Установка или снятие самозапрета на получение кредита</li>
+                  <li>Заявки на различные кредитные продукты и т. д.</li>
+                </ul>
               </div>
             </div>
           </div>
-
-        </div><!-- /.footer__nav -->
-        <div class="footer__card mob-full">
-          <div class="footercard mob-full">
-            <div class="footercard__contacts mob-flexwrap">
-              <div class="footercard__phone mob-full">
-                <div class="phone">
-                  <div class="phonetext mob-center">Наш телефон в Москве:</div>
-                  <div class="phonevalue mob-center">
-                    <a href="tel:+74952217837">+7 (495) 221-78-37</a>
-                  </div><!-- /.phonevalue -->
-                </div><!-- /.phone -->
-              </div><!-- /.footercard__phone -->
-              <div class="footercard__icons mob-m-32-0 mob-full">
-                <a href="https://t.me/bkinbki" target="_blank" class="flex content-center" aria-label="telegram">
-                  <span class="onlyMobile">Telegram</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.5533 13.9461C10.3005 14.173 10.3201 14.5749 10.5937 14.7762L16.7335 19.2932C17.4925 19.7162 18.0273 19.4935 18.2321 18.595L20.9488 5.86598C21.1895 4.74398 20.5437 4.30448 19.8042 4.57973L3.83569 10.693C2.74587 11.116 2.76237 11.7235 3.65042 11.9987L7.26328 13.1224C7.56143 13.2151 7.88519 13.1732 8.14989 13.0076L17.2158 7.33523C17.6621 7.03973 18.0678 7.20323 17.7341 7.49873L10.5533 13.9461Z" fill="#858FA3"/>
-</svg>
-
-                </a>
-              </div><!-- /.footercard__icons -->
-            </div><!-- /.footercard__contacts -->
-            <div class="footercard__button">
-              <a href="https://lk.nbki.ru/login/" class="btn btn_border btn_xxl w-full">Личный кабинет</a>
-            </div><!-- /.footercard__button -->
-          </div><!-- /.footercard -->
-        </div><!-- /.footer__card -->
-      </div><!-- /.footer__wrapper -->
-    </div><!-- /.container -->
-  </div><!-- /.footer__main -->
-  <div class="footer__bottom">
-    <div class="container">
-      <div class="footerbottom mob-flexwrap">
-        <div class="footerbottom__copy mob-center">© Национальное бюро кредитных историй, 2005–2026</div>
-        <div class="footerbottom__links mob-full mob-order-1  mob-mb-20">
-          <ul class="mob-flexwrap">
-            <li class="mob-full mob-center"><a
-                href="https://nbki.ru/upload/iblock/5fa/muqsrd2n4cuyky63jz7wl1telgqzyppx.pdf">Политика обработки
-                данных</a></li>
-            <li class="mob-full mob-center"><a href="/privacy_rules/">Пользовательское соглашение</a></li>
-          </ul>
-        </div><!-- /.footerbottom__links -->
-      </div><!-- /.footerlinks -->
-    </div><!-- /.container -->
-  </div><!-- /.footer__bottom -->
-</footer>
-<div class="backdrop"></div><!-- /.backdrop -->
-<script src="js/jquery.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/maskedinput.js"></script>
-<script src="js/index.js"></script>
+        </div>
+      </section>
+      <section class="flipcardssection p-32-0 mob-p-20-0">
+        <div class="container">
+          <h2>Мониторинг финансового поведения</h2>
+          <div class="subtitle">
+            <p>
+              Сигнальные кредитные отчеты НБКИ используются службами взыскания<br />кредиторов исходя из конкретных
+              задач и особенностей работы
+            </p>
+          </div>
+          <div class="offers offers_flip">
+            <div class="offers__items">
+              <div class="offers__item" data-flipwrapper="flipcard">
+                <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__top mob-mb-20">
+                      <span class="offercard__title title">По основной части<br />кредитной истории</span>
+                      <div class="offercard__text text">
+                        Максимально широкий набор данных<br />из кредитной истории физического<br />или юридического
+                        лица каждые сутки
+                      </div>
+                    </div>
+                    <div class="offercard__footer">
+                      <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
+                    </div>
+                  </div>
+                  <div class="offercard__image mob-order-1 mob-mb-30">
+                    <img src="img/KO_ul.svg" alt="KO_ul" width="104" height="90" loading="lazy" />
+                  </div>
+                </div>
+                <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__header">
+                      <div class="offercard__info">
+                        <span><b>Время обновления:</b> 1 раз в сутки</span>
+                      </div>
+                      <div class="offercard__button">
+                        <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard"
+                          ><img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="offercard__top mob-mb-0">
+                      <span class="offercard__title title">Точная оценка динамики<br />кредитного риска</span>
+                      <div class="offercard__text text">
+                        Отчет содержит следующую информацию: открытие счета, возникновение просрочки, погашение всех
+                        просрочек, изменение лимита по кредиту более, чем на n%, изменение текущей задолженности более,
+                        чем на n%, закрытие или удаление счета, запрос КИ, изменение/появление сведений о
+                        недееспособности, несостоятельности (банкротстве) и др.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__item" data-flipwrapper="flipcard">
+                <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__top mob-mb-20">
+                      <span class="offercard__title title">По информационной части кредитной истории</span>
+                      <div class="offercard__text text">
+                        Данные из информационной части кредитной<br />истории клиента один раз в сутки. Можно<br />использовать
+                        без согласия клиента по 218-ФЗ
+                      </div>
+                    </div>
+                    <div class="offercard__footer">
+                      <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
+                    </div>
+                  </div>
+                  <div class="offercard__image mob-order-1 mob-mb-30">
+                    <img src="img/verify90.svg" alt="verify" width="90" height="90" loading="lazy" />
+                  </div>
+                </div>
+                <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__header">
+                      <div class="offercard__info">
+                        <span><b>Время обновления:</b> 1 раз в сутки</span>
+                      </div>
+                      <div class="offercard__button">
+                        <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard"
+                          ><img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="offercard__top mob-mb-0">
+                      <span class="offercard__title title"
+                        >Возможность оценить клиента без действующего кредитного договора</span
+                      >
+                      <div class="offercard__text text">
+                        <p>
+                          Предварительная оценка кредитного риска и его динамики, потребности клиентов и оптимизация
+                          кампаний по формированию кредитных предложений.
+                        </p>
+                        <p>
+                          Сигналы: появилась новая заявка, заявка одобрена, заявка отклонена, по заявке выдан кредит, по
+                          кредиту произошел дефолт, кредит погашен, появились сведения об установке/снятии самозапрета
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__item" data-flipwrapper="flipcard">
+                <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__top mob-mb-20">
+                      <span class="offercard__title title">Сигнальные отчеты<br />online</span>
+                      <div class="offercard__text text">
+                        Ограниченный набор данных для&nbsp;оперативной<br />оценки рисков. 15 минут — максимальное
+                        время<br />ожидания сигнала
+                      </div>
+                    </div>
+                    <div class="offercard__footer">
+                      <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
+                    </div>
+                  </div>
+                  <div class="offercard__image mob-order-1 mob-mb-30">
+                    <img src="img/signals108.svg" alt="signals" width="108" height="90" loading="lazy" />
+                  </div>
+                </div>
+                <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__header">
+                      <div class="offercard__info">
+                        <span><b>Время обновления:</b> до 15 минут после события</span>
+                      </div>
+                      <div class="offercard__button">
+                        <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard"
+                          ><img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="offercard__top mob-mb-0">
+                      <span class="offercard__title title"
+                        >Оперативное решение по&nbsp;изменениям в&nbsp;кредитной истории субъекта</span
+                      >
+                      <div class="offercard__text text">
+                        <p>
+                          Частота предоставления – до 15 минут после наступления события в финансовом поведении клиента.
+                        </p>
+                        <p>События: запрос кредитного отчета, скоринга, ССП, сведений о самозапрете</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offers__item" data-flipwrapper="flipcard">
+                <div class="flipcard offercard card flex content-between mob-flexwrap" data-flip="face">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__top mob-mb-20">
+                      <span class="offercard__title title">Сигнал online +<br />скоринг</span>
+                      <div class="offercard__text text">
+                        Автоматический расчет скоринга вместе<br />со сработавшим сигналом online. Результат<br />за&nbsp;20&nbsp;минут
+                      </div>
+                    </div>
+                    <div class="offercard__footer">
+                      <span class="btn_main btn_main_light mob-full" data-flipbutton="flipcard">Подробнее</span>
+                    </div>
+                  </div>
+                  <div class="offercard__image mob-order-1 mob-mb-30">
+                    <img src="img/signals2_108.svg" alt="signals" width="108" height="90" loading="lazy" />
+                  </div>
+                </div>
+                <div class="flipcard flipcard_back offercard card flex content-between mob-flexwrap" data-flip="back">
+                  <div class="offercard__content content_h">
+                    <div class="offercard__header">
+                      <div class="offercard__info">
+                        <span><b>Время обновления:</b> до 20 минут</span>
+                      </div>
+                      <div class="offercard__button">
+                        <span class="btn_main btn_main_light btn_img" data-flipbutton="flipcard"
+                          ><img src="img/CloseLarge.svg" alt="CloseLarge" width="24" height="24"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="offercard__top mob-mb-0">
+                      <span class="offercard__title title">Взвешенное кредитное решение<br />по клиенту</span>
+                      <div class="offercard__text text">
+                        <p>
+                          Интервал реакции ~20 минут. Информация о событии и скоринговая оценка клиента для&nbsp;более
+                          точной интерпретации события.
+                        </p>
+                        <p>
+                          Вместе с сигналом можно выбрать один из трех скорингов НБКИ на усмотрение клиента: Retail PV,
+                          МФО 3.0 или Take
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectiontabs p-32-0 pb-0 mob-p-20-0">
+        <div class="container"><h2>Другие услуги НБКИ для&nbsp;банков и МФИ</h2></div>
+        <div class="solutionsgrid onlyMobile">
+          <div class="container">
+            <div class="solutionsgrid__items">
+              <div class="solutionsgrid__item">
+                <a href="#" class="solutionsgrid__card"
+                  ><div class="solutionsgrid__image">
+                    <img loading="lazy" src="img/PD2_sm.webp" alt="PD2_sm" width="150" height="150" />
+                  </div>
+                  <div class="solutionsgrid__title">Кредитные отчеты</div></a
+                >
+              </div>
+              <div class="solutionsgrid__item">
+                <a href="#" class="solutionsgrid__card"
+                  ><div class="solutionsgrid__image">
+                    <img loading="lazy" src="img/Take2_sm.webp" alt="Take2_sm" width="150" height="150" />
+                  </div>
+                  <div class="solutionsgrid__title">Скоринги</div></a
+                >
+              </div>
+              <div class="solutionsgrid__item">
+                <a href="#" class="solutionsgrid__card"
+                  ><div class="solutionsgrid__image">
+                    <img loading="lazy" src="img/Reports2_sm.webp" alt="Reports2_sm" width="150" height="150" />
+                  </div>
+                  <div class="solutionsgrid__title">Сигнальные отчеты</div></a
+                >
+              </div>
+              <div class="solutionsgrid__item">
+                <a href="#" class="solutionsgrid__card"
+                  ><div class="solutionsgrid__image">
+                    <img loading="lazy" src="img/BI2_sm.webp" alt="BI2_sm" width="150" height="150" />
+                  </div>
+                  <div class="solutionsgrid__title">Fraud скоринг<br />НБКИ</div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabsblock onlyDesktop">
+          <div class="tabsblock__content">
+            <div class="tabsblock__items">
+              <div class="tabsblock__item">
+                <div class="solutions">
+                  <div class="solutions__wrapper">
+                    <div class="solutions__slider" data-slider="solutions">
+                      <div class="solutions__slide">
+                        <a href="#" class="solutioncard"
+                          ><div class="solutioncard__title">Кредитные отчеты для&nbsp;банков и МФИ</div>
+                          <div class="solutioncard__icon"></div
+                        ></a>
+                      </div>
+                      <div class="solutions__slide">
+                        <a href="#" class="solutioncard"
+                          ><div class="solutioncard__title">ССП и сведения<br />о самозапрете</div>
+                          <div class="solutioncard__icon"></div
+                        ></a>
+                      </div>
+                      <div class="solutions__slide">
+                        <a href="#" class="solutioncard"
+                          ><div class="solutioncard__title">Сигнальные кредитные отчеты</div>
+                          <div class="solutioncard__icon"></div
+                        ></a>
+                      </div>
+                      <div class="solutions__slide">
+                        <a href="#" class="solutioncard"
+                          ><div class="solutioncard__title">Fraud скоринг<br />НБКИ</div>
+                          <div class="solutioncard__icon"></div
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="formsection p-32-0 mob-p-20-0" id="formsection">
+        <div class="container">
+          <div class="formsection__content">
+            <h2>Оставить заявку</h2>
+            <div class="subtitle"><p>Опишите ваш запрос и менеджер НБКИ свяжется с вами</p></div>
+            <div class="contactsform">
+              <form action="#" class="stform" data-entity="corp-page-form">
+                <div class="formcols__item">
+                  <div class="formcols__input">
+                    <div class="placeholder">Услуга *</div>
+                    <div class="custom-select">
+                      <select name="service" class="required">
+                        <option value="" selected="selected">Выберите из списка</option>
+                        <option value="slmService$2302309">Digital скоринг</option>
+                        <option value="slmService$2302303">Fraud скоринг</option>
+                        <option value="slmService$2297520">Верификация данных заявителей</option>
+                        <option value="slmService$2297501">НБКИ-AFS</option>
+                        <option value="slmService$236518701">BI аналитика НБКИ</option>
+                        <option value="slmService$2297502">Отчет «Анализ долговой нагрузки частных заемщиков»</option>
+                        <option value="slmService$2297508">Отчеты «Бенчмаркинг»</option>
+                        <option value="slmService$2297505">Отчеты «Бенчмаркинг.Взыскание»</option>
+                        <option value="slmService$2297507">Отчеты «Винтажный анализ»</option>
+                        <option value="slmService$2297504">
+                          Отчеты «Поведенческий анализ заемщика после получения отказа»
+                        </option>
+                        <option value="slmService$2297515">Передача кредитных историй</option>
+                        <option value="slmService$2513606">Персональный кредитный рейтинг</option>
+                        <option value="slmService$2297529">Получение кредитных отчетов</option>
+                        <option value="slmService$2297538">Сигнальные кредитные отчеты</option>
+                        <option value="slmService$2302308">Скоринг бюро для&nbsp;выдачи кредита/займа</option>
+                        <option value="slmService$2302305">Скоринг бюро для&nbsp;управления портфелем</option>
+                        <option value="slmService$78324402">Прочее</option>
+                      </select>
+                    </div>
+                    <div class="error_text" style="display: none"></div>
+                  </div>
+                </div>
+                <div class="formcols__item">
+                  <div class="formcols__input">
+                    <label for="input_company" class="placeholder">Организация *</label>
+                    <input id="input_company" name="company" value="" minlength="2" class="forminput" placeholder="" />
+                    <div class="error_text"></div>
+                  </div>
+                </div>
+                <div class="formcols__items formcols__items_two">
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_inn" class="placeholder">ИНН</label>
+                      <input id="input_inn" name="inn" value="" class="forminput" placeholder="" />
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_code" class="placeholder">Код участника</label>
+                      <input id="input_code" name="code" value="" class="forminput" placeholder="" />
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formcols__item">
+                  <div class="formcols__input">
+                    <label for="input_fio" class="placeholder">Фамилия, имя и&nbsp;отчество *</label>
+                    <input id="input_fio" name="fio" value="" minlength="2" class="forminput" placeholder="" />
+                    <div class="error_text"></div>
+                  </div>
+                </div>
+                <div class="formcols__items formcols__items_two">
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_email" class="placeholder">Электронная почта *</label>
+                      <input
+                        id="input_email"
+                        name="email"
+                        type="email"
+                        value=""
+                        minlength="2"
+                        class="forminput"
+                        placeholder=""
+                      />
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                  <div class="formcols__item">
+                    <div class="formcols__input">
+                      <label for="input_phone" class="placeholder">Мобильный телефон *</label>
+                      <input
+                        id="input_phone"
+                        name="phone"
+                        value=""
+                        type="tel"
+                        class="forminput"
+                        placeholder=""
+                        minlength="11"
+                      />
+                      <div class="error_text"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="formcols__item">
+                  <div class="formcols__input">
+                    <label for="input_comment" class="placeholder">Текст сообщения</label>
+                    <textarea id="input_comment" name="comm" rows="5" class="forminput" placeholder=""></textarea>
+                    <div class="error_text"></div>
+                  </div>
+                </div>
+                <div class="pagerow">
+                  <div class="buttoncaption">
+                    <div class="buttoncaption__info">АО «НБКИ» гарантирует безопасность ваших данных</div>
+                    <div class="buttoncaption__button">
+                      <button type="submit" class="btn btn_main btn_submit">Отправить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="formcheckinfo">
+                  Нажимая кнопку «Отправить», вы подтверждаете свое согласие
+                  <a href="#" aria-label="formcheckinfo">на обработку и использование персональных данных</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__wrapper mob-flexwrap">
+            <div class="footer__nav mob-center">
+              <div class="footer__menuline mob-flexwrap mob-full">
+                <div class="footer__menu mob-full">
+                  <div class="footer__menumain">
+                    <div class="footer__menutitle">Банкам&nbsp;и&nbsp;микрофинансовым институтам</div>
+                    <div class="footer__menulist">
+                      <ul>
+                        <li><a href="#">Управление рисками</a></li>
+                        <li><a href="#">Маркетинг</a></li>
+                        <li><a href="#">Службы взыскания</a></li>
+                        <li><a href="#">Управление кредитным портфелем</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__menu mob-full">
+                  <div class="footer__menutitle">Страховым компаниям</div>
+                  <div class="footer__menulist">
+                    <ul>
+                      <li><a href="#">Предоставление кредитных отчетов</a></li>
+                      <li><a href="#">Мониторинг клиентской базы</a></li>
+                      <li><a href="#">Скоринги и рейтинги</a></li>
+                      <li><a href="#">Верификация данных</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__menu mob-full">
+                  <div class="footer__menutitle">Способы подключения к&nbsp;НБКИ</div>
+                  <div class="footer__menulist">
+                    <ul>
+                      <li><a href="#">API (B2B соединение)</a></li>
+                      <li><a href="#">WEB: передача и запросы данных «НБКИ онлайн»</a></li>
+                      <li><a href="#">WEB: передача в 1 клик</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__menuline mob-flexwrap mob-full">
+                <div class="footer__menu mob-full">
+                  <div class="footer__menutitle mb-0"><a href="#">Аналитика НБКИ</a></div>
+                </div>
+                <div class="footer__menu mob-full">
+                  <div class="footer__menutitle mb-0">
+                    <a href="#">Лизинговым компаниям и операторам инвестиционных платформ</a>
+                  </div>
+                </div>
+                <div class="footer__menu mob-full">
+                  <div class="footer__menutitle mb-0"><a href="#">Поставщикам ЖКУ и услуг связи</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__card mob-full">
+              <div class="footercard mob-full">
+                <div class="footercard__contacts mob-flexwrap">
+                  <div class="footercard__phone mob-full">
+                    <div class="phone">
+                      <div class="phonetext mob-center">Наш телефон в Москве:</div>
+                      <div class="phonevalue mob-center"><a href="tel:+74952217837">+7 (495) 221-78-37</a></div>
+                    </div>
+                  </div>
+                  <div class="footercard__icons mob-m-32-0 mob-full">
+                    <a href="https://t.me/bkinbki" target="_blank" class="flex content-center" aria-label="telegram"
+                      ><span class="onlyMobile">Telegram</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.5533 13.9461C10.3005 14.173 10.3201 14.5749 10.5937 14.7762L16.7335 19.2932C17.4925 19.7162 18.0273 19.4935 18.2321 18.595L20.9488 5.86598C21.1895 4.74398 20.5437 4.30448 19.8042 4.57973L3.83569 10.693C2.74587 11.116 2.76237 11.7235 3.65042 11.9987L7.26328 13.1224C7.56143 13.2151 7.88519 13.1732 8.14989 13.0076L17.2158 7.33523C17.6621 7.03973 18.0678 7.20323 17.7341 7.49873L10.5533 13.9461Z"
+                          fill="#858FA3"
+                        /></svg
+                    ></a>
+                  </div>
+                </div>
+                <div class="footercard__button">
+                  <a href="https://lk.nbki.ru/login/" class="btn btn_border btn_xxl w-full">Личный кабинет</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footerbottom mob-flexwrap">
+            <div class="footerbottom__copy mob-center">© Национальное бюро кредитных историй, 2005–2026</div>
+            <div class="footerbottom__links mob-full mob-order-1 mob-mb-20">
+              <ul class="mob-flexwrap">
+                <li class="mob-full mob-center">
+                  <a href="https://nbki.ru/upload/iblock/5fa/muqsrd2n4cuyky63jz7wl1telgqzyppx.pdf"
+                    >Политика обработки данных</a
+                  >
+                </li>
+                <li class="mob-full mob-center"><a href="/privacy_rules/">Пользовательское соглашение</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

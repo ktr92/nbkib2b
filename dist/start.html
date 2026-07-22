@@ -1,368 +1,575 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>
-    b2b
-  </title>
-  <meta name="description" content="content">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-  <meta name="msapplication-navbutton-color" content="#ffffff">
-
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="apple-touch-icon"
-    href="img/apple-touch-icon-76x76.webp">
-  <link rel="apple-touch-icon" sizes="76x76"
-    href="img/apple-touch-icon-76x76.webp">
-  <link rel="apple-touch-icon" sizes="120x120"
-    href="img/apple-touch-icon-120x120.webp">
-  <link rel="apple-touch-icon" sizes="152x152"
-    href="img/apple-touch-icon-152x152.webp">
-  <link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-76x76.ico">
-  <link rel="preload" href="fonts/Formular.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular.woff" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Formular.ttf" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Italic.ttf" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/FormularMono.ttf" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.woff2" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.woff" as="font" type="font/woff2"
-    crossorigin>
-  <link rel="preload" href="fonts/Formular-Medium.ttf" as="font" type="font/woff2"
-    crossorigin>
-
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
-
-  <link rel="stylesheet" href="css/style.bundle.css">
-
-
-</head>
-
-<body>
-<div class="jsbackdrop "></div>
-<header id="header" class="header ">
-  <div class="container">
-    <div class="header__wrapper">
-      <div class="header__logo">
-        <a href="/">
-          <div class="header__logoimg"><img loading="eager" src="img/nbki-logo.svg" alt="логотип" width="148" height="29"></div>
-          <div class="header__logotext onlyDesktop">для&nbsp;бизнеса</div>
-        </a>
-      </div><!-- /.header__logo -->
-      <div class="header__menu onlyDesktop">
-        <div class="menuline">
-          <div class="menuline__items">
-            <div class="menuline__item">
-              <a href="#" data-toggleclick="mainmenu" id="mainmenu_btn" aria-expanded="false"
-                aria-controls="menu-main">Услуги</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Аналитика</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Способы подключения</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Стать клиентом</a>
-            </div>
-            <div class="menuline__item">
-              <a href="#">Контакты</a>
-            </div>
-          </div><!-- /.menuline__items -->
-        </div><!-- /.menuline -->
-      </div><!-- /.header__menu -->
-      <div class="header__nav onlyDesktop">
-        <div class="headerlogin">
-          <a href="#" class="headerlogin__button">Войти</a>
-          <a href="#" class="headerlogin__icon">
-            <img loading="eager" src="img/User.svg" alt="User" width="18" height="18">
-          </a>
-        </div><!-- /.headerlogin -->
-      </div><!-- /.header__nav -->
-      <div class="header__burger onlyMobile" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
-      </div>
-    </div><!-- /.header__wrapper -->
-  </div><!-- /.container -->
-  <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true" id="menu-main">
-    <div class="mainmenu__wrapper">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <title>b2b</title>
+    <meta name="description" content="content" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-76x76.webp" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.webp" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.webp" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.webp" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/apple-touch-icon-76x76.ico" />
+    <link rel="preload" href="fonts/Formular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Italic.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/FormularMono.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.woff" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/Formular-Medium.ttf" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+  </head>
+  <body>
+    <div class="jsbackdrop"></div>
+    <header id="header" class="header">
       <div class="container">
-        <div class="mainmenu__header onlyMobile">
-          <a href="#" class="btn_border btn_lk">
-            <span>Войти в ЛКП</span>
-          </a><!-- /.btn_border btn_lk -->
-          <div class="header__closeburger active" data-toggleclick="mainmenu" data-button="burger" data-overflow="body">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/"
+              ><div class="header__logoimg">
+                <img loading="eager" src="img/nbki-logo.svg" alt="логотип" width="148" height="29" />
+              </div>
+              <div class="header__logotext onlyDesktop">для&nbsp;бизнеса</div></a
+            >
           </div>
-        </div><!-- /.mainmenu__header -->
-        <div class="mainmenu__union onlyDesktop">
-          <img loading="lazy" src="img/Union.svg" alt="Union" width="90" height="45">
-        </div><!-- /.mainmenu__union -->
-        <div class="mainmenu__main" data-tabs="mainmenu">
-          <div class="mainmenu__navouter onlyDesktop">
-
-            <div class="mainmenu__navbar" data-tabsheader="mainmenu" role="tablist" aria-label="Menu desktop">
-              <div class="mainmenu__nav active" data-tabsbutton="mainmenu" role="tab" aria-selected="true"
-                aria-controls="menupanel-1" id="menutab-1" tabindex="0">Банкам и МФИ</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-2" id="menutab-1" tabindex="1">Страховым компаниям</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-3" id="menutab-3" tabindex="2">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-4" id="menutab-4" tabindex="3">Лизингу и операторам инвестиционных платформ
-              </div>
-              <div class="mainmenu__nav" data-tabsbutton="mainmenu" role="tab" aria-selected="false"
-                aria-controls="menupanel-5" id="menutab-5" tabindex="4">Аналитика НБКИ</div>
-            </div><!-- /.mainmenu__nav -->
-            <div class="mainmenu__subfooter">
-              <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-            </div><!-- /.mainmenu__subfooter -->
-          </div><!-- /.mainmenu__navouter -->
-
-
-
-          <div class="mainmenu__content">
-            <div class="mainmenu__tabsarea">
-
-
-              <div class="mainmenu__nav active onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-1" id="menuaccordion-1">Банкам и МФИ</div>
-
-              <div class="mainmenu__subcontent active" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-1" role="region tabpanel" aria-labelledby="menutab-1 menuaccordion-1"
-                tabindex="0" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Управление рисками</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Прескоринг кредитных заявок</a></li>
-                          <li><a href="#">Кредитные отчеты</a></li>
-                          <li><a href="#">ССП и самозапрет на кредиты</a></li>
-                          <li><a href="#">Мониторинг финансового поведения заемщика</a></li>
-                          <li><a href="#">Верификация данных заявителей</a></li>
-                          <li><a href="#">Противодействие мошенничеству</a></li>
-                          <li><a href="#">Скоринги и рейтинги</a></li>
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Кредитный портфель</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Скоринг действующих кредитов</a></li>
-                          <li><a href="#">Мониторинг должников</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Службы взыскания</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Взыскание на ранних этапах</a></li>
-                          <li><a href="#">Скоринг банкротства</a></li>
-                          <li><a href="#">Мониторинг должников</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                  <div class="mainmenu__subcol">
-
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle">Маркетинг</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Сегментация клиентской базы</a></li>
-                          <li><a href="#">Диверсификация кредитных предложений</a></li>
-                          <li><a href="#">Мониторинг клиентов (CRM)</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div><!-- /.mainmenu__submenu -->
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-2" id="menuaccordion-2">Страховым компаниям</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-2" role="region tabpanel" aria-labelledby="menutab-2 menuaccordion-2"
-                tabindex="1" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Страховым компаниям</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Кредитные отчеты и ССП</a></li>
-                          <li><a href="#">Мониторинг клиентской базы</a></li>
-                          <li><a href="#">Скоринги и рейтинги</a></li>
-                          <li><a href="#">Верификация данных</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
+          <div class="header__menu onlyDesktop">
+            <div class="menuline">
+              <div class="menuline__items">
+                <div class="menuline__item">
+                  <a
+                    href="#"
+                    data-toggleclick="mainmenu"
+                    id="mainmenu_btn"
+                    aria-expanded="false"
+                    aria-controls="menu-main"
+                    >Услуги</a
+                  >
                 </div>
+                <div class="menuline__item"><a href="#">Аналитика</a></div>
+                <div class="menuline__item"><a href="#">Способы подключения</a></div>
+                <div class="menuline__item"><a href="#">Стать клиентом</a></div>
+                <div class="menuline__item"><a href="#">Контакты</a></div>
               </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-3" id="menuaccordion-3">Поставщикам ЖКУ и услуг связи</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-3" role="region tabpanel" aria-labelledby="menutab-3 menuaccordion-3"
-                tabindex="2" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Поставщикам ЖКУ и услуг связи</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Информация</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div>
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-4" id="menuaccordion-4">Лизингу и операторам инвестиционных
-                платформ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-4" role="region tabpanel" aria-labelledby="menutab-4 menuaccordion-4"
-                tabindex="3"  hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Лизингу и операторам инвестиционных платформ</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Передача данных по 218-ФЗ</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
-                </div>
-              </div>
-
-              <div class="mainmenu__nav onlyMobile" data-accordion="mainmenu" aria-expanded="false"
-                aria-controls="mainmenu-5" id="menuaccordion-5">Аналитика НБКИ</div>
-              <div class="mainmenu__subcontent" data-tabscontent="mainmenu" data-accordioncontent="mainmenu"
-                id="mainmenu-5" role="region tabpanel" aria-labelledby="menutab-5 menuaccordion-5"
-                tabindex="3" hidden>
-                <div class="mainmenu__submenu">
-                  <div class="mainmenu__subcol">
-                    <div class="mainmenu__subitem">
-                      <div class="mainmenu__subtitle onlyDesktop">Аналитика НБКИ</div>
-                      <div class="mainmenu__sublinks">
-                        <ul>
-                          <li><a href="#">Аналитические отчеты НБКИ</a></li>
-                          <li><a href="#">BI аналитика НБКИ</a></li>
-
-                        </ul>
-                      </div><!-- /.mainmenu__sublinks -->
-                    </div><!-- /.mainmenu__subitem -->
-                  </div><!-- /.mainmenu__subcol -->
+            </div>
+          </div>
+          <div class="header__nav onlyDesktop">
+            <div class="headerlogin">
+              <a href="#" class="headerlogin__button">Войти</a>
+              <a href="#" class="headerlogin__icon"
+                ><img loading="eager" src="img/User.svg" alt="User" width="18" height="18"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="header__burger onlyMobile"
+            data-toggleclick="mainmenu"
+            data-button="burger"
+            data-overflow="body"
+          ></div>
+        </div>
+      </div>
+      <div class="mainmenu" data-toggle="mainmenu" data-backdrop="true" id="menu-main">
+        <div class="mainmenu__wrapper">
+          <div class="container">
+            <div class="mainmenu__header onlyMobile">
+              <a href="#" class="btn_border btn_lk"><span>Войти в ЛКП</span></a>
+              <div
+                class="header__closeburger active"
+                data-toggleclick="mainmenu"
+                data-button="burger"
+                data-overflow="body"
+              ></div>
+            </div>
+            <div class="mainmenu__union onlyDesktop">
+              <img loading="lazy" src="img/Union.svg" alt="Union" width="90" height="45" />
+            </div>
+            <div class="mainmenu__main" data-tabs="mainmenu">
+              <div class="mainmenu__navouter onlyDesktop">
+                <div class="mainmenu__navbar" data-tabsheader="mainmenu" role="tablist" aria-label="Menu desktop">
+                  <div
+                    class="mainmenu__nav active"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="menupanel-1"
+                    id="menutab-1"
+                    tabindex="0"
+                  >
+                    Банкам и МФИ
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-2"
+                    id="menutab-1"
+                    tabindex="1"
+                  >
+                    Страховым компаниям
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-3"
+                    id="menutab-3"
+                    tabindex="2"
+                  >
+                    Поставщикам ЖКУ и услуг связи
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-4"
+                    id="menutab-4"
+                    tabindex="3"
+                  >
+                    Лизингу и операторам инвестиционных платформ
+                  </div>
+                  <div
+                    class="mainmenu__nav"
+                    data-tabsbutton="mainmenu"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="menupanel-5"
+                    id="menutab-5"
+                    tabindex="4"
+                  >
+                    Аналитика НБКИ
+                  </div>
                 </div>
                 <div class="mainmenu__subfooter">
-                  <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a><!-- /.btn_arrow -->
-                </div><!-- /.mainmenu__subfooter -->
+                  <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a>
+                </div>
               </div>
-            </div><!-- /.mainmenu__tabsarea -->
-            <div class="mainmenu__staticarea onlyMobile">
-              <div class="mainmenu__staticmenu">
-                <ul>
-                  <li><a href="">Способы подключения</a></li>
-                  <li><a href="">Стать клиентом</a></li>
-                  <li><a href="">Контакты</a></li>
-                </ul>
-              </div><!-- /.mainmenu__staticmenu -->
-              <div class="mainmenu__staticbuttons">
-                <a href="https://nbki.ru" class="btn_arrow btn_icon btn_arrow_white btn_full" target="_blank">
-                  <span>Сайт для&nbsp;физических лиц</span></a>
-              </div><!-- /.mainmenu__staticbuttons -->
-            </div><!-- /.mainmenu -->
-          </div><!-- /.mainmenu__content -->
+              <div class="mainmenu__content">
+                <div class="mainmenu__tabsarea">
+                  <div
+                    class="mainmenu__nav active onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-1"
+                    id="menuaccordion-1"
+                  >
+                    Банкам и МФИ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent active"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-1"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-1 menuaccordion-1"
+                    tabindex="0"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Управление рисками</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Прескоринг кредитных заявок</a></li>
+                              <li><a href="#">Кредитные отчеты</a></li>
+                              <li><a href="#">ССП и самозапрет на кредиты</a></li>
+                              <li><a href="#">Мониторинг финансового поведения заемщика</a></li>
+                              <li><a href="#">Верификация данных заявителей</a></li>
+                              <li><a href="#">Противодействие мошенничеству</a></li>
+                              <li><a href="#">Скоринги и рейтинги</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Кредитный портфель</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Скоринг действующих кредитов</a></li>
+                              <li><a href="#">Мониторинг должников</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Службы взыскания</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Взыскание на ранних этапах</a></li>
+                              <li><a href="#">Скоринг банкротства</a></li>
+                              <li><a href="#">Мониторинг должников</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle">Маркетинг</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Сегментация клиентской базы</a></li>
+                              <li><a href="#">Диверсификация кредитных предложений</a></li>
+                              <li><a href="#">Мониторинг клиентов (CRM)</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-2"
+                    id="menuaccordion-2"
+                  >
+                    Страховым компаниям
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-2"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-2 menuaccordion-2"
+                    tabindex="1"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Страховым компаниям</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Кредитные отчеты и ССП</a></li>
+                              <li><a href="#">Мониторинг клиентской базы</a></li>
+                              <li><a href="#">Скоринги и рейтинги</a></li>
+                              <li><a href="#">Верификация данных</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-3"
+                    id="menuaccordion-3"
+                  >
+                    Поставщикам ЖКУ и услуг связи
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-3"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-3 menuaccordion-3"
+                    tabindex="2"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Поставщикам ЖКУ и услуг связи</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Информация</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-4"
+                    id="menuaccordion-4"
+                  >
+                    Лизингу и операторам инвестиционных платформ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-4"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-4 menuaccordion-4"
+                    tabindex="3"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Лизингу и операторам инвестиционных платформ</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Передача данных по 218-ФЗ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mainmenu__nav onlyMobile"
+                    data-accordion="mainmenu"
+                    aria-expanded="false"
+                    aria-controls="mainmenu-5"
+                    id="menuaccordion-5"
+                  >
+                    Аналитика НБКИ
+                  </div>
+                  <div
+                    class="mainmenu__subcontent"
+                    data-tabscontent="mainmenu"
+                    data-accordioncontent="mainmenu"
+                    id="mainmenu-5"
+                    role="region tabpanel"
+                    aria-labelledby="menutab-5 menuaccordion-5"
+                    tabindex="3"
+                    hidden
+                  >
+                    <div class="mainmenu__submenu">
+                      <div class="mainmenu__subcol">
+                        <div class="mainmenu__subitem">
+                          <div class="mainmenu__subtitle onlyDesktop">Аналитика НБКИ</div>
+                          <div class="mainmenu__sublinks">
+                            <ul>
+                              <li><a href="#">Аналитические отчеты НБКИ</a></li>
+                              <li><a href="#">BI аналитика НБКИ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mainmenu__subfooter">
+                      <a href="#" class="btn_arrow" target="_blank">BI Аналитика НБКИ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainmenu__staticarea onlyMobile">
+                  <div class="mainmenu__staticmenu">
+                    <ul>
+                      <li><a href="">Способы подключения</a></li>
+                      <li><a href="">Стать клиентом</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <div class="mainmenu__staticbuttons">
+                    <a href="https://nbki.ru" class="btn_arrow btn_icon btn_arrow_white btn_full" target="_blank"
+                      ><span>Сайт для&nbsp;физических лиц</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div><!-- /.container -->
-    </div><!-- /.mainmenu__main -->
-  </div><!-- /.mainmenu -->
-</header>
-<!-- /#header.header -->
-<style>
-  main ul {
+      </div>
+    </header>
+    <style>
+      main ul {
         column-count: 2;
-  }
-  main li {
-    margin-bottom: 15px;
-    list-style: none;
-    display: block;
-  }
-   main a.btn_main {
-    line-height: unset;
-    background: none !important;
-    padding: 0;
-    height: unset;
-    color: #000 !important;
-    margin: 0 0 12px 0;
-  }
-</style>
-<main>
-    <div class="container">
-     <ul>
-      <li><a href="index.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_home_white</a></li>
-      <li><a href="b2b_services_bank.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank</a></li>
-      <li><a href="b2b_services_bank_risks_digital_score.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_risks_digital_score</a></li>
-      <li><a href="b2b_services_bank_risks_ko.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_risks_ko</a></li>
-      <li><a href="b2b_services_bank_risks_ssp_szp.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_risks_ssp_szp</a></li>
-      <li><a href="b2b_services_bank_risks_signals.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_risks_signals</a></li>
-      <li><a href="b2b_services_bank_risks_fssp.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_risks_fssp</a></li>
-      <li><a href="b2b_services_bank_scores.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_scores</a></li>
-      <li><a href="b2b_services_bank_loan_pv_score.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_loan_pv_score</a></li>
-      <li><a href="b2b_services_bank_loan_signals.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_loan_signals</a></li>
-      <li><a href="b2b_services_bank_ collection_pd_score.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_ collection_pd_score</a></li>
-      <li><a href="b2b_services_bank_ collection_bankrupt_score.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_ collection_bankrupt_score</a></li>
-      <li><a href="b2b_services_bank_loan_signals2.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_loan_signals2</a></li>
-      <li><a href="b2b_services_bank_marketing_signals.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_marketing_signals</a></li>
-      <li><a href="b2b_services_bank_marketing_segmentation.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_marketing_segmentation</a></li>
-      <li><a href="b2b_services_bank_marketing_diversification.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_bank_marketing_diversification</a></li>
-      <li><a href="b2b_services_insurance.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_ insurance</a></li>
-      <li><a href="b2b_services_ insurance_ko.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_insurance_ko</a></li>
-      <li><a href="b2b_services_insurance_ssp_szp.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_insurance_ssp_szp</a></li>
-      <li><a href="b2b_services_insurance_signals.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_insurance_signals</a></li>
-      <li><a href="b2b_services_insurance_scores.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_insurance_scores</a></li>
-      <li><a href="b2b_services_insurance_risks_fssp.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_insurance_risks_fssp</a></li>
-      <li><a href="b2b_services_ utility.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_ utility</a></li>
-      <li><a href="b2b_services_lising.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_lising</a></li>
-      <li><a href="b2b_services_analytics1.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_analytics 1</a></li>
-      <li><a href="b2b_services_analytics.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_analytics 2</a></li>
-      <li><a href="b2b_services_connect.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_services_connect 2</a></li>
-      <li><a href="b2b_become-a-client.html" target="_blank" rel="noopener noreferrer" class='btn_main'>b2b_become-a-client</a></li>
-     
-      
-     </ul>
-    </div><!-- /.container -->
-
-
+      }
+      main li {
+        margin-bottom: 15px;
+        list-style: none;
+        display: block;
+      }
+      main a.btn_main {
+        line-height: unset;
+        background: none !important;
+        padding: 0;
+        height: unset;
+        color: #000 !important;
+        margin: 0 0 12px 0;
+      }
+    </style>
+    <main>
+      <div class="container">
+        <ul>
+          <li><a href="index.html" target="_blank" rel="noopener noreferrer" class="btn_main">b2b_home_white</a></li>
+          <li>
+            <a href="b2b_services_bank.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_risks_digital_score.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_risks_digital_score</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_risks_ko.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_risks_ko</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_risks_ssp_szp.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_risks_ssp_szp</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_risks_signals.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_risks_signals</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_risks_fssp.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_risks_fssp</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_scores.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_scores</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_loan_pv_score.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_loan_pv_score</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_loan_signals.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_loan_signals</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_ collection_pd_score.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_ collection_pd_score</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_ collection_bankrupt_score.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_ collection_bankrupt_score</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_bank_loan_signals2.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_bank_loan_signals2</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_marketing_signals.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_marketing_signals</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_marketing_segmentation.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_marketing_segmentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="b2b_services_bank_marketing_diversification.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn_main"
+              >b2b_services_bank_marketing_diversification</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_insurance.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_ insurance</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_ insurance_ko.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_insurance_ko</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_insurance_ssp_szp.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_insurance_ssp_szp</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_insurance_signals.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_insurance_signals</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_insurance_scores.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_insurance_scores</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_insurance_risks_fssp.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_insurance_risks_fssp</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_ utility.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_ utility</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_lising.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_lising</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_analytics1.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_analytics 1</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_analytics.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_analytics 2</a
+            >
+          </li>
+          <li>
+            <a href="b2b_services_connect.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_services_connect 2</a
+            >
+          </li>
+          <li>
+            <a href="b2b_become-a-client.html" target="_blank" rel="noopener noreferrer" class="btn_main"
+              >b2b_become-a-client</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

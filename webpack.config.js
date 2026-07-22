@@ -37,7 +37,7 @@ const config = {
   devtool: "source-map",
   mode: "production",
   optimization: {
-    minimize: true,
+    minimize: false,
    minimizer: [
       new CssMinimizerPlugin({
         minimizerOptions: {
